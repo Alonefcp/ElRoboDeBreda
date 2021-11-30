@@ -1,0 +1,361 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<eAdventure version="3">
+  <player>
+    <resources name="No name">
+      <asset type="standup" uri="assets/special/EmptyAnimation" />
+      <asset type="standdown" uri="assets/special/EmptyAnimation" />
+      <asset type="standright" uri="assets/special/EmptyAnimation" />
+      <asset type="standleft" uri="assets/special/EmptyAnimation" />
+      <asset type="speakup" uri="assets/special/EmptyAnimation" />
+      <asset type="speakdown" uri="assets/special/EmptyAnimation" />
+      <asset type="speakright" uri="assets/special/EmptyAnimation" />
+      <asset type="speakleft" uri="assets/special/EmptyAnimation" />
+      <asset type="useright" uri="assets/special/EmptyAnimation" />
+      <asset type="useleft" uri="assets/special/EmptyAnimation" />
+      <asset type="walkup" uri="assets/special/EmptyAnimation" />
+      <asset type="walkdown" uri="assets/special/EmptyAnimation" />
+      <asset type="walkright" uri="assets/special/EmptyAnimation" />
+      <asset type="walkleft" uri="assets/special/EmptyAnimation" />
+    </resources>
+    <textcolor showsSpeechBubble="no" bubbleBkgColor="#FFFFFF" bubbleBorderColor="#000000">
+      <frontcolor color="#FFFFFF" />
+      <bordercolor color="#000000" />
+    </textcolor>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <voice name="" synthesizeAlways="no" />
+  </player>
+  <scene id="SceneId" hideInventory="no" allowsZoom="yes" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
+    <documentation>
+    </documentation>
+    <resources name="No name">
+      <asset type="background" uri="assets/background/1613098218277.jpg" />
+    </resources>
+    <name>
+    </name>
+    <default-initial-position x="400" y="450" />
+  </scene>
+  <map-scene id="MapaJuego" cameraType="Aerial2D" renderStyle="Tile" tileMetaIdentifier="OSMTile" usesGameplayArea="yes" gameplayArea="40.4125729710596 -3.71781527995988 0.00793969609117084 0.0171661376952987" center="(40.4160691666784, -3.70270907878802)" zoom="15" start="yes" />
+  <geo-element id="PlazaMayor">
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <geometries>
+      <geometry influence="5">
+        <Polygon>
+          <exterior>
+            <LinearRing>
+              <posList>40.4157015845639 -3.70680749416331 40.4151706290746 -3.70674848556495 40.4151583762062 -3.70729029178596 40.4156811632764 -3.70731711387612</posList>
+            </LinearRing>
+          </exterior>
+        </Polygon>
+      </geometry>
+    </geometries>
+    <actions>
+      <enter-action>
+        <effect>
+          <trigger-zoned-scene idTarget="SceneId" x="512" y="384" zoneId="PlazaMayor" transitionTime="0" transitionType="0" guid="de808f1f-d900-4cbc-b28f-021caf1df7f5" />
+          <condition />
+        </effect>
+        <only-from-outside>False</only-from-outside>
+      </enter-action>
+    </actions>
+  </geo-element>
+  <geo-element id="Taberna">
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <geometries>
+      <geometry influence="0">
+        <Polygon>
+          <exterior>
+            <LinearRing>
+              <posList>40.4129324009012 -3.70827997922902 40.4127057149336 -3.70832289457326 40.4127914880922 -3.70851064920431 40.4129548652347 -3.70843822956091</posList>
+            </LinearRing>
+          </exterior>
+        </Polygon>
+      </geometry>
+    </geometries>
+    <actions />
+  </geo-element>
+  <geo-element id="Carcel">
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <geometries>
+      <geometry influence="0">
+        <Polygon>
+          <exterior>
+            <LinearRing>
+              <posList>40.4148923857091 -3.70568628311119 40.4147126760051 -3.70563800334891 40.4146942965765 -3.70624686479528 40.414888301403 -3.706198585033</posList>
+            </LinearRing>
+          </exterior>
+        </Polygon>
+      </geometry>
+    </geometries>
+    <actions />
+  </geo-element>
+  <geo-element id="Sol">
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <geometries>
+      <geometry influence="0">
+        <Polygon>
+          <exterior>
+            <LinearRing>
+              <posList>40.4169467602642 -3.70439614057527 40.4165097514463 -3.70430762767779 40.4164709514608 -3.7046697258948 40.4169100026225 -3.70471800565708</posList>
+            </LinearRing>
+          </exterior>
+        </Polygon>
+      </geometry>
+    </geometries>
+    <actions />
+  </geo-element>
+  <geo-element id="SanGines">
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <geometries>
+      <geometry influence="0">
+        <Polygon>
+          <exterior>
+            <LinearRing>
+              <posList>40.4173306722157 -3.70664114952105 40.4171979369133 -3.70670552253741 40.417306167256 -3.70705152750034 40.4174246077935 -3.70698179006594</posList>
+            </LinearRing>
+          </exterior>
+        </Polygon>
+      </geometry>
+    </geometries>
+    <actions />
+  </geo-element>
+  <geo-element id="PlazaSanMartin">
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <geometries>
+      <geometry influence="0">
+        <Polygon>
+          <exterior>
+            <LinearRing>
+              <posList>40.4184374699002 -3.70636219978309 40.4181720035789 -3.70651776790593 40.4183292414495 -3.70709444284414 40.4185844969506 -3.70697374343843</posList>
+            </LinearRing>
+          </exterior>
+        </Polygon>
+      </geometry>
+    </geometries>
+    <actions />
+  </geo-element>
+  <geo-element id="PalacioReal">
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <geometries>
+      <geometry influence="0">
+        <Polygon>
+          <exterior>
+            <LinearRing>
+              <posList>40.4184497222562 -3.7118768215179 40.4181679193272 -3.71189291477199 40.418212844491 -3.71252055168148 40.4184905631444 -3.71249372959132</posList>
+            </LinearRing>
+          </exterior>
+        </Polygon>
+      </geometry>
+    </geometries>
+    <actions />
+  </geo-element>
+  <geo-element id="PlazaRamales">
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <geometries>
+      <geometry influence="0">
+        <Polygon>
+          <exterior>
+            <LinearRing>
+              <posList>40.4171938527785 -3.71139134168621 40.4168364872784 -3.71132160425185 40.4167793086222 -3.7119116902351 40.4170570330684 -3.71186341047286</posList>
+            </LinearRing>
+          </exterior>
+        </Polygon>
+      </geometry>
+    </geometries>
+    <actions />
+  </geo-element>
+  <geo-element id="PalacioUceda">
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <geometries>
+      <geometry influence="0">
+        <Polygon>
+          <exterior>
+            <LinearRing>
+              <posList>40.415308983834 -3.71226305961613 40.4149618186884 -3.71212358474737 40.4148311209916 -3.71348078250888 40.4151496965888 -3.713502240181</posList>
+            </LinearRing>
+          </exterior>
+        </Polygon>
+      </geometry>
+    </geometries>
+    <actions />
+  </geo-element>
+  <geo-element id="CruzVerde">
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <geometries>
+      <geometry influence="0">
+        <Polygon>
+          <exterior>
+            <LinearRing>
+              <posList>40.4141878392359 -3.71172466039677 40.4139448200455 -3.71170052051562 40.4139611574976 -3.7119285082819 40.4141388270329 -3.71192046165485</posList>
+            </LinearRing>
+          </exterior>
+        </Polygon>
+      </geometry>
+    </geometries>
+    <actions />
+  </geo-element>
+  <geo-element id="PlazaVilla">
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <geometries>
+      <geometry influence="0">
+        <Polygon>
+          <exterior>
+            <LinearRing>
+              <posList>40.415407006297 -3.71018775463099 40.4149740717794 -3.71023066997523 40.4149597767243 -3.71052839517588 40.415349826426 -3.71063836574548</posList>
+            </LinearRing>
+          </exterior>
+        </Polygon>
+      </geometry>
+    </geometries>
+    <actions />
+  </geo-element>
+  <geo-element id="SanMiguel">
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <geometries>
+      <geometry influence="0">
+        <Polygon>
+          <exterior>
+            <LinearRing>
+              <posList>40.4156295989033 -3.70869912862759 40.4152824358014 -3.70857842922195 40.4151068114323 -3.70937236309033 40.4154846074727 -3.70948233365996</posList>
+            </LinearRing>
+          </exterior>
+        </Polygon>
+      </geometry>
+    </geometries>
+    <actions />
+  </geo-element>
+  <geo-element id="Chocolateria">
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <geometries>
+      <geometry influence="0">
+        <Polygon>
+          <exterior>
+            <LinearRing>
+              <posList>40.4169059184386 -3.70678134918202 40.4167425508893 -3.7066874718665 40.4166935405471 -3.70711126089083 40.4168405714665 -3.70715417623507</posList>
+            </LinearRing>
+          </exterior>
+        </Polygon>
+      </geometry>
+    </geometries>
+    <actions />
+  </geo-element>
+  <geo-element id="Fin-PlazaMayor">
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <geometries>
+      <geometry influence="0">
+        <Polygon>
+          <exterior>
+            <LinearRing>
+              <posList>40.4156398095558 -3.7073975324632 40.4151211064564 -3.70737071037304 40.415104769286 -3.70792860984813 40.4156193882496 -3.70797688961041</posList>
+            </LinearRing>
+          </exterior>
+        </Polygon>
+      </geometry>
+    </geometries>
+    <actions />
+  </geo-element>
+</eAdventure>
