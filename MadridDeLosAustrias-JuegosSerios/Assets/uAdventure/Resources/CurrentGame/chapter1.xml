@@ -456,9 +456,6 @@
         <actions />
       </ext-elem-ref>
     </map-element>
-    <map-element targetId="PlazaMayor" layer="0">
-      <condition />
-    </map-element>
   </map-scene>
   <geo-element id="PlazaMayor">
     <description>
@@ -799,6 +796,8 @@
           <condition>
             <inactive flag="FotoConsultada" />
           </condition>
+          <speak-player guid="61530ee8-6db0-4af2-9d05-9d28562236b9">Hum, me parece que aquí hay algo raro.</speak-player>
+          <condition />
         </effect>
       </examine>
     </actions>
