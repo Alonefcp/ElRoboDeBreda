@@ -358,7 +358,7 @@
     </description>
     <voice name="" synthesizeAlways="no" />
   </character>
-  <scene id="Introduccion" hideInventory="no" allowsZoom="yes" allowsSavingGame="yes" start="yes" playerLayer="-1" playerScale="1" class="accesible" type="area">
+  <scene id="Introduccion" hideInventory="no" allowsZoom="yes" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
     <documentation>
     </documentation>
     <resources name="No name">
@@ -370,6 +370,10 @@
     <exits>
       <exit rectangular="yes" x="257" y="43" width="443" height="508" hasInfluenceArea="no" idTarget="MapaJuego" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
         <exit-look text="" cursor-path="" sound-path="" />
+        <effect>
+          <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="4ed4abe1-d3bb-44e4-95cf-81fbf9d5393d">Agente, deberás al siglo XVII, para encontrar La Rendición de Breda. Buena suerte.</show-text>
+          <condition />
+        </effect>
       </exit>
     </exits>
   </scene>
@@ -420,6 +424,21 @@
         </actions>
       </active-area>
     </active-areas>
+  </scene>
+  <scene id="MenuPrincipal" hideInventory="no" allowsZoom="no" allowsSavingGame="yes" start="yes" playerLayer="-1" playerScale="1" class="accesible" type="area">
+    <documentation>
+    </documentation>
+    <resources name="No name">
+      <asset type="background" uri="assets/background/Menu.png" />
+    </resources>
+    <name>
+    </name>
+    <default-initial-position x="400" y="450" />
+    <exits>
+      <exit rectangular="yes" x="263" y="288" width="100" height="100" hasInfluenceArea="no" idTarget="Introduccion" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
+        <exit-look text="" />
+      </exit>
+    </exits>
   </scene>
   <map-scene id="MapaJuego" cameraType="Aerial2D" renderStyle="Tile" tileMetaIdentifier="OSMTile" usesGameplayArea="yes" gameplayArea="40.4125729710596 -3.71781527995988 0.00793969609117084 0.0171661376952987" center="(40.4153830117701, -3.70691210031333)" zoom="19" start="no">
     <map-element targetId="Foto" layer="0">
