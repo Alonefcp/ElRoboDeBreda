@@ -33,10 +33,10 @@
   </player>
   <character id="Caridad" behaviour="normal">
     <resources name="No name">
-      <asset type="standup" uri="assets/special/EmptyAnimation" />
-      <asset type="standdown" uri="assets/special/EmptyAnimation" />
-      <asset type="standright" uri="assets/special/EmptyAnimation" />
-      <asset type="standleft" uri="assets/special/EmptyAnimation" />
+      <asset type="standup" uri="assets/animation/Estatica.eaa.xml" />
+      <asset type="standdown" uri="assets/animation/Estatica.eaa.xml" />
+      <asset type="standright" uri="assets/animation/Estatica.eaa.xml" />
+      <asset type="standleft" uri="assets/animation/Estatica.eaa.xml" />
       <asset type="speakup" uri="assets/special/EmptyAnimation" />
       <asset type="speakdown" uri="assets/special/EmptyAnimation" />
       <asset type="speakright" uri="assets/special/EmptyAnimation" />
@@ -70,9 +70,9 @@
       </talk-to>
     </actions>
   </character>
-  <character id="Quvedo" behaviour="normal">
+  <character id="Lope" behaviour="normal">
     <resources name="No name">
-      <asset type="standup" uri="assets/special/EmptyAnimation" />
+      <asset type="standup" uri="assets/animation/Lop.eaa.xml" />
       <asset type="standdown" uri="assets/special/EmptyAnimation" />
       <asset type="standright" uri="assets/special/EmptyAnimation" />
       <asset type="standleft" uri="assets/special/EmptyAnimation" />
@@ -103,7 +103,7 @@
   </character>
   <character id="Inigo" behaviour="normal">
     <resources name="No name">
-      <asset type="standup" uri="assets/special/EmptyAnimation" />
+      <asset type="standup" uri="assets/animation/Estatico.eaa.xml" />
       <asset type="standdown" uri="assets/special/EmptyAnimation" />
       <asset type="standright" uri="assets/special/EmptyAnimation" />
       <asset type="standleft" uri="assets/special/EmptyAnimation" />
@@ -172,40 +172,9 @@
     </description>
     <voice name="" synthesizeAlways="no" />
   </character>
-  <character id="FelipeIV" behaviour="normal">
-    <resources name="No name">
-      <asset type="standup" uri="assets/special/EmptyAnimation" />
-      <asset type="standdown" uri="assets/special/EmptyAnimation" />
-      <asset type="standright" uri="assets/special/EmptyAnimation" />
-      <asset type="standleft" uri="assets/special/EmptyAnimation" />
-      <asset type="speakup" uri="assets/special/EmptyAnimation" />
-      <asset type="speakdown" uri="assets/special/EmptyAnimation" />
-      <asset type="speakright" uri="assets/special/EmptyAnimation" />
-      <asset type="speakleft" uri="assets/special/EmptyAnimation" />
-      <asset type="useright" uri="assets/special/EmptyAnimation" />
-      <asset type="useleft" uri="assets/special/EmptyAnimation" />
-      <asset type="walkup" uri="assets/special/EmptyAnimation" />
-      <asset type="walkdown" uri="assets/special/EmptyAnimation" />
-      <asset type="walkright" uri="assets/special/EmptyAnimation" />
-      <asset type="walkleft" uri="assets/special/EmptyAnimation" />
-    </resources>
-    <textcolor showsSpeechBubble="no" bubbleBkgColor="#FFFFFF" bubbleBorderColor="#000000">
-      <frontcolor color="#FFFFFF" />
-      <bordercolor color="#000000" />
-    </textcolor>
-    <description>
-      <name>
-      </name>
-      <brief>
-      </brief>
-      <detailed>
-      </detailed>
-    </description>
-    <voice name="" synthesizeAlways="no" />
-  </character>
   <character id="Monja" behaviour="normal">
     <resources name="No name">
-      <asset type="standup" uri="assets/special/EmptyAnimation" />
+      <asset type="standup" uri="assets/animation/monji.eaa.xml" />
       <asset type="standdown" uri="assets/special/EmptyAnimation" />
       <asset type="standright" uri="assets/special/EmptyAnimation" />
       <asset type="standleft" uri="assets/special/EmptyAnimation" />
@@ -267,7 +236,7 @@
   </character>
   <character id="MariaDeAustria" behaviour="normal">
     <resources name="No name">
-      <asset type="standup" uri="assets/special/EmptyAnimation" />
+      <asset type="standup" uri="assets/animation/mari.eaa.xml" />
       <asset type="standdown" uri="assets/special/EmptyAnimation" />
       <asset type="standright" uri="assets/special/EmptyAnimation" />
       <asset type="standleft" uri="assets/special/EmptyAnimation" />
@@ -330,6 +299,37 @@
   <character id="Velazquez" behaviour="normal">
     <resources name="No name">
       <asset type="standup" uri="assets/special/EmptyAnimation" />
+      <asset type="standdown" uri="assets/special/EmptyAnimation" />
+      <asset type="standright" uri="assets/special/EmptyAnimation" />
+      <asset type="standleft" uri="assets/special/EmptyAnimation" />
+      <asset type="speakup" uri="assets/special/EmptyAnimation" />
+      <asset type="speakdown" uri="assets/special/EmptyAnimation" />
+      <asset type="speakright" uri="assets/special/EmptyAnimation" />
+      <asset type="speakleft" uri="assets/special/EmptyAnimation" />
+      <asset type="useright" uri="assets/special/EmptyAnimation" />
+      <asset type="useleft" uri="assets/special/EmptyAnimation" />
+      <asset type="walkup" uri="assets/special/EmptyAnimation" />
+      <asset type="walkdown" uri="assets/special/EmptyAnimation" />
+      <asset type="walkright" uri="assets/special/EmptyAnimation" />
+      <asset type="walkleft" uri="assets/special/EmptyAnimation" />
+    </resources>
+    <textcolor showsSpeechBubble="no" bubbleBkgColor="#FFFFFF" bubbleBorderColor="#000000">
+      <frontcolor color="#FFFFFF" />
+      <bordercolor color="#000000" />
+    </textcolor>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <voice name="" synthesizeAlways="no" />
+  </character>
+  <character id="FelipeIV" behaviour="normal">
+    <resources name="No name">
+      <asset type="standup" uri="assets/animation/saas.eaa.xml" />
       <asset type="standdown" uri="assets/special/EmptyAnimation" />
       <asset type="standright" uri="assets/special/EmptyAnimation" />
       <asset type="standleft" uri="assets/special/EmptyAnimation" />
@@ -436,11 +436,11 @@
     <default-initial-position x="400" y="450" />
     <exits>
       <exit rectangular="yes" x="263" y="288" width="100" height="100" hasInfluenceArea="no" idTarget="Introduccion" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
-        <exit-look text="" />
+        <exit-look text="" cursor-path="" sound-path="" />
       </exit>
     </exits>
   </scene>
-  <map-scene id="MapaJuego" cameraType="Aerial2D" renderStyle="Tile" tileMetaIdentifier="OSMTile" usesGameplayArea="yes" gameplayArea="40.4125729710596 -3.71781527995988 0.00793969609117084 0.0171661376952987" center="(40.4153830117701, -3.70691210031333)" zoom="19" start="no">
+  <map-scene id="MapaJuego" cameraType="Aerial2D" renderStyle="Tile" tileMetaIdentifier="OSMTile" usesGameplayArea="yes" gameplayArea="40.4125729710596 -3.71781527995988 0.00793969609117084 0.0171661376952987" center="(40.4130100054437, -3.70763093232937)" zoom="18" start="no">
     <map-element targetId="Foto" layer="0">
       <condition />
       <ext-elem-ref scale="1.3" orientation="2" transformManager="uAdventure.Geo.GeopositionedDescriptor">
@@ -455,11 +455,11 @@
     </map-element>
     <map-element targetId="Caridad" layer="0">
       <condition />
-      <ext-elem-ref scale="0.7721993" orientation="2" transformManager="uAdventure.Geo.GeopositionedDescriptor">
-        <param name="Position">(40.4128112792969, -3.70836997032166)</param>
+      <ext-elem-ref scale="0.4719685" orientation="2" transformManager="uAdventure.Geo.GeopositionedDescriptor">
+        <param name="Position">(40.4127655029297, -3.70830678939819)</param>
         <param name="Rotation">0</param>
-        <param name="InteractionRange">16.4</param>
-        <param name="RevealOnlyOnRange">False</param>
+        <param name="InteractionRange">46.33</param>
+        <param name="RevealOnlyOnRange">True</param>
         <param name="Hint">False</param>
         <param name="RevealParticleTexture">leaf_particle.png</param>
         <actions />
@@ -470,7 +470,7 @@
         <active flag="FotoConsultada" />
       </condition>
       <ext-elem-ref scale="4.88958" orientation="2" transformManager="uAdventure.Geo.ScreenDescriptor">
-        <param name="Position">(65.74079, 591.1033)</param>
+        <param name="Position">(67.83868, 589.9711)</param>
         <param name="Rotation">0</param>
         <actions />
       </ext-elem-ref>
