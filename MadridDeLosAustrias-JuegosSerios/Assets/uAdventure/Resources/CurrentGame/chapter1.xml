@@ -33,10 +33,10 @@
   </player>
   <character id="Caridad" behaviour="normal">
     <resources name="No name">
-      <asset type="standup" uri="assets/animation/Estatica.eaa.xml" />
-      <asset type="standdown" uri="assets/animation/Estatica.eaa.xml" />
-      <asset type="standright" uri="assets/animation/Estatica.eaa.xml" />
-      <asset type="standleft" uri="assets/animation/Estatica.eaa.xml" />
+      <asset type="standup" uri="assets/animation/caridadAnimacion.eaa.xml" />
+      <asset type="standdown" uri="assets/animation/caridadAnimacion.eaa.xml" />
+      <asset type="standright" uri="assets/animation/caridadAnimacion.eaa.xml" />
+      <asset type="standleft" uri="assets/animation/caridadAnimacion.eaa.xml" />
       <asset type="speakup" uri="assets/special/EmptyAnimation" />
       <asset type="speakdown" uri="assets/special/EmptyAnimation" />
       <asset type="speakright" uri="assets/special/EmptyAnimation" />
@@ -48,7 +48,7 @@
       <asset type="walkright" uri="assets/special/EmptyAnimation" />
       <asset type="walkleft" uri="assets/special/EmptyAnimation" />
     </resources>
-    <textcolor showsSpeechBubble="no" bubbleBkgColor="#FFFFFF" bubbleBorderColor="#000000">
+    <textcolor showsSpeechBubble="yes" bubbleBkgColor="#0F5E08" bubbleBorderColor="#000000">
       <frontcolor color="#FFFFFF" />
       <bordercolor color="#000000" />
     </textcolor>
@@ -72,10 +72,10 @@
   </character>
   <character id="Lope" behaviour="normal">
     <resources name="No name">
-      <asset type="standup" uri="assets/animation/Lop.eaa.xml" />
-      <asset type="standdown" uri="assets/special/EmptyAnimation" />
-      <asset type="standright" uri="assets/special/EmptyAnimation" />
-      <asset type="standleft" uri="assets/special/EmptyAnimation" />
+      <asset type="standup" uri="assets/animation/LopeAnimacion.eaa.xml" />
+      <asset type="standdown" uri="assets/animation/LopeAnimacion.eaa.xml" />
+      <asset type="standright" uri="assets/animation/LopeAnimacion.eaa.xml" />
+      <asset type="standleft" uri="assets/animation/LopeAnimacion.eaa.xml" />
       <asset type="speakup" uri="assets/special/EmptyAnimation" />
       <asset type="speakdown" uri="assets/special/EmptyAnimation" />
       <asset type="speakright" uri="assets/special/EmptyAnimation" />
@@ -87,7 +87,7 @@
       <asset type="walkright" uri="assets/special/EmptyAnimation" />
       <asset type="walkleft" uri="assets/special/EmptyAnimation" />
     </resources>
-    <textcolor showsSpeechBubble="no" bubbleBkgColor="#FFFFFF" bubbleBorderColor="#000000">
+    <textcolor showsSpeechBubble="no" bubbleBkgColor="#736406" bubbleBorderColor="#000000">
       <frontcolor color="#FFFFFF" />
       <bordercolor color="#000000" />
     </textcolor>
@@ -100,13 +100,22 @@
       </detailed>
     </description>
     <voice name="" synthesizeAlways="no" />
+    <actions>
+      <talk-to needsGoTo="yes" keepDistance="35" not-effects="no">
+        <documentation>Created with target conversation: conversacionLope</documentation>
+        <effect>
+          <trigger-conversation idTarget="conversacionLope" guid="6640f4fa-4f68-4d3c-9775-f019bd6f0992" />
+          <condition />
+        </effect>
+      </talk-to>
+    </actions>
   </character>
   <character id="Inigo" behaviour="normal">
     <resources name="No name">
-      <asset type="standup" uri="assets/animation/Estatico.eaa.xml" />
-      <asset type="standdown" uri="assets/special/EmptyAnimation" />
-      <asset type="standright" uri="assets/special/EmptyAnimation" />
-      <asset type="standleft" uri="assets/special/EmptyAnimation" />
+      <asset type="standup" uri="assets/animation/InigoAnimacion.eaa.xml" />
+      <asset type="standdown" uri="assets/animation/InigoAnimacion.eaa.xml" />
+      <asset type="standright" uri="assets/animation/InigoAnimacion.eaa.xml" />
+      <asset type="standleft" uri="assets/animation/InigoAnimacion.eaa.xml" />
       <asset type="speakup" uri="assets/special/EmptyAnimation" />
       <asset type="speakdown" uri="assets/special/EmptyAnimation" />
       <asset type="speakright" uri="assets/special/EmptyAnimation" />
@@ -118,7 +127,7 @@
       <asset type="walkright" uri="assets/special/EmptyAnimation" />
       <asset type="walkleft" uri="assets/special/EmptyAnimation" />
     </resources>
-    <textcolor showsSpeechBubble="no" bubbleBkgColor="#FFFFFF" bubbleBorderColor="#000000">
+    <textcolor showsSpeechBubble="no" bubbleBkgColor="#0618AB" bubbleBorderColor="#000000">
       <frontcolor color="#FFFFFF" />
       <bordercolor color="#000000" />
     </textcolor>
@@ -134,8 +143,21 @@
     <actions>
       <talk-to needsGoTo="yes" keepDistance="35" not-effects="no">
         <documentation>Created with target conversation: InicialInigo</documentation>
+        <condition>
+          <equals var="InigoConversacion" value="0" />
+        </condition>
         <effect>
           <trigger-conversation idTarget="InicialInigo" guid="a122da6b-0fc7-4cef-afa7-2dd394b107c4" />
+          <condition />
+        </effect>
+      </talk-to>
+      <talk-to needsGoTo="yes" keepDistance="35" not-effects="no">
+        <documentation>Created with target conversation: conversacionSol</documentation>
+        <condition>
+          <equals var="InigoConversacion" value="1" />
+        </condition>
+        <effect>
+          <trigger-conversation idTarget="conversacionSol" guid="1abd1e76-16a9-451f-aa51-c460ee44fe87" />
           <condition />
         </effect>
       </talk-to>
@@ -358,7 +380,7 @@
     </description>
     <voice name="" synthesizeAlways="no" />
   </character>
-  <scene id="MenuPrincipal" hideInventory="no" allowsZoom="no" allowsSavingGame="yes" start="yes" playerLayer="-1" playerScale="1" class="accesible" type="area">
+  <scene id="MenuPrincipal" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="yes" playerLayer="-1" playerScale="1" class="accesible" type="area">
     <documentation>
     </documentation>
     <resources name="No name">
@@ -373,7 +395,7 @@
       </exit>
     </exits>
   </scene>
-  <scene id="Introduccion" hideInventory="no" allowsZoom="yes" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
+  <scene id="Introduccion" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
     <documentation>
     </documentation>
     <resources name="No name">
@@ -386,7 +408,16 @@
       <exit rectangular="yes" x="257" y="43" width="443" height="508" hasInfluenceArea="no" idTarget="MapaJuego" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
         <exit-look text="" cursor-path="" sound-path="" />
         <effect>
-          <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="4ed4abe1-d3bb-44e4-95cf-81fbf9d5393d">Agente, deberás viajar al siglo XVII, para encontrar La Rendición de Breda. Buena suerte.</show-text>
+          <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="4ed4abe1-d3bb-44e4-95cf-81fbf9d5393d">Buenas tardes, nos acaban de informar de que ha desaparecido el cuadro "La Rendición de Breda" del museo del prado</show-text>
+          <condition />
+          <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="153a52a2-0dd3-4aba-8d96-395ab3dc206f">Tenemos que encargarnos de esto cuanto antes, como mienbro de la division de crimenes temporales, te hemos asignado a ti esta misión</show-text>
+          <condition />
+          <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="9e3b2611-25e8-4472-9fde-5c86ffd702f7">Tendrás que devolver el cuadro a su dueño legitimo para restaurarlo en el presente</show-text>
+          <condition />
+          <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="0e3aea0b-1f4a-48ae-a0d4-f2ca9d187835">Sabemos que hay mas alteraciones temporales, lo que supone mas objetos robados,pero no hemos sido capaces de identificarlas</show-text>
+          <condition />
+          <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="1a2e45f9-5651-46d4-9f15-1c9a689e2b07">Trae a ese ladrón ante la justicia, antes de que siga robando mas cosas.
+confiamos en ti, agente.</show-text>
           <condition />
         </effect>
       </exit>
@@ -431,11 +462,28 @@
       </active-area>
     </active-areas>
   </scene>
-  <map-scene id="MapaJuego" cameraType="Aerial2D" renderStyle="Tile" tileMetaIdentifier="OSMTile" usesGameplayArea="yes" gameplayArea="40.4125729710596 -3.71781527995988 0.00793969609117084 0.0171661376952987" center="(40.4153625897575, -3.70722050666813)" zoom="18" start="no">
+  <scene id="escenaSol" hideInventory="no" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
+    <documentation>
+    </documentation>
+    <resources name="No name">
+      <asset type="background" uri="assets/background/CalleArenal.png" />
+    </resources>
+    <name>
+    </name>
+    <default-initial-position x="400" y="450" />
+    <objects>
+      <object-ref idTarget="huellas" x="142" y="302" scale="0.779829" glow="no" layer="2" hasInfluenceArea="no" />
+      <object-ref idTarget="botonAtrasSol" x="52" y="47" scale="0.08760475" glow="no" layer="0" hasInfluenceArea="no" />
+    </objects>
+    <characters>
+      <character-ref idTarget="Inigo" x="418" y="341" scale="0.7" orientation="2" glow="no" layer="1" hasInfluenceArea="no" />
+    </characters>
+  </scene>
+  <map-scene id="MapaJuego" cameraType="Aerial2D" renderStyle="Tile" tileMetaIdentifier="OSMTile" usesGameplayArea="yes" gameplayArea="40.4125729710596 -3.71781527995988 0.00793969609117084 0.0171661376952987" center="(40.4155157499863, -3.70569164753033)" zoom="18" start="no">
     <map-element targetId="Foto" layer="0">
       <condition />
-      <ext-elem-ref scale="1.3" orientation="2" transformManager="uAdventure.Geo.GeopositionedDescriptor">
-        <param name="Position">(40.4153327941895, -3.70736265182495)</param>
+      <ext-elem-ref scale="0.2661203" orientation="2" transformManager="uAdventure.Geo.GeopositionedDescriptor">
+        <param name="Position">(40.4153213500977, -3.70735454559326)</param>
         <param name="Rotation">0</param>
         <param name="InteractionRange">65.64</param>
         <param name="RevealOnlyOnRange">True</param>
@@ -449,7 +497,7 @@
       <ext-elem-ref scale="0.4719685" orientation="2" transformManager="uAdventure.Geo.GeopositionedDescriptor">
         <param name="Position">(40.4127655029297, -3.70830678939819)</param>
         <param name="Rotation">0</param>
-        <param name="InteractionRange">46.33</param>
+        <param name="InteractionRange">18.95</param>
         <param name="RevealOnlyOnRange">True</param>
         <param name="Hint">False</param>
         <param name="RevealParticleTexture">leaf_particle.png</param>
@@ -460,13 +508,31 @@
       <condition>
         <active flag="FotoConsultada" />
       </condition>
-      <ext-elem-ref scale="4.88958" orientation="2" transformManager="uAdventure.Geo.ScreenDescriptor">
-        <param name="Position">(67.83868, 589.9711)</param>
+      <ext-elem-ref scale="2.1" orientation="2" transformManager="uAdventure.Geo.ScreenDescriptor">
+        <param name="Position">(61.52798, 775.316)</param>
         <param name="Rotation">0</param>
         <actions />
       </ext-elem-ref>
     </map-element>
     <map-element targetId="Taberna" layer="0">
+      <condition />
+    </map-element>
+    <map-element targetId="Carcel" layer="0">
+      <condition />
+    </map-element>
+    <map-element targetId="Lope" layer="0">
+      <condition />
+      <ext-elem-ref scale="0.08830845" orientation="2" transformManager="uAdventure.Geo.GeopositionedDescriptor">
+        <param name="Position">(40.4147033691406, -3.70605635643005)</param>
+        <param name="Rotation">0</param>
+        <param name="InteractionRange">25.14</param>
+        <param name="RevealOnlyOnRange">True</param>
+        <param name="Hint">False</param>
+        <param name="RevealParticleTexture">leaf_particle.png</param>
+        <actions />
+      </ext-elem-ref>
+    </map-element>
+    <map-element targetId="Sol" layer="0">
       <condition />
     </map-element>
   </map-scene>
@@ -533,7 +599,15 @@
         </Polygon>
       </geometry>
     </geometries>
-    <actions />
+    <actions>
+      <enter-action>
+        <effect>
+          <trigger-conversation idTarget="ConversationCarcel" guid="804b279d-71f8-423e-82a5-725fd066f3a9" />
+          <condition />
+        </effect>
+        <only-from-outside>True</only-from-outside>
+      </enter-action>
+    </actions>
   </geo-element>
   <geo-element id="Sol">
     <description>
@@ -549,13 +623,23 @@
         <Polygon>
           <exterior>
             <LinearRing>
-              <posList>40.4169467602642 -3.70439614057527 40.4165097514463 -3.70430762767779 40.4164709514608 -3.7046697258948 40.4169100026225 -3.70471800565708</posList>
+              <posList>40.4169079605438 -3.70442832708344 40.4167139615407 -3.70438809394823 40.4166935405605 -3.70465095043168 40.4168834554063 -3.70468581914888</posList>
             </LinearRing>
           </exterior>
         </Polygon>
       </geometry>
     </geometries>
-    <actions />
+    <actions>
+      <enter-action>
+        <effect>
+          <trigger-scene idTarget="escenaSol" x="228" y="387" transitionTime="0" transitionType="0" guid="7eb3b93b-f475-4a57-8c79-f38d67acf5ba" />
+          <condition>
+            <inactive flag="verHuellasEnSol" />
+          </condition>
+        </effect>
+        <only-from-outside>True</only-from-outside>
+      </enter-action>
+    </actions>
   </geo-element>
   <geo-element id="SanGines">
     <description>
@@ -775,7 +859,7 @@
   </geo-element>
   <object id="Foto" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
     <resources name="No name">
-      <asset type="image" uri="assets/special/EmptyImage.png" />
+      <asset type="image" uri="assets/image/pza_grabado.jpg" />
       <asset type="icon" uri="assets/special/EmptyIcon.png" />
     </resources>
     <description>
@@ -829,14 +913,128 @@
       </use>
     </actions>
   </object>
+  <object id="huellas" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
+    <resources name="No name">
+      <asset type="image" uri="assets/image/Huellas.png" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <actions>
+      <examine needsGoTo="no" keepDistance="0" not-effects="no">
+        <effect>
+          <activate flag="verHuellasEnSol" guid="d193767c-6aa4-43ca-962f-c3330d8e56f2" />
+          <condition />
+          <speak-player guid="54066b4d-fd28-4639-8392-2e12e7364273">Huellas de deportiva, seguro que es nuestro ladrón, vamos a seguirlas</speak-player>
+          <condition />
+        </effect>
+      </examine>
+    </actions>
+  </object>
+  <object id="botonAtrasSol" returnsWhenDragged="yes" behaviour="first-action" resources-transition-time="0">
+    <resources name="No name">
+      <asset type="image" uri="assets/image/botonAtras.png" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <actions>
+      <use needsGoTo="yes" keepDistance="35" not-effects="no">
+        <condition>
+          <active flag="verHuellasEnSol" />
+        </condition>
+        <effect>
+          <trigger-scene idTarget="MapaJuego" x="325" y="324" transitionTime="0" transitionType="0" guid="2faad7f4-899f-4870-bf9d-d0848760ff30" />
+          <condition />
+        </effect>
+      </use>
+    </actions>
+  </object>
   <graph-conversation id="ConversacionCaridad">
     <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
+      <speak-char idTarget="Caridad">
+        <resources name="No name" />
+        <text>¡Iñigo!,¿cómo te atreves a asomar la cara por aquí?</text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="Inigo">
+        <resources name="No name" />
+        <text>Tan agradable como siempre, Anda ponme lo de siempre y otra para mi amigo</text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="Caridad">
+        <resources name="No name" />
+        <text>Espero que vengas a devolverme lo que me debes.</text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="Inigo">
+        <resources name="No name" />
+        <text> jajaja, sabes bien a qué he venido, Necesito información, pero la gente no suelta prenda </text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="Caridad">
+        <resources name="No name" />
+        <text> Normal, con esas pintas que me llevais los dos, tengo una idea </text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="Caridad">
+        <resources name="No name" />
+        <text>Vestidos de mensajero real entrareis donde querais, seguro que asi conseguis información. </text>
+      </speak-char>
+      <condition />
+      <child nodeindex="1" />
+    </dialogue-node>
+    <dialogue-node nodeindex="1" editor-x="583" editor-y="55">
       <speak-player>
         <resources name="No name" />
-        <text>Buenas tardes, toma tu traje.</text>
+        <text> y de dónde los sacamos? </text>
       </speak-player>
       <condition />
-      <end-conversation />
+      <speak-char idTarget="Caridad">
+        <resources name="No name" />
+        <text> casualmente, me vendieron dos la semana pasada, os los presto, por un módico precio claro.</text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="Inigo">
+        <resources name="No name" />
+        <text>Está bien, apuntaló a mi cuenta.</text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="Inigo">
+        <resources name="No name" />
+        <text>Ahora dime, sabes algo sobre el robo. </text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="Caridad">
+        <resources name="No name" />
+        <text>he oído que se ha escapado de la cárcel un señor peculiar, tan raro como tu amigo. </text>
+      </speak-char>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>seguro que es él,deberíamos empezar por ahí..</text>
+      </speak-player>
+      <condition />
+      <end-conversation>
+        <effect>
+          <navigate navigation-type="Ordered" guid="6ad63e49-2f24-4cd0-80c7-3f8d5924ad96">
+            <step locks="False">Carcel</step>
+          </navigate>
+          <condition />
+        </effect>
+      </end-conversation>
     </dialogue-node>
   </graph-conversation>
   <graph-conversation id="InicialInigo">
@@ -911,6 +1109,108 @@
           <navigate navigation-type="Ordered" guid="8d487e45-6ee3-4f26-919c-533485329926">
             <step locks="False">Taberna</step>
           </navigate>
+          <condition />
+          <increment var="InigoConversacion" value="1" guid="e3df0e29-6128-43fd-b4ea-ff23c5e61b32" />
+          <condition />
+        </effect>
+      </end-conversation>
+    </dialogue-node>
+  </graph-conversation>
+  <graph-conversation id="ConversationCarcel">
+    <dialogue-node nodeindex="0" editor-x="50" editor-y="98">
+      <speak-char idTarget="Inigo">
+        <resources name="No name" />
+        <text>Ya hemos llegado</text>
+      </speak-char>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>el ministerio de asuntos exteriores, como ha cambiado la cosa.</text>
+      </speak-player>
+      <condition />
+      <speak-char idTarget="Inigo">
+        <resources name="No name" />
+        <text>¿...?</text>
+      </speak-char>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>no importa</text>
+      </speak-player>
+      <condition />
+      <end-conversation />
+    </dialogue-node>
+  </graph-conversation>
+  <graph-conversation id="conversacionLope">
+    <dialogue-node nodeindex="0" editor-x="140" editor-y="120">
+      <speak-player>
+        <resources name="No name" />
+        <text>hola señor, ¿nos podría ayudar? </text>
+      </speak-player>
+      <condition />
+      <speak-char idTarget="Lope">
+        <resources name="No name" />
+        <text> aquí Lope de Vega, por fin libre y a vuestro servicio</text>
+      </speak-char>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>¿Has visto a alguien sospechoso por aquí?</text>
+      </speak-player>
+      <condition />
+      <speak-char idTarget="Lope">
+        <resources name="No name" />
+        <text>te refieres al preso fugado, si fue mi compañero de celda, un tipo extraño</text>
+      </speak-char>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>¿qué sabes de él? </text>
+      </speak-player>
+      <condition />
+      <speak-char idTarget="Lope">
+        <resources name="No name" />
+        <text>le encerraron hace tres de días por intento de robo, y se escapó ayer mismo </text>
+      </speak-char>
+      <condition />
+      <child nodeindex="1" />
+    </dialogue-node>
+    <dialogue-node nodeindex="1" editor-x="602" editor-y="120">
+      <speak-player>
+        <resources name="No name" />
+        <text>¿Sabes hacia dónde se fue? </text>
+      </speak-player>
+      <condition />
+      <speak-char idTarget="Lope">
+        <resources name="No name" />
+        <text> puede ser, mientras escribía mi obra no paraba de molestarme murmurando algo sobre ir a la puerta del Sol. </text>
+      </speak-char>
+      <condition />
+      <end-conversation>
+        <effect>
+          <navigate navigation-type="Ordered" guid="430598d8-a286-475f-98d5-d2d3f8feaaf2">
+            <step locks="False">Sol</step>
+          </navigate>
+          <condition />
+        </effect>
+      </end-conversation>
+    </dialogue-node>
+  </graph-conversation>
+  <graph-conversation id="conversacionSol">
+    <dialogue-node nodeindex="0" editor-x="168" editor-y="70">
+      <speak-char idTarget="Inigo">
+        <resources name="No name" />
+        <text> la puerta del sol, será mejor que cuides tus bolsillos,por aqui hay mucho pícaro </text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="Inigo">
+        <resources name="No name" />
+        <text>mira! ese tipo salió corriendo al vernos, no he visto por donde ha ido</text>
+      </speak-char>
+      <condition />
+      <end-conversation>
+        <effect>
+          <increment var="InigoConversacion" value="1" guid="d90064ef-5798-4f4b-a24d-f17de3b944a2" />
           <condition />
         </effect>
       </end-conversation>
