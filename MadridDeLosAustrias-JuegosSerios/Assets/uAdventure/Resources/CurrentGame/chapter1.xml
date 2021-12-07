@@ -473,13 +473,17 @@ confiamos en ti, agente.</show-text>
     <default-initial-position x="400" y="450" />
     <objects>
       <object-ref idTarget="huellas" x="142" y="302" scale="0.779829" glow="no" layer="2" hasInfluenceArea="no" />
-      <object-ref idTarget="botonAtrasSol" x="52" y="47" scale="0.08760475" glow="no" layer="0" hasInfluenceArea="no" />
+      <object-ref idTarget="botonAtrasSol" x="52" y="47" scale="0.08760475" glow="no" layer="0" hasInfluenceArea="no">
+        <condition>
+          <active flag="verHuellasEnSol" />
+        </condition>
+      </object-ref>
     </objects>
     <characters>
       <character-ref idTarget="Inigo" x="418" y="341" scale="0.7" orientation="2" glow="no" layer="1" hasInfluenceArea="no" />
     </characters>
   </scene>
-  <map-scene id="MapaJuego" cameraType="Aerial2D" renderStyle="Tile" tileMetaIdentifier="OSMTile" usesGameplayArea="yes" gameplayArea="40.4125729710596 -3.71781527995988 0.00793969609117084 0.0171661376952987" center="(40.4155157499863, -3.70569164753033)" zoom="18" start="no">
+  <map-scene id="MapaJuego" cameraType="Aerial2D" renderStyle="Tile" tileMetaIdentifier="OSMTile" usesGameplayArea="yes" gameplayArea="40.4125729710596 -3.71781527995988 0.00793969609117084 0.0171661376952987" center="(40.4153891375539, -3.70693082809523)" zoom="18" start="no">
     <map-element targetId="Foto" layer="0">
       <condition />
       <ext-elem-ref scale="0.2661203" orientation="2" transformManager="uAdventure.Geo.GeopositionedDescriptor">
@@ -880,7 +884,7 @@ confiamos en ti, agente.</show-text>
           <condition>
             <inactive flag="FotoConsultada" />
           </condition>
-          <speak-player guid="61530ee8-6db0-4af2-9d05-9d28562236b9">Hum, me parece que aquí hay algo raro.</speak-player>
+          <speak-player guid="61530ee8-6db0-4af2-9d05-9d28562236b9">No ha cambiado mucho la Plaza Mayor. Pero me parece que aquí falta algo.</speak-player>
           <condition />
         </effect>
       </examine>
@@ -1170,7 +1174,7 @@ confiamos en ti, agente.</show-text>
       <condition />
       <speak-char idTarget="Lope">
         <resources name="No name" />
-        <text>le encerraron hace tres de días por intento de robo, y se escapó ayer mismo </text>
+        <text>le encerraron hace tres días por intento de robo, y se escapó ayer mismo </text>
       </speak-char>
       <condition />
       <child nodeindex="1" />
