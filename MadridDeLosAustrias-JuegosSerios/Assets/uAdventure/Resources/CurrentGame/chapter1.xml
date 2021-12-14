@@ -405,7 +405,7 @@
     </name>
     <default-initial-position x="400" y="450" />
     <exits>
-      <exit rectangular="yes" x="257" y="43" width="443" height="508" hasInfluenceArea="no" idTarget="MapaJuego" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
+      <exit rectangular="yes" x="257" y="1" width="477" height="556" hasInfluenceArea="no" idTarget="MapaJuego" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
         <exit-look text="" cursor-path="" sound-path="" />
         <effect>
           <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="4ed4abe1-d3bb-44e4-95cf-81fbf9d5393d">Buenas tardes, nos acaban de informar de que ha desaparecido el cuadro "La Rendición de Breda" del museo del prado</show-text>
@@ -418,6 +418,8 @@
           <condition />
           <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="1a2e45f9-5651-46d4-9f15-1c9a689e2b07">Trae a ese ladrón ante la justicia, antes de que siga robando mas cosas.
 confiamos en ti, agente.</show-text>
+          <condition />
+          <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="becf7590-81dc-4fd9-883b-c47fd00961f1">Para empezar dirigete hacia la Plaza Mayor. Es el mejor lugar para empezar la búsqueda.</show-text>
           <condition />
         </effect>
       </exit>
@@ -452,7 +454,7 @@ confiamos en ti, agente.</show-text>
         <actions>
           <examine needsGoTo="no" keepDistance="0" not-effects="no">
             <effect>
-              <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="be6a7241-84af-4ed5-9bcb-2a1f73f8d37a">Efectivamente,falta la estauta de Felipe III. No es que la hayan robado, es que en esta época estaba en la Casa de Campo.</show-text>
+              <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="be6a7241-84af-4ed5-9bcb-2a1f73f8d37a">Efectivamente, falta la estauta de Felipe III. No la han robado, es que en esta época estaba en la Casa de Campo. No fue hasta el 1848 a petición de Isabel II que fue trasladada a la Plaza Mayor.</show-text>
               <condition />
               <activate flag="FotoConsultada" guid="937aa3f9-dca9-47e8-931e-9233120030f8" />
               <condition />
@@ -480,10 +482,10 @@ confiamos en ti, agente.</show-text>
       </object-ref>
     </objects>
     <characters>
-      <character-ref idTarget="Inigo" x="418" y="341" scale="0.7" orientation="2" glow="no" layer="1" hasInfluenceArea="no" />
+      <character-ref idTarget="Inigo" x="387" y="337" scale="0.7" orientation="2" glow="no" layer="1" hasInfluenceArea="no" />
     </characters>
   </scene>
-  <map-scene id="MapaJuego" cameraType="Aerial2D" renderStyle="Tile" tileMetaIdentifier="OSMTile" usesGameplayArea="yes" gameplayArea="40.4125729710596 -3.71781527995988 0.00793969609117084 0.0171661376952987" center="(40.4153891375539, -3.70693082809523)" zoom="18" start="no">
+  <map-scene id="MapaJuego" cameraType="Aerial2D" renderStyle="Tile" tileMetaIdentifier="OSMTile" usesGameplayArea="yes" gameplayArea="40.4125729710596 -3.71781527995988 0.00793969609117084 0.0171661376952987" center="(40.4173740663363, -3.70701129436574)" zoom="18" start="no">
     <map-element targetId="Foto" layer="0">
       <condition />
       <ext-elem-ref scale="0.2661203" orientation="2" transformManager="uAdventure.Geo.GeopositionedDescriptor">
@@ -537,6 +539,9 @@ confiamos en ti, agente.</show-text>
       </ext-elem-ref>
     </map-element>
     <map-element targetId="Sol" layer="0">
+      <condition />
+    </map-element>
+    <map-element targetId="SanGines" layer="0">
       <condition />
     </map-element>
   </map-scene>
@@ -659,7 +664,7 @@ confiamos en ti, agente.</show-text>
         <Polygon>
           <exterior>
             <LinearRing>
-              <posList>40.4173306722157 -3.70664114952105 40.4171979369133 -3.70670552253741 40.417306167256 -3.70705152750034 40.4174246077935 -3.70698179006594</posList>
+              <posList>40.4173592613374 -3.70663578510305 40.417140758486 -3.70671088695609 40.4172530731641 -3.7071480870255 40.4174777018332 -3.70704079866493</posList>
             </LinearRing>
           </exterior>
         </Polygon>
@@ -884,7 +889,7 @@ confiamos en ti, agente.</show-text>
           <condition>
             <inactive flag="FotoConsultada" />
           </condition>
-          <speak-player guid="61530ee8-6db0-4af2-9d05-9d28562236b9">No ha cambiado mucho la Plaza Mayor. Pero me parece que aquí falta algo.</speak-player>
+          <speak-player guid="61530ee8-6db0-4af2-9d05-9d28562236b9">*Los edificios de la Plaza Mayor no han cambiado mucho pero hay otros elementos aquitectónicos decorativos que no concuerdan, debo de localízalos.*</speak-player>
           <condition />
         </effect>
       </examine>
@@ -935,7 +940,12 @@ confiamos en ti, agente.</show-text>
         <effect>
           <activate flag="verHuellasEnSol" guid="d193767c-6aa4-43ca-962f-c3330d8e56f2" />
           <condition />
-          <speak-player guid="54066b4d-fd28-4639-8392-2e12e7364273">Huellas de deportiva, seguro que es nuestro ladrón, vamos a seguirlas</speak-player>
+          <speak-player guid="54066b4d-fd28-4639-8392-2e12e7364273">Huellas de deportiva, seguro que es nuestro ladrón, vamos a seguirlas para ver en que dirección huyó.
+Vamos Iñigo en marcha.</speak-player>
+          <condition />
+          <navigate navigation-type="Ordered" guid="3375b382-862a-451d-98ae-c558a9dbbc87">
+            <step locks="False">SanGines</step>
+          </navigate>
           <condition />
         </effect>
       </examine>
@@ -967,35 +977,30 @@ confiamos en ti, agente.</show-text>
     </actions>
   </object>
   <graph-conversation id="ConversacionCaridad">
-    <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
+    <dialogue-node nodeindex="0" editor-x="33" editor-y="62">
       <speak-char idTarget="Caridad">
         <resources name="No name" />
-        <text>¡Iñigo!,¿cómo te atreves a asomar la cara por aquí?</text>
+        <text>¡Iñigo!,¿cómo te atreves a asomar la cara por aquí? </text>
       </speak-char>
       <condition />
       <speak-char idTarget="Inigo">
         <resources name="No name" />
-        <text>Tan agradable como siempre, Anda ponme lo de siempre y otra para mi amigo</text>
+        <text>Tan agradable como siempre mi querida Caridad. </text>
       </speak-char>
       <condition />
       <speak-char idTarget="Caridad">
         <resources name="No name" />
-        <text>Espero que vengas a devolverme lo que me debes.</text>
+        <text>Pues no habéis pillado a Alatriste por poco. </text>
       </speak-char>
       <condition />
       <speak-char idTarget="Inigo">
         <resources name="No name" />
-        <text> jajaja, sabes bien a qué he venido, Necesito información, pero la gente no suelta prenda </text>
+        <text>Jajaja, siempre tan oportuno. Necesitamos información porque han robado un cuadro a Velazquez pero la gente no suelta prenda. </text>
       </speak-char>
       <condition />
       <speak-char idTarget="Caridad">
         <resources name="No name" />
-        <text> Normal, con esas pintas que me llevais los dos, tengo una idea </text>
-      </speak-char>
-      <condition />
-      <speak-char idTarget="Caridad">
-        <resources name="No name" />
-        <text>Vestidos de mensajero real entrareis donde querais, seguro que asi conseguis información. </text>
+        <text>Normal, con esas pintas que me llevais los dos espantáis a la gente. Tengo una idea, poneros estos trajes de mensajero real. Así la gente igual os ayuda algo mas.  </text>
       </speak-char>
       <condition />
       <child nodeindex="1" />
@@ -1003,33 +1008,28 @@ confiamos en ti, agente.</show-text>
     <dialogue-node nodeindex="1" editor-x="583" editor-y="55">
       <speak-player>
         <resources name="No name" />
-        <text> y de dónde los sacamos? </text>
+        <text>Caridad, ¿sabes algo sobre algún ladrón o algún robo?.</text>
       </speak-player>
       <condition />
       <speak-char idTarget="Caridad">
         <resources name="No name" />
-        <text> casualmente, me vendieron dos la semana pasada, os los presto, por un módico precio claro.</text>
-      </speak-char>
-      <condition />
-      <speak-char idTarget="Inigo">
-        <resources name="No name" />
-        <text>Está bien, apuntaló a mi cuenta.</text>
-      </speak-char>
-      <condition />
-      <speak-char idTarget="Inigo">
-        <resources name="No name" />
-        <text>Ahora dime, sabes algo sobre el robo. </text>
-      </speak-char>
-      <condition />
-      <speak-char idTarget="Caridad">
-        <resources name="No name" />
-        <text>he oído que se ha escapado de la cárcel un señor peculiar, tan raro como tu amigo. </text>
+        <text>Antes Alatriste me estuvo hablando de un ladrón que se escapó de la cárcel, que tenía unas pintas raras me dijo.</text>
       </speak-char>
       <condition />
       <speak-player>
         <resources name="No name" />
-        <text>seguro que es él,deberíamos empezar por ahí..</text>
+        <text>Seguro que es él, deberíamos empezar por ahí. </text>
       </speak-player>
+      <condition />
+      <speak-char idTarget="Inigo">
+        <resources name="No name" />
+        <text>Está bien, bueno Caridad nos vamos a ver si damos con algo. </text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="Caridad">
+        <resources name="No name" />
+        <text>Más os vale que me devolváis los trajes como os los lleváis si no os las veréis conmigo. Venga iros ya que tengo mucho trabajo que hacer.</text>
+      </speak-char>
       <condition />
       <end-conversation>
         <effect>
@@ -1045,7 +1045,7 @@ confiamos en ti, agente.</show-text>
     <dialogue-node nodeindex="0" editor-x="79" editor-y="0">
       <speak-char idTarget="Inigo">
         <resources name="No name" />
-        <text>cuidado, mira por donde vas</text>
+        <text>Cuidado, mira por donde vas</text>
       </speak-char>
       <condition />
       <speak-player>
@@ -1060,27 +1060,27 @@ confiamos en ti, agente.</show-text>
       <condition />
       <speak-player>
         <resources name="No name" />
-        <text>¿y que estás buscando?</text>
+        <text>¿Y que estás buscando?</text>
       </speak-player>
       <condition />
       <speak-char idTarget="Inigo">
         <resources name="No name" />
-        <text>han robado un cuadro a el maestro Velazquez,seguro que si lo recupero me darán una buena recompensa</text>
+        <text>Han robado un cuadro a el maestro Velazquez,seguro que si lo recupero me darán una buena recompensa</text>
       </speak-char>
       <condition />
       <speak-player>
         <resources name="No name" />
-        <text>*seguro que es la Rendición de breda*</text>
+        <text>*Seguro que es la Rendición de breda*</text>
       </speak-player>
       <condition />
       <speak-char idTarget="Inigo">
         <resources name="No name" />
-        <text>¿la que? </text>
+        <text>¿La que? </text>
       </speak-char>
       <condition />
       <speak-player>
         <resources name="No name" />
-        <text>da lo mismo, vengo buscando a ese ladrón, igual podemos ayudarnos…</text>
+        <text>Da lo mismo, vengo buscando a ese ladrón, igual podemos ayudarnos…</text>
       </speak-player>
       <condition />
       <speak-char idTarget="Inigo">
@@ -1090,17 +1090,17 @@ confiamos en ti, agente.</show-text>
       <condition />
       <speak-player>
         <resources name="No name" />
-        <text>trato hecho</text>
+        <text>Trato hecho</text>
       </speak-player>
       <condition />
       <speak-char idTarget="Inigo">
         <resources name="No name" />
-        <text>¿tú no eres de por aquí no? </text>
+        <text>¿Tú no eres de por aquí no? </text>
       </speak-char>
       <condition />
       <speak-player>
         <resources name="No name" />
-        <text>digamos que acabo de llegar a la ciudad</text>
+        <text>Digamos que acabo de llegar a la ciudad</text>
       </speak-player>
       <condition />
       <speak-char idTarget="Inigo">
@@ -1121,7 +1121,7 @@ confiamos en ti, agente.</show-text>
     </dialogue-node>
   </graph-conversation>
   <graph-conversation id="ConversationCarcel">
-    <dialogue-node nodeindex="0" editor-x="50" editor-y="98">
+    <dialogue-node nodeindex="0" editor-x="79" editor-y="57">
       <speak-char idTarget="Inigo">
         <resources name="No name" />
         <text>Ya hemos llegado</text>
@@ -1129,32 +1129,42 @@ confiamos en ti, agente.</show-text>
       <condition />
       <speak-player>
         <resources name="No name" />
-        <text>el ministerio de asuntos exteriores, como ha cambiado la cosa.</text>
+        <text>El ministerio de asuntos exteriores, como ha cambiado la cosa. De una carcel en esta época a un edificio de un ministerio.</text>
+      </speak-player>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>Lo acabaron en 1636 y casi 400 años despues sigue aquí.</text>
       </speak-player>
       <condition />
       <speak-char idTarget="Inigo">
         <resources name="No name" />
-        <text>¿...?</text>
+        <text>¿...? ¿Que murmuras?</text>
       </speak-char>
       <condition />
       <speak-player>
         <resources name="No name" />
-        <text>no importa</text>
+        <text>Nada nada, no importa</text>
       </speak-player>
       <condition />
       <end-conversation />
     </dialogue-node>
   </graph-conversation>
   <graph-conversation id="conversacionLope">
-    <dialogue-node nodeindex="0" editor-x="140" editor-y="120">
+    <dialogue-node nodeindex="0" editor-x="33" editor-y="60">
       <speak-player>
         <resources name="No name" />
-        <text>hola señor, ¿nos podría ayudar? </text>
+        <text>*Ay va es Lope de Vega, ¿Que hace aquí?*</text>
+      </speak-player>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>Disculpe caballero, ¿nos podría ayudar? </text>
       </speak-player>
       <condition />
       <speak-char idTarget="Lope">
         <resources name="No name" />
-        <text> aquí Lope de Vega, por fin libre y a vuestro servicio</text>
+        <text>Por supuesto, Lope de Vega a vuestro servicio. Que ya me han liberado por fin.</text>
       </speak-char>
       <condition />
       <speak-player>
@@ -1164,22 +1174,22 @@ confiamos en ti, agente.</show-text>
       <condition />
       <speak-char idTarget="Lope">
         <resources name="No name" />
-        <text>te refieres al preso fugado, si fue mi compañero de celda, un tipo extraño</text>
+        <text>¿Te refieres al preso fugado? Si fue mi compañero de celda, un tipo un poco raro.</text>
       </speak-char>
       <condition />
       <speak-player>
         <resources name="No name" />
-        <text>¿qué sabes de él? </text>
+        <text>¿Qué nos puedes decir sobre él? </text>
       </speak-player>
-      <condition />
-      <speak-char idTarget="Lope">
-        <resources name="No name" />
-        <text>le encerraron hace tres días por intento de robo, y se escapó ayer mismo </text>
-      </speak-char>
       <condition />
       <child nodeindex="1" />
     </dialogue-node>
     <dialogue-node nodeindex="1" editor-x="602" editor-y="120">
+      <speak-char idTarget="Lope">
+        <resources name="No name" />
+        <text>Le encerraron hace tres días por intento de robo, y se escapó hace unas horas.</text>
+      </speak-char>
+      <condition />
       <speak-player>
         <resources name="No name" />
         <text>¿Sabes hacia dónde se fue? </text>
@@ -1187,8 +1197,18 @@ confiamos en ti, agente.</show-text>
       <condition />
       <speak-char idTarget="Lope">
         <resources name="No name" />
-        <text> puede ser, mientras escribía mi obra no paraba de molestarme murmurando algo sobre ir a la puerta del Sol. </text>
+        <text> Es posible, mientras escribía mi obra no paraba de murmurar algo sobre la puerta del Sol. </text>
       </speak-char>
+      <condition />
+      <speak-char idTarget="Inigo">
+        <resources name="No name" />
+        <text>Podemos ir hacia allí a ver si encontramos mas información.</text>
+      </speak-char>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>Muchas gracias, tenga buen dia Lope de Vega.</text>
+      </speak-player>
       <condition />
       <end-conversation>
         <effect>
@@ -1204,12 +1224,12 @@ confiamos en ti, agente.</show-text>
     <dialogue-node nodeindex="0" editor-x="168" editor-y="70">
       <speak-char idTarget="Inigo">
         <resources name="No name" />
-        <text> la puerta del sol, será mejor que cuides tus bolsillos,por aqui hay mucho pícaro </text>
+        <text> La Puerta del Sol, será mejor que cuides tus bolsillos, por aqui hay listillo suelto te lo digo yo.</text>
       </speak-char>
       <condition />
       <speak-char idTarget="Inigo">
         <resources name="No name" />
-        <text>mira! ese tipo salió corriendo al vernos, no he visto por donde ha ido</text>
+        <text>¡Mira! ese tipo salió corriendo al vernos, no he visto por donde ha ido.</text>
       </speak-char>
       <condition />
       <end-conversation>
