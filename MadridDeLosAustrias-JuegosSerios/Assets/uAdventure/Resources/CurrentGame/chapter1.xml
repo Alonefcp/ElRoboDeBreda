@@ -408,18 +408,18 @@
       <exit rectangular="yes" x="257" y="1" width="477" height="556" hasInfluenceArea="no" idTarget="MapaJuego" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
         <exit-look text="" cursor-path="" sound-path="" />
         <effect>
-          <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="4ed4abe1-d3bb-44e4-95cf-81fbf9d5393d">Buenas tardes, nos acaban de informar de que ha desaparecido el cuadro "La Rendición de Breda" del museo del prado</show-text>
+          <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="4ed4abe1-d3bb-44e4-95cf-81fbf9d5393d">Buenas tardes, nos acaban de informar de que ha desaparecido del Museo del Prado, el cuadro "La Rendición de Breda" de Velázquez.</show-text>
           <condition />
-          <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="153a52a2-0dd3-4aba-8d96-395ab3dc206f">Tenemos que encargarnos de esto cuanto antes, como mienbro de la division de crimenes temporales, te hemos asignado a ti esta misión</show-text>
+          <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="153a52a2-0dd3-4aba-8d96-395ab3dc206f">Tenemos que encargarnos de esto cuanto antes, como miembro de la division de crimenes temporales, te hemos asignado a ti esta misión.</show-text>
           <condition />
-          <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="9e3b2611-25e8-4472-9fde-5c86ffd702f7">Tendrás que devolver el cuadro a su dueño legitimo para restaurarlo en el presente</show-text>
+          <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="9e3b2611-25e8-4472-9fde-5c86ffd702f7">Tendrás que devolver el cuadro a su dueño legitimo para restaurarlo en el presente.</show-text>
           <condition />
-          <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="0e3aea0b-1f4a-48ae-a0d4-f2ca9d187835">Sabemos que hay mas alteraciones temporales, lo que supone mas objetos robados,pero no hemos sido capaces de identificarlas</show-text>
+          <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="0e3aea0b-1f4a-48ae-a0d4-f2ca9d187835">Sabemos que hay mas alteraciones temporales, lo que supone mas objetos robados,pero no hemos sido capaces de identificarlas.</show-text>
           <condition />
-          <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="1a2e45f9-5651-46d4-9f15-1c9a689e2b07">Trae a ese ladrón ante la justicia, antes de que siga robando mas cosas.
-confiamos en ti, agente.</show-text>
+          <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="1a2e45f9-5651-46d4-9f15-1c9a689e2b07">Trae a ese ladrón ante la justicia, antes de que siga robando mas objetos del pasado.
+Confiamos en ti, agente.</show-text>
           <condition />
-          <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="becf7590-81dc-4fd9-883b-c47fd00961f1">Para empezar dirigete hacia la Plaza Mayor. Es el mejor lugar para empezar la búsqueda.</show-text>
+          <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="becf7590-81dc-4fd9-883b-c47fd00961f1">Para empezar dirigete hacia la Plaza Mayor. Es el mejor lugar para comenzar la búsqueda.</show-text>
           <condition />
         </effect>
       </exit>
@@ -454,7 +454,7 @@ confiamos en ti, agente.</show-text>
         <actions>
           <examine needsGoTo="no" keepDistance="0" not-effects="no">
             <effect>
-              <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="be6a7241-84af-4ed5-9bcb-2a1f73f8d37a">Efectivamente, falta la estauta de Felipe III. No la han robado, es que en esta época estaba en la Casa de Campo. No fue hasta el 1848 a petición de Isabel II que fue trasladada a la Plaza Mayor.</show-text>
+              <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="be6a7241-84af-4ed5-9bcb-2a1f73f8d37a">Efectivamente, falta la estatua de Felipe III. No la han robado, es que en esta época estaba en la Casa de Campo. No fue hasta el 1848 a petición de Isabel II que fue trasladada a la Plaza Mayor.</show-text>
               <condition />
               <activate flag="FotoConsultada" guid="937aa3f9-dca9-47e8-931e-9233120030f8" />
               <condition />
@@ -485,7 +485,7 @@ confiamos en ti, agente.</show-text>
       <character-ref idTarget="Inigo" x="387" y="337" scale="0.7" orientation="2" glow="no" layer="1" hasInfluenceArea="no" />
     </characters>
   </scene>
-  <map-scene id="MapaJuego" cameraType="Aerial2D" renderStyle="Tile" tileMetaIdentifier="OSMTile" usesGameplayArea="yes" gameplayArea="40.4125729710596 -3.71781527995988 0.00793969609117084 0.0171661376952987" center="(40.4173740663363, -3.70701129436574)" zoom="18" start="no">
+  <map-scene id="MapaJuego" cameraType="Aerial2D" renderStyle="Tile" tileMetaIdentifier="OSMTile" usesGameplayArea="yes" gameplayArea="40.4125729710596 -3.71781527995988 0.00793969609117084 0.0171661376952987" center="(40.4153850532776, -3.70716149807068)" zoom="19" start="no">
     <map-element targetId="Foto" layer="0">
       <condition />
       <ext-elem-ref scale="0.2661203" orientation="2" transformManager="uAdventure.Geo.GeopositionedDescriptor">
@@ -1045,67 +1045,72 @@ Vamos Iñigo en marcha.</speak-player>
     <dialogue-node nodeindex="0" editor-x="79" editor-y="0">
       <speak-char idTarget="Inigo">
         <resources name="No name" />
-        <text>Cuidado, mira por donde vas</text>
+        <text>Cuidado, mira por donde vas.</text>
       </speak-char>
       <condition />
       <speak-player>
         <resources name="No name" />
-        <text>Perdona, no te había visto </text>
+        <text>Perdona, no te había visto. Lo siento… </text>
       </speak-player>
       <condition />
       <speak-char idTarget="Inigo">
         <resources name="No name" />
-        <text>No pasa nada, voy apurado,estoy buscando un algo</text>
+        <text>íñigo, ese es mi nombre. No pasa nada, voy apurado,estoy buscando algo. </text>
       </speak-char>
       <condition />
       <speak-player>
         <resources name="No name" />
-        <text>¿Y que estás buscando?</text>
+        <text>¿Y que estás buscando íñigo?</text>
       </speak-player>
       <condition />
       <speak-char idTarget="Inigo">
         <resources name="No name" />
-        <text>Han robado un cuadro a el maestro Velazquez,seguro que si lo recupero me darán una buena recompensa</text>
+        <text>Han robado un cuadro al maestro Velazquez, seguro que si lo recupero me darán una buena recompensa.</text>
       </speak-char>
       <condition />
       <speak-player>
         <resources name="No name" />
-        <text>*Seguro que es la Rendición de breda*</text>
+        <text>*Seguro que es la Rendición de breda.*</text>
       </speak-player>
       <condition />
       <speak-char idTarget="Inigo">
         <resources name="No name" />
-        <text>¿La que? </text>
+        <text>¿La que?.</text>
       </speak-char>
       <condition />
       <speak-player>
         <resources name="No name" />
-        <text>Da lo mismo, vengo buscando a ese ladrón, igual podemos ayudarnos…</text>
+        <text>Da lo mismo, casualmente vengo buscando a ese ladrón, igual podemos ayudarnos…</text>
       </speak-player>
       <condition />
       <speak-char idTarget="Inigo">
         <resources name="No name" />
-        <text>Está bien, pero la recompensa es toda mía </text>
+        <text>Está bien, pero la recompensa es toda mía. </text>
       </speak-char>
       <condition />
       <speak-player>
         <resources name="No name" />
-        <text>Trato hecho</text>
+        <text>Trato hecho.</text>
       </speak-player>
       <condition />
       <speak-char idTarget="Inigo">
         <resources name="No name" />
-        <text>¿Tú no eres de por aquí no? </text>
+        <text>¿Tú no eres de por aquí no?.</text>
       </speak-char>
       <condition />
       <speak-player>
         <resources name="No name" />
-        <text>Digamos que acabo de llegar a la ciudad</text>
+        <text>Digamos que acabo de llegar a la ciudad.</text>
       </speak-player>
       <condition />
       <speak-char idTarget="Inigo">
         <resources name="No name" />
-        <text>ya te notaba algo raro. Bueno, vamos, sé por dónde empezar a buscar…</text>
+        <text>Ya te notaba algo raro. Bueno, sé por dónde empezar a buscar.</text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="Inigo">
+        <resources name="No name" />
+        <text>Vamos a acercarnos a la taberna de la Lebrijana, que seguro que ella ha escuchado algo, ya que es un lugar muy concurrido. </text>
       </speak-char>
       <condition />
       <end-conversation>
