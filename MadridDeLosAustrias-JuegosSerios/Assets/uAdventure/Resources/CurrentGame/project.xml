@@ -7,11 +7,15 @@
 <entry key="Chapter0.Mapa.Y">17</entry>
 <entry key="Chapter0.Introduccion.X">117</entry>
 <entry key="Chapter0.Introduccion.Y">-27</entry>
-<entry key="Chapter0.ImagenPlazaMayor.X">-1</entry>
-<entry key="Chapter0.ImagenPlazaMayor.Y">132</entry>
-<entry key="Chapter0.MenuPrincipal.X">229</entry>
-<entry key="Chapter0.MenuPrincipal.Y">91</entry>
-<entry key="Chapter0.escenaSol.X">95</entry>
-<entry key="Chapter0.escenaSol.Y">208</entry>
+<entry key="Chapter0.ImagenPlazaMayor.X">-175</entry>
+<entry key="Chapter0.ImagenPlazaMayor.Y">203</entry>
+<entry key="Chapter0.MenuPrincipal.X">362</entry>
+<entry key="Chapter0.MenuPrincipal.Y">-4</entry>
+<entry key="Chapter0.escenaSol.X">-20</entry>
+<entry key="Chapter0.escenaSol.Y">205</entry>
+<entry key="Chapter0.ScenaSanGines.X">142</entry>
+<entry key="Chapter0.ScenaSanGines.Y">190</entry>
+<entry key="Chapter0.EscenaSanMartin.X">303</entry>
+<entry key="Chapter0.EscenaSanMartin.Y">170</entry>
 </properties>
 

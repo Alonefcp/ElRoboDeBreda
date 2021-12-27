@@ -152,12 +152,11 @@
         </effect>
       </talk-to>
       <talk-to needsGoTo="yes" keepDistance="35" not-effects="no">
-        <documentation>Created with target conversation: conversacionSol</documentation>
         <condition>
-          <equals var="InigoConversacion" value="1" />
+          <equals var="InigoConversacion" value="2" />
         </condition>
         <effect>
-          <trigger-conversation idTarget="conversacionSol" guid="1abd1e76-16a9-451f-aa51-c460ee44fe87" />
+          <trigger-conversation idTarget="AyudaConversacionSanGines" guid="58c40d37-2cae-4704-82b2-162af1575f80" />
           <condition />
         </effect>
       </talk-to>
@@ -196,10 +195,10 @@
   </character>
   <character id="Monja" behaviour="normal">
     <resources name="No name">
-      <asset type="standup" uri="assets/animation/monji.eaa.xml" />
-      <asset type="standdown" uri="assets/special/EmptyAnimation" />
-      <asset type="standright" uri="assets/special/EmptyAnimation" />
-      <asset type="standleft" uri="assets/special/EmptyAnimation" />
+      <asset type="standup" uri="assets/animation/MonjaAnim.eaa.xml" />
+      <asset type="standdown" uri="assets/animation/MonjaAnim.eaa.xml" />
+      <asset type="standright" uri="assets/animation/MonjaAnim.eaa.xml" />
+      <asset type="standleft" uri="assets/animation/MonjaAnim.eaa.xml" />
       <asset type="speakup" uri="assets/special/EmptyAnimation" />
       <asset type="speakdown" uri="assets/special/EmptyAnimation" />
       <asset type="speakright" uri="assets/special/EmptyAnimation" />
@@ -211,7 +210,7 @@
       <asset type="walkright" uri="assets/special/EmptyAnimation" />
       <asset type="walkleft" uri="assets/special/EmptyAnimation" />
     </resources>
-    <textcolor showsSpeechBubble="no" bubbleBkgColor="#FFFFFF" bubbleBorderColor="#000000">
+    <textcolor showsSpeechBubble="yes" bubbleBkgColor="#FFEF5F" bubbleBorderColor="#000000">
       <frontcolor color="#FFFFFF" />
       <bordercolor color="#000000" />
     </textcolor>
@@ -224,6 +223,15 @@
       </detailed>
     </description>
     <voice name="" synthesizeAlways="no" />
+    <actions>
+      <talk-to needsGoTo="yes" keepDistance="35" not-effects="no">
+        <documentation>Created with target conversation: ConversacionMonja</documentation>
+        <effect>
+          <trigger-conversation idTarget="ConversacionMonja" guid="48802cbf-a607-4f32-b361-da3a4bf2c1f2" />
+          <condition />
+        </effect>
+      </talk-to>
+    </actions>
   </character>
   <character id="DuqueDeUceda" behaviour="normal">
     <resources name="No name">
@@ -256,12 +264,12 @@
     </description>
     <voice name="" synthesizeAlways="no" />
   </character>
-  <character id="MariaDeAustria" behaviour="normal">
+  <character id="MarianaDeAustria" behaviour="normal">
     <resources name="No name">
-      <asset type="standup" uri="assets/animation/mari.eaa.xml" />
-      <asset type="standdown" uri="assets/special/EmptyAnimation" />
-      <asset type="standright" uri="assets/special/EmptyAnimation" />
-      <asset type="standleft" uri="assets/special/EmptyAnimation" />
+      <asset type="standup" uri="assets/animation/MarianaAnim.eaa.xml" />
+      <asset type="standdown" uri="assets/animation/MarianaAnim.eaa.xml" />
+      <asset type="standright" uri="assets/animation/MarianaAnim.eaa.xml" />
+      <asset type="standleft" uri="assets/animation/MarianaAnim.eaa.xml" />
       <asset type="speakup" uri="assets/special/EmptyAnimation" />
       <asset type="speakdown" uri="assets/special/EmptyAnimation" />
       <asset type="speakright" uri="assets/special/EmptyAnimation" />
@@ -273,7 +281,7 @@
       <asset type="walkright" uri="assets/special/EmptyAnimation" />
       <asset type="walkleft" uri="assets/special/EmptyAnimation" />
     </resources>
-    <textcolor showsSpeechBubble="no" bubbleBkgColor="#FFFFFF" bubbleBorderColor="#000000">
+    <textcolor showsSpeechBubble="yes" bubbleBkgColor="#AC58FF" bubbleBorderColor="#000000">
       <frontcolor color="#FFFFFF" />
       <bordercolor color="#000000" />
     </textcolor>
@@ -286,13 +294,22 @@
       </detailed>
     </description>
     <voice name="" synthesizeAlways="no" />
+    <actions>
+      <talk-to needsGoTo="yes" keepDistance="35" not-effects="no">
+        <documentation>Created with target conversation: ConversacionMarianaAustria</documentation>
+        <effect>
+          <trigger-conversation idTarget="ConversacionMarianaAustria" guid="b71fe294-cd21-4a94-99c1-578d490b5a09" />
+          <condition />
+        </effect>
+      </talk-to>
+    </actions>
   </character>
   <character id="Mercader" behaviour="normal">
     <resources name="No name">
-      <asset type="standup" uri="assets/special/EmptyAnimation" />
-      <asset type="standdown" uri="assets/special/EmptyAnimation" />
-      <asset type="standright" uri="assets/special/EmptyAnimation" />
-      <asset type="standleft" uri="assets/special/EmptyAnimation" />
+      <asset type="standup" uri="assets/animation/MercaderAnim.eaa.xml" />
+      <asset type="standdown" uri="assets/animation/MercaderAnim.eaa.xml" />
+      <asset type="standright" uri="assets/animation/MercaderAnim.eaa.xml" />
+      <asset type="standleft" uri="assets/animation/MercaderAnim.eaa.xml" />
       <asset type="speakup" uri="assets/special/EmptyAnimation" />
       <asset type="speakdown" uri="assets/special/EmptyAnimation" />
       <asset type="speakright" uri="assets/special/EmptyAnimation" />
@@ -304,7 +321,7 @@
       <asset type="walkright" uri="assets/special/EmptyAnimation" />
       <asset type="walkleft" uri="assets/special/EmptyAnimation" />
     </resources>
-    <textcolor showsSpeechBubble="no" bubbleBkgColor="#FFFFFF" bubbleBorderColor="#000000">
+    <textcolor showsSpeechBubble="yes" bubbleBkgColor="#EEA62E" bubbleBorderColor="#000000">
       <frontcolor color="#FFFFFF" />
       <bordercolor color="#000000" />
     </textcolor>
@@ -317,6 +334,15 @@
       </detailed>
     </description>
     <voice name="" synthesizeAlways="no" />
+    <actions>
+      <talk-to needsGoTo="yes" keepDistance="35" not-effects="no">
+        <documentation>Created with target conversation: CoversacionMercader</documentation>
+        <effect>
+          <trigger-conversation idTarget="CoversacionMercader" guid="2500e876-b46d-42fa-b75d-df7546cddaad" />
+          <condition />
+        </effect>
+      </talk-to>
+    </actions>
   </character>
   <character id="Velazquez" behaviour="normal">
     <resources name="No name">
@@ -351,10 +377,10 @@
   </character>
   <character id="FelipeIV" behaviour="normal">
     <resources name="No name">
-      <asset type="standup" uri="assets/animation/saas.eaa.xml" />
-      <asset type="standdown" uri="assets/special/EmptyAnimation" />
-      <asset type="standright" uri="assets/special/EmptyAnimation" />
-      <asset type="standleft" uri="assets/special/EmptyAnimation" />
+      <asset type="standup" uri="assets/animation/FelipeIVAnim.eaa.xml" />
+      <asset type="standdown" uri="assets/animation/FelipeIVAnim.eaa.xml" />
+      <asset type="standright" uri="assets/animation/FelipeIVAnim.eaa.xml" />
+      <asset type="standleft" uri="assets/animation/FelipeIVAnim.eaa.xml" />
       <asset type="speakup" uri="assets/special/EmptyAnimation" />
       <asset type="speakdown" uri="assets/special/EmptyAnimation" />
       <asset type="speakright" uri="assets/special/EmptyAnimation" />
@@ -366,7 +392,7 @@
       <asset type="walkright" uri="assets/special/EmptyAnimation" />
       <asset type="walkleft" uri="assets/special/EmptyAnimation" />
     </resources>
-    <textcolor showsSpeechBubble="no" bubbleBkgColor="#FFFFFF" bubbleBorderColor="#000000">
+    <textcolor showsSpeechBubble="yes" bubbleBkgColor="#79FF42" bubbleBorderColor="#000000">
       <frontcolor color="#FFFFFF" />
       <bordercolor color="#000000" />
     </textcolor>
@@ -379,6 +405,15 @@
       </detailed>
     </description>
     <voice name="" synthesizeAlways="no" />
+    <actions>
+      <talk-to needsGoTo="yes" keepDistance="35" not-effects="no">
+        <documentation>Created with target conversation: ConversacionFelipeIV</documentation>
+        <effect>
+          <trigger-conversation idTarget="ConversacionFelipeIV" guid="2d246768-9e9b-4f6a-a330-0a1ffbc2a306" />
+          <condition />
+        </effect>
+      </talk-to>
+    </actions>
   </character>
   <scene id="MenuPrincipal" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="yes" playerLayer="-1" playerScale="1" class="accesible" type="area">
     <documentation>
@@ -485,13 +520,82 @@ Confiamos en ti, agente.</show-text>
       <character-ref idTarget="Inigo" x="387" y="337" scale="0.7" orientation="2" glow="no" layer="1" hasInfluenceArea="no" />
     </characters>
   </scene>
-  <map-scene id="MapaJuego" cameraType="Aerial2D" renderStyle="Tile" tileMetaIdentifier="OSMTile" usesGameplayArea="yes" gameplayArea="40.4125729710596 -3.71781527995988 0.00793969609117084 0.0171661376952987" center="(40.4153850532776, -3.70716149807068)" zoom="19" start="no">
+  <scene id="ScenaSanGines" hideInventory="no" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
+    <documentation>
+    </documentation>
+    <resources name="No name">
+      <asset type="background" uri="assets/background/SanGines.png" />
+    </resources>
+    <name>
+    </name>
+    <default-initial-position x="400" y="450" />
+    <objects>
+      <object-ref idTarget="botonAtrasSanGines" x="41" y="74" scale="0.1091302" glow="no" layer="0" hasInfluenceArea="no" />
+    </objects>
+    <characters>
+      <character-ref idTarget="Inigo" x="45" y="583" scale="1" orientation="2" glow="no" layer="1" hasInfluenceArea="no" />
+    </characters>
+    <active-areas>
+      <active-area id="ZonaFachadaEstatua" rectangular="yes" x="114" y="228" width="62" height="76" hasInfluenceArea="no" behaviour="normal">
+        <description>
+          <name>
+          </name>
+          <brief>
+          </brief>
+          <detailed>
+          </detailed>
+        </description>
+        <actions>
+          <examine needsGoTo="no" keepDistance="0" not-effects="no">
+            <effect>
+              <trigger-conversation idTarget="ConversacionSanGines" guid="f8266847-4826-4ff5-b495-e091c344e605" />
+              <condition />
+              <activate flag="FachadaConsultada" guid="87346186-97be-4fb4-bac7-ca5ccdeea11f" />
+              <condition />
+            </effect>
+          </examine>
+        </actions>
+      </active-area>
+    </active-areas>
+  </scene>
+  <scene id="EscenaSanMartin" hideInventory="no" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
+    <documentation>
+    </documentation>
+    <resources name="No name">
+      <asset type="background" uri="assets/background/mercadoSanMartin.png" />
+    </resources>
+    <name>
+    </name>
+    <default-initial-position x="400" y="450" />
+    <objects>
+      <object-ref idTarget="Estatua1" x="137" y="665" scale="0.9832749" glow="no" layer="2" hasInfluenceArea="no" />
+      <object-ref idTarget="Estatua2" x="337" y="665" scale="0.4725072" glow="no" layer="1" hasInfluenceArea="no" />
+      <object-ref idTarget="Estatua3" x="532" y="667" scale="0.2331693" glow="no" layer="0" hasInfluenceArea="no" />
+    </objects>
+    <characters>
+      <character-ref idTarget="Mercader" x="716" y="687" scale="0.4078919" orientation="2" glow="no" layer="4" hasInfluenceArea="no" />
+      <character-ref idTarget="Inigo" x="926" y="878" scale="2.122508" orientation="2" glow="no" layer="3" hasInfluenceArea="no" />
+    </characters>
+  </scene>
+  <map-scene id="MapaJuego" cameraType="Aerial2D" renderStyle="Tile" tileMetaIdentifier="OSMTile" usesGameplayArea="yes" gameplayArea="40.4125729710596 -3.71781527995988 0.00793969609117084 0.0171661376952987" center="(40.4178673899563, -3.709280443192)" zoom="18" start="no">
     <map-element targetId="Foto" layer="0">
       <condition />
       <ext-elem-ref scale="0.2661203" orientation="2" transformManager="uAdventure.Geo.GeopositionedDescriptor">
         <param name="Position">(40.4153213500977, -3.70735454559326)</param>
         <param name="Rotation">0</param>
         <param name="InteractionRange">65.64</param>
+        <param name="RevealOnlyOnRange">True</param>
+        <param name="Hint">False</param>
+        <param name="RevealParticleTexture">leaf_particle.png</param>
+        <actions />
+      </ext-elem-ref>
+    </map-element>
+    <map-element targetId="FotoSanGines" layer="0">
+      <condition />
+      <ext-elem-ref scale="0.12" orientation="2" transformManager="uAdventure.Geo.GeopositionedDescriptor">
+        <param name="Position">(40.4171600341797, -3.70692014694214)</param>
+        <param name="Rotation">0</param>
+        <param name="InteractionRange">19.4</param>
         <param name="RevealOnlyOnRange">True</param>
         <param name="Hint">False</param>
         <param name="RevealParticleTexture">leaf_particle.png</param>
@@ -511,20 +615,12 @@ Confiamos en ti, agente.</show-text>
       </ext-elem-ref>
     </map-element>
     <map-element targetId="Inigo" layer="0">
-      <condition>
-        <active flag="FotoConsultada" />
-      </condition>
+      <condition />
       <ext-elem-ref scale="2.1" orientation="2" transformManager="uAdventure.Geo.ScreenDescriptor">
         <param name="Position">(61.52798, 775.316)</param>
         <param name="Rotation">0</param>
         <actions />
       </ext-elem-ref>
-    </map-element>
-    <map-element targetId="Taberna" layer="0">
-      <condition />
-    </map-element>
-    <map-element targetId="Carcel" layer="0">
-      <condition />
     </map-element>
     <map-element targetId="Lope" layer="0">
       <condition />
@@ -538,11 +634,69 @@ Confiamos en ti, agente.</show-text>
         <actions />
       </ext-elem-ref>
     </map-element>
+    <map-element targetId="Monja" layer="0">
+      <condition>
+        <active flag="EstatuaRecuperada" />
+      </condition>
+      <ext-elem-ref scale="0.388689" orientation="2" transformManager="uAdventure.Geo.GeopositionedDescriptor">
+        <param name="Position">(40.4181289672852, -3.70652842521667)</param>
+        <param name="Rotation">0</param>
+        <param name="InteractionRange">53.24</param>
+        <param name="RevealOnlyOnRange">True</param>
+        <param name="Hint">False</param>
+        <param name="RevealParticleTexture">leaf_particle.png</param>
+        <actions />
+      </ext-elem-ref>
+    </map-element>
+    <map-element targetId="MarianaDeAustria" layer="0">
+      <condition>
+        <active flag="HabladoConMonja" />
+      </condition>
+      <ext-elem-ref scale="0.1224859" orientation="2" transformManager="uAdventure.Geo.GeopositionedDescriptor">
+        <param name="Position">(40.4179763793945, -3.70580434799194)</param>
+        <param name="Rotation">0</param>
+        <param name="InteractionRange">38.5</param>
+        <param name="RevealOnlyOnRange">True</param>
+        <param name="Hint">False</param>
+        <param name="RevealParticleTexture">leaf_particle.png</param>
+        <actions />
+      </ext-elem-ref>
+    </map-element>
     <map-element targetId="Sol" layer="0">
+      <condition />
+    </map-element>
+    <map-element targetId="Carcel" layer="0">
       <condition />
     </map-element>
     <map-element targetId="SanGines" layer="0">
       <condition />
+    </map-element>
+    <map-element targetId="Taberna" layer="0">
+      <condition />
+    </map-element>
+    <map-element targetId="PlazaSanMartin" layer="0">
+      <condition />
+    </map-element>
+    <map-element targetId="MonasterioDescalzas" layer="0">
+      <condition />
+    </map-element>
+    <map-element targetId="MonasterioDescalzas" layer="0">
+      <condition />
+    </map-element>
+    <map-element targetId="PalacioReal" layer="0">
+      <condition />
+    </map-element>
+    <map-element targetId="FelipeIV" layer="0">
+      <condition />
+      <ext-elem-ref scale="0.1024112" orientation="2" transformManager="uAdventure.Geo.GeopositionedDescriptor">
+        <param name="Position">(40.4180564880371, -3.71221208572388)</param>
+        <param name="Rotation">0</param>
+        <param name="InteractionRange">40.8</param>
+        <param name="RevealOnlyOnRange">True</param>
+        <param name="Hint">False</param>
+        <param name="RevealParticleTexture">leaf_particle.png</param>
+        <actions />
+      </ext-elem-ref>
     </map-element>
   </map-scene>
   <geo-element id="PlazaMayor">
@@ -645,6 +799,8 @@ Confiamos en ti, agente.</show-text>
           <condition>
             <inactive flag="verHuellasEnSol" />
           </condition>
+          <trigger-conversation idTarget="conversacionSol" guid="b46797d8-aa5c-4be7-ab2b-79889c23879c" />
+          <condition />
         </effect>
         <only-from-outside>True</only-from-outside>
       </enter-action>
@@ -664,13 +820,21 @@ Confiamos en ti, agente.</show-text>
         <Polygon>
           <exterior>
             <LinearRing>
-              <posList>40.4173592613374 -3.70663578510305 40.417140758486 -3.70671088695609 40.4172530731641 -3.7071480870255 40.4174777018332 -3.70704079866493</posList>
+              <posList>40.4173674296456 -3.7066196918494 40.4171387164097 -3.70670015811988 40.4172612414809 -3.70719100236957 40.417487912195 -3.70708639621801</posList>
             </LinearRing>
           </exterior>
         </Polygon>
       </geometry>
     </geometries>
-    <actions />
+    <actions>
+      <enter-action>
+        <effect>
+          <trigger-conversation idTarget="ConversationAlLlegarSanGines" guid="f4e81709-00e7-4d4a-889b-3cd33c841b55" />
+          <condition />
+        </effect>
+        <only-from-outside>True</only-from-outside>
+      </enter-action>
+    </actions>
   </geo-element>
   <geo-element id="PlazaSanMartin">
     <description>
@@ -686,13 +850,23 @@ Confiamos en ti, agente.</show-text>
         <Polygon>
           <exterior>
             <LinearRing>
-              <posList>40.4184374699002 -3.70636219978309 40.4181720035789 -3.70651776790593 40.4183292414495 -3.70709444284414 40.4185844969506 -3.70697374343843</posList>
+              <posList>40.4184456380838 -3.70638365745571 40.4180556064222 -3.70662505626707 40.4182638958819 -3.70716954469708 40.418592665112 -3.70692814588592</posList>
             </LinearRing>
           </exterior>
         </Polygon>
       </geometry>
     </geometries>
-    <actions />
+    <actions>
+      <enter-action>
+        <effect>
+          <trigger-scene idTarget="EscenaSanMartin" x="492" y="534" transitionTime="0" transitionType="0" guid="77dccc88-6c5c-4e57-975b-8ebcb4792952" />
+          <condition />
+          <speak-char idTarget="Inigo" guid="1f3e2978-f33a-4be8-aec6-106d82202d02">Mira, este mercader vende estatuas. Echales un buen vistazo.</speak-char>
+          <condition />
+        </effect>
+        <only-from-outside>True</only-from-outside>
+      </enter-action>
+    </actions>
   </geo-element>
   <geo-element id="PalacioReal">
     <description>
@@ -866,6 +1040,28 @@ Confiamos en ti, agente.</show-text>
     </geometries>
     <actions />
   </geo-element>
+  <geo-element id="MonasterioDescalzas">
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <geometries>
+      <geometry influence="0">
+        <Polygon>
+          <exterior>
+            <LinearRing>
+              <posList>40.4182190096948 -3.70549852848058 40.4179331586052 -3.70567018985754 40.4181192315816 -3.70622272491469 40.4184159626016 -3.70605374574673</posList>
+            </LinearRing>
+          </exterior>
+        </Polygon>
+      </geometry>
+    </geometries>
+    <actions />
+  </geo-element>
   <object id="Foto" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
     <resources name="No name">
       <asset type="image" uri="assets/image/pza_grabado.jpg" />
@@ -917,6 +1113,8 @@ Confiamos en ti, agente.</show-text>
           <trigger-scene idTarget="MapaJuego" x="325" y="324" transitionTime="0" transitionType="5" guid="893b0a1f-bcd5-4503-97e4-ca37e491ee93" />
           <condition />
           <remove-element idTarget="Foto" guid="0eda66e7-27f7-4710-9a1d-d8c84a6a553d" />
+          <condition />
+          <trigger-conversation idTarget="InicialInigo" guid="cd28da95-2a85-4d4b-8dbf-f82f4c1772b0" />
           <condition />
         </effect>
       </use>
@@ -975,6 +1173,103 @@ Vamos Iñigo en marcha.</speak-player>
         </effect>
       </use>
     </actions>
+  </object>
+  <object id="FotoSanGines" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
+    <resources name="No name">
+      <asset type="image" uri="assets/image/SanGines.png" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <actions>
+      <examine needsGoTo="no" keepDistance="0" not-effects="no">
+        <effect>
+          <trigger-scene idTarget="ScenaSanGines" x="208" y="384" transitionTime="0" transitionType="0" guid="6a468b2e-eae6-45dd-b54c-113afc2b0a0a" />
+          <condition />
+        </effect>
+      </examine>
+    </actions>
+  </object>
+  <object id="botonAtrasSanGines" returnsWhenDragged="yes" behaviour="first-action" resources-transition-time="0">
+    <resources name="No name">
+      <asset type="image" uri="assets/image/botonAtras.png" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <actions>
+      <use needsGoTo="yes" keepDistance="35" not-effects="no">
+        <condition>
+          <active flag="FachadaConsultada" />
+        </condition>
+        <effect>
+          <trigger-scene idTarget="MapaJuego" x="325" y="324" transitionTime="0" transitionType="0" guid="0c4311df-d447-450d-a3e4-3f7779c982f2" />
+          <condition />
+          <remove-element idTarget="FotoSanGines" guid="3b6b3cf2-7d30-4355-8256-c2a87e6e7712" />
+          <condition />
+          <navigate navigation-type="Ordered" guid="92dd315a-11b3-4102-ab2d-c9e7551b5b30">
+            <step locks="False">PlazaSanMartin</step>
+          </navigate>
+          <condition />
+          <increment var="InigoConversacion" value="1" guid="3e7ee33b-c3c1-450f-849a-190fb7937327" />
+          <condition />
+        </effect>
+      </use>
+    </actions>
+  </object>
+  <object id="Estatua1" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
+    <resources name="No name">
+      <asset type="image" uri="assets/image/Estatua.png" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+  </object>
+  <object id="Estatua2" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
+    <resources name="No name">
+      <asset type="image" uri="assets/image/pensante.png" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+  </object>
+  <object id="Estatua3" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
+    <resources name="No name">
+      <asset type="image" uri="assets/image/estatuafake.png" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
   </object>
   <graph-conversation id="ConversacionCaridad">
     <dialogue-node nodeindex="0" editor-x="33" editor-y="62">
@@ -1243,6 +1538,302 @@ Vamos Iñigo en marcha.</speak-player>
           <condition />
         </effect>
       </end-conversation>
+    </dialogue-node>
+  </graph-conversation>
+  <graph-conversation id="ConversacionSanGines">
+    <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
+      <speak-player>
+        <resources name="No name" />
+        <text>La escultura de la fachada no está.</text>
+      </speak-player>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>No creo que haya cargado con ella mucho tiempo, pesa demasiado.</text>
+      </speak-player>
+      <condition />
+      <speak-char idTarget="Inigo">
+        <resources name="No name" />
+        <text> Podría haberla vendido en el mercado de la Plaza de San Martín. Allí a veces venden objetos robados, y no queda lejos. </text>
+      </speak-char>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>Pues vayamos allí.</text>
+      </speak-player>
+      <condition />
+      <end-conversation />
+    </dialogue-node>
+  </graph-conversation>
+  <graph-conversation id="ConversationAlLlegarSanGines">
+    <dialogue-node nodeindex="0" editor-x="26" editor-y="54">
+      <speak-char idTarget="Inigo">
+        <resources name="No name" />
+        <text>Aquí se pierde el rastro, estamos seguros de que estuvo aquí?. </text>
+      </speak-char>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>Vaya la iglesia de San Ginés, una de las más antiguas de Madrid, que en el presente sigue en pie.</text>
+      </speak-player>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>Si no me equivoco, se construyó en 1645 sobre los restos de lo fue una ermita mozárabe.</text>
+      </speak-player>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>Deberíamos ver si han robado algo en ella.</text>
+      </speak-player>
+      <condition />
+      <speak-char idTarget="Inigo">
+        <resources name="No name" />
+        <text>Veo algo raro en la fachada, deberías mirar bien ahí.</text>
+      </speak-char>
+      <condition />
+      <end-conversation />
+    </dialogue-node>
+  </graph-conversation>
+  <graph-conversation id="AyudaConversacionSanGines">
+    <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
+      <speak-char idTarget="Inigo">
+        <resources name="No name" />
+        <text>Mira la fachada, seguro que falta algo.</text>
+      </speak-char>
+      <condition />
+      <end-conversation />
+    </dialogue-node>
+  </graph-conversation>
+  <graph-conversation id="ConversacionMonja">
+    <dialogue-node nodeindex="0" editor-x="43" editor-y="26">
+      <speak-char idTarget="Monja">
+        <resources name="No name" />
+        <text>Disculpe buen hombre, ¿podría acompañarme al monasterio de las Descalzas?, es por un asunto de la realeza.</text>
+      </speak-char>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>¿Un asunto de la realeza?</text>
+      </speak-player>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>Ahora mismo, me pilla usted ocupado. Debo devolver una estatua a la iglesia de San Ginés.</text>
+      </speak-player>
+      <condition />
+      <speak-char idTarget="Monja">
+        <resources name="No name" />
+        <text>No se preocupe,ahora la lleva alguna de mis hermanas. Sigame por pavor.</text>
+      </speak-char>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>*Es verdad en el monasterio de las Descalzas, Finalizado en 1564 y tuvo gran relevancia para la Casa de los Austria.*</text>
+      </speak-player>
+      <condition />
+      <end-conversation>
+        <effect>
+          <navigate navigation-type="Ordered" guid="42369694-c6a0-4110-b3b4-9cc2cc8d00d2">
+            <step locks="False">MonasterioDescalzas</step>
+          </navigate>
+          <condition />
+          <deactivate flag="EstatuaRecuperada" guid="75ee8c78-4953-48d8-9721-92cef037c85e" />
+          <condition />
+          <activate flag="HabladoConMonja" guid="bcc9f5ee-49df-4d0f-8b04-4a9448f02de2" />
+          <condition />
+        </effect>
+      </end-conversation>
+    </dialogue-node>
+  </graph-conversation>
+  <graph-conversation id="ConversacionMarianaAustria">
+    <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
+      <speak-char idTarget="MarianaDeAustria">
+        <resources name="No name" />
+        <text>Que bien que hayas llegado,llévale estos planos a mi marido al Palacio Real. </text>
+      </speak-char>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>¿Disculpe?¿Qué le lleve que a quién?</text>
+      </speak-player>
+      <condition />
+      <speak-char idTarget="MarianaDeAustria">
+        <resources name="No name" />
+        <text> ¿Cómo?, te atreves a desobedecerme.</text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="Inigo">
+        <resources name="No name" />
+        <text>No se preocupe su majestad, ahora mismo se los llevaremos a Felipe IV. </text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="MarianaDeAustria">
+        <resources name="No name" />
+        <text>Excelente, venga, iros ya.</text>
+      </speak-char>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>¿A que ha venido eso? </text>
+      </speak-player>
+      <condition />
+      <speak-char idTarget="Inigo">
+        <resources name="No name" />
+        <text>Por la ropa que tienes puesta, la reina habrá pensado que eres un mensajero real. </text>
+      </speak-char>
+      <condition />
+      <child nodeindex="1" />
+    </dialogue-node>
+    <dialogue-node nodeindex="1" editor-x="731" editor-y="106">
+      <speak-player>
+        <resources name="No name" />
+        <text>Claro, Mariana de Austria, la segunda esposa de Felipe IV.Como no he podido darme cuenta. </text>
+      </speak-player>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>Aquí estuvo viviendo junto con otros miembros de la Casa de los Austria.</text>
+      </speak-player>
+      <condition />
+      <speak-char idTarget="Inigo">
+        <resources name="No name" />
+        <text>Será mejor que hagamos lo que ha dicho,para no tener problemas.</text>
+      </speak-char>
+      <condition />
+      <end-conversation>
+        <effect>
+          <navigate navigation-type="Ordered" guid="2af82cc8-6c3c-42bf-9156-bcfac581294e">
+            <step locks="False">PalacioReal</step>
+          </navigate>
+          <condition />
+        </effect>
+      </end-conversation>
+    </dialogue-node>
+  </graph-conversation>
+  <graph-conversation id="CoversacionMercader">
+    <dialogue-node nodeindex="0" editor-x="87" editor-y="64">
+      <speak-char idTarget="Mercader">
+        <resources name="No name">
+          <asset type="image" uri="" />
+        </resources>
+        <text>¿Le interesa alguna señor?</text>
+      </speak-char>
+      <condition />
+      <child nodeindex="1" />
+    </dialogue-node>
+    <option-node nodeindex="1" question="¿Qué estatua es la de San Ginés?" keepShowing="yes" preListening="yes" editor-x="470" editor-y="22" x="470" y="22">
+      <speak-player>
+        <text>La de la izquierda.</text>
+        <resources name="No name" />
+      </speak-player>
+      <condition />
+      <child nodeindex="2" />
+      <speak-player>
+        <text>La del centro.</text>
+        <resources name="No name" />
+      </speak-player>
+      <condition />
+      <child nodeindex="3" />
+      <speak-player>
+        <text>La de la derecha.</text>
+        <resources name="No name" />
+      </speak-player>
+      <condition />
+      <child nodeindex="4" />
+    </option-node>
+    <dialogue-node nodeindex="2" editor-x="785" editor-y="38">
+      <speak-player>
+        <resources name="No name" />
+        <text>humm parece que esta es la estatua.</text>
+      </speak-player>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>Quiero esta,pero no la voy a pagar, porque es robada y la voy a devolver a su respectivo lugar.</text>
+      </speak-player>
+      <condition />
+      <speak-char idTarget="Mercader">
+        <resources name="No name" />
+        <text>Cómo se atreve a decir eso.</text>
+      </speak-char>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>¡Esta estatua pertenece a la parroquia de San Ginés y me la voy a llevar! </text>
+      </speak-player>
+      <condition />
+      <speak-char idTarget="Inigo">
+        <resources name="No name" />
+        <text>Vaya carácter amigo. Será mejor que nos vayamos de aquí, para no llamar más la atención.</text>
+      </speak-char>
+      <condition />
+      <end-conversation>
+        <effect>
+          <trigger-scene idTarget="MapaJuego" x="325" y="324" transitionTime="0" transitionType="0" guid="c00fda26-0795-42f6-bbb3-709a65c3bb54" />
+          <condition />
+          <activate flag="EstatuaRecuperada" guid="7bac8ae8-0505-4620-80ed-189d98ea1be7" />
+          <condition />
+          <trigger-conversation idTarget="ConversacionMonja" guid="4135005d-24e4-44b8-bf08-79c5e7ee274f" />
+          <condition />
+        </effect>
+      </end-conversation>
+    </dialogue-node>
+    <dialogue-node nodeindex="3" editor-x="823" editor-y="476">
+      <speak-player>
+        <resources name="No name" />
+        <text>Esta parece que no es.</text>
+      </speak-player>
+      <condition />
+      <child nodeindex="1" />
+    </dialogue-node>
+    <dialogue-node nodeindex="4" editor-x="531" editor-y="481">
+      <speak-player>
+        <resources name="No name" />
+        <text>No parece que sea esta.</text>
+      </speak-player>
+      <condition />
+      <child nodeindex="1" />
+    </dialogue-node>
+  </graph-conversation>
+  <graph-conversation id="ConversacionFelipeIV">
+    <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
+      <speak-player>
+        <resources name="No name" />
+        <text>Disculpe su majestad, le traigo unos planos de parte de su esposa Mariana. </text>
+      </speak-player>
+      <condition />
+      <speak-char idTarget="FelipeIV">
+        <resources name="No name" />
+        <text>Gracias mensajero.Por fin los tengo. Llevo esperando estos planos meses por parte de Velázquez.</text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="Inigo">
+        <resources name="No name" />
+        <text>¿Qué contienen, su majestad?</text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="FelipeIV">
+        <resources name="No name" />
+        <text>El diseño de una estatua en mi honor, que se va a construir aquí,en el Palacio Real.</text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="FelipeIV">
+        <resources name="No name" />
+        <text>Esta será la primera estatua con un caballo sobre dos patas, bastante ha costado que he tenido que pedir consejo a Galileo Galilei para que resista.</text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="Inigo">
+        <resources name="No name" />
+        <text>*Ah sí, esto es lo otro en lo que estaba trabajando el maestro Velazquez.*</text>
+      </speak-char>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>*Es verdad, la estatua en esta época aún no existía. No fue hasta 1843 que se trasladó aquí, a la Plaza de Oriente.*</text>
+      </speak-player>
+      <condition />
+      <end-conversation />
     </dialogue-node>
   </graph-conversation>
 </eAdventure>
