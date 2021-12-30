@@ -160,6 +160,20 @@
           <condition />
         </effect>
       </talk-to>
+      <talk-to needsGoTo="yes" keepDistance="35" not-effects="no">
+        <documentation>Created with target conversation: conversacionHaciaRamales</documentation>
+        <effect>
+          <trigger-conversation idTarget="conversacionHaciaRamales" guid="d336a797-cc5c-4178-8595-9a8263120864" />
+          <condition />
+        </effect>
+      </talk-to>
+      <talk-to needsGoTo="yes" keepDistance="35" not-effects="no">
+        <documentation>Created with target conversation: ConversationEnRamales</documentation>
+        <effect>
+          <trigger-conversation idTarget="ConversationEnRamales" guid="ab286e27-01fc-45bd-bf16-d4371c9e0679" />
+          <condition />
+        </effect>
+      </talk-to>
     </actions>
   </character>
   <character id="Ladron" behaviour="normal">
@@ -179,7 +193,7 @@
       <asset type="walkright" uri="assets/special/EmptyAnimation" />
       <asset type="walkleft" uri="assets/special/EmptyAnimation" />
     </resources>
-    <textcolor showsSpeechBubble="no" bubbleBkgColor="#FFFFFF" bubbleBorderColor="#000000">
+    <textcolor showsSpeechBubble="yes" bubbleBkgColor="#5E0C29" bubbleBorderColor="#000000">
       <frontcolor color="#FFFFFF" />
       <bordercolor color="#000000" />
     </textcolor>
@@ -235,10 +249,10 @@
   </character>
   <character id="DuqueDeUceda" behaviour="normal">
     <resources name="No name">
-      <asset type="standup" uri="assets/special/EmptyAnimation" />
-      <asset type="standdown" uri="assets/special/EmptyAnimation" />
-      <asset type="standright" uri="assets/special/EmptyAnimation" />
-      <asset type="standleft" uri="assets/special/EmptyAnimation" />
+      <asset type="standup" uri="assets/animation/duqueDeUcedaAnim.eaa.xml" />
+      <asset type="standdown" uri="assets/animation/duqueDeUcedaAnim.eaa.xml" />
+      <asset type="standright" uri="assets/animation/duqueDeUcedaAnim.eaa.xml" />
+      <asset type="standleft" uri="assets/animation/duqueDeUcedaAnim.eaa.xml" />
       <asset type="speakup" uri="assets/special/EmptyAnimation" />
       <asset type="speakdown" uri="assets/special/EmptyAnimation" />
       <asset type="speakright" uri="assets/special/EmptyAnimation" />
@@ -250,7 +264,7 @@
       <asset type="walkright" uri="assets/special/EmptyAnimation" />
       <asset type="walkleft" uri="assets/special/EmptyAnimation" />
     </resources>
-    <textcolor showsSpeechBubble="no" bubbleBkgColor="#FFFFFF" bubbleBorderColor="#000000">
+    <textcolor showsSpeechBubble="yes" bubbleBkgColor="#00F3E7" bubbleBorderColor="#000000">
       <frontcolor color="#FFFFFF" />
       <bordercolor color="#000000" />
     </textcolor>
@@ -263,6 +277,14 @@
       </detailed>
     </description>
     <voice name="" synthesizeAlways="no" />
+    <actions>
+      <talk-to needsGoTo="yes" keepDistance="35" not-effects="no">
+        <effect>
+          <trigger-conversation idTarget="ConversationDuquedeUceda" guid="01704f7a-e6ec-412e-a083-3cd15bcea335" />
+          <condition />
+        </effect>
+      </talk-to>
+    </actions>
   </character>
   <character id="MarianaDeAustria" behaviour="normal">
     <resources name="No name">
@@ -414,6 +436,37 @@
         </effect>
       </talk-to>
     </actions>
+  </character>
+  <character id="Guardia" behaviour="normal">
+    <resources name="No name">
+      <asset type="standup" uri="assets/animation/GuardiaAnim.eaa.xml" />
+      <asset type="standdown" uri="assets/animation/GuardiaAnim.eaa.xml" />
+      <asset type="standright" uri="assets/animation/GuardiaAnim.eaa.xml" />
+      <asset type="standleft" uri="assets/animation/GuardiaAnim.eaa.xml" />
+      <asset type="speakup" uri="assets/special/EmptyAnimation" />
+      <asset type="speakdown" uri="assets/special/EmptyAnimation" />
+      <asset type="speakright" uri="assets/special/EmptyAnimation" />
+      <asset type="speakleft" uri="assets/special/EmptyAnimation" />
+      <asset type="useright" uri="assets/special/EmptyAnimation" />
+      <asset type="useleft" uri="assets/special/EmptyAnimation" />
+      <asset type="walkup" uri="assets/special/EmptyAnimation" />
+      <asset type="walkdown" uri="assets/special/EmptyAnimation" />
+      <asset type="walkright" uri="assets/special/EmptyAnimation" />
+      <asset type="walkleft" uri="assets/special/EmptyAnimation" />
+    </resources>
+    <textcolor showsSpeechBubble="yes" bubbleBkgColor="#4D4D4D" bubbleBorderColor="#000000">
+      <frontcolor color="#FFFFFF" />
+      <bordercolor color="#000000" />
+    </textcolor>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <voice name="" synthesizeAlways="no" />
   </character>
   <scene id="MenuPrincipal" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="yes" playerLayer="-1" playerScale="1" class="accesible" type="area">
     <documentation>
@@ -577,7 +630,91 @@ Confiamos en ti, agente.</show-text>
       <character-ref idTarget="Inigo" x="926" y="878" scale="2.122508" orientation="2" glow="no" layer="3" hasInfluenceArea="no" />
     </characters>
   </scene>
-  <map-scene id="MapaJuego" cameraType="Aerial2D" renderStyle="Tile" tileMetaIdentifier="OSMTile" usesGameplayArea="yes" gameplayArea="40.4125729710596 -3.71781527995988 0.00793969609117084 0.0171661376952987" center="(40.4178673899563, -3.709280443192)" zoom="18" start="no">
+  <scene id="PalaciodeUcedaScene" hideInventory="no" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
+    <documentation>
+    </documentation>
+    <resources name="No name">
+      <asset type="background" uri="assets/background/PalacioUceda.jpg" />
+    </resources>
+    <name>
+    </name>
+    <default-initial-position x="400" y="450" />
+    <objects>
+      <object-ref idTarget="botonSalirUceda" x="47" y="84" scale="0.1438316" glow="no" layer="0" hasInfluenceArea="no">
+        <condition>
+          <active flag="escudoConsultado" />
+        </condition>
+      </object-ref>
+    </objects>
+    <active-areas>
+      <active-area id="ActiveAreaEscudo" rectangular="yes" x="21" y="381" width="89" height="48" hasInfluenceArea="no" behaviour="normal">
+        <description>
+          <name>
+          </name>
+          <brief>
+          </brief>
+          <detailed>
+          </detailed>
+        </description>
+        <actions>
+          <examine needsGoTo="no" keepDistance="0" not-effects="no">
+            <effect>
+              <speak-player guid="45940fd3-6b10-475d-905d-1d87b669ce12">¡Eso es! falta el escudo de la fachada</speak-player>
+              <condition />
+              <activate flag="escudoConsultado" guid="348d63e9-7347-469e-bb58-c9762acc6257" />
+              <condition />
+            </effect>
+          </examine>
+        </actions>
+      </active-area>
+    </active-areas>
+  </scene>
+  <scene id="PlazadeLaCruzVerdeScene" hideInventory="no" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
+    <documentation>
+    </documentation>
+    <resources name="No name">
+      <asset type="background" uri="assets/background/CruzVerde.PNG" />
+    </resources>
+    <name>
+    </name>
+    <default-initial-position x="400" y="450" />
+    <objects>
+      <object-ref idTarget="botonSalirCruzVerde" x="26" y="47" scale="0.08083671" glow="no" layer="0" hasInfluenceArea="no">
+        <condition>
+          <active flag="escudoRecuperado" />
+        </condition>
+      </object-ref>
+      <object-ref idTarget="escudoUceda" x="301" y="171" scale="0.08693288" glow="no" layer="1" hasInfluenceArea="no" />
+    </objects>
+  </scene>
+  <scene id="MercadoSanMiguelScene" hideInventory="no" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
+    <documentation>
+    </documentation>
+    <resources name="No name">
+      <asset type="background" uri="assets/background/MercadoSanMiguel.jpg" />
+    </resources>
+    <name>
+    </name>
+    <default-initial-position x="400" y="450" />
+    <objects>
+      <object-ref idTarget="codice" x="583" y="478" scale="0.174339" glow="no" layer="2" hasInfluenceArea="no">
+        <condition>
+          <inactive flag="codiceRecuperado" />
+        </condition>
+      </object-ref>
+      <object-ref idTarget="CodiceDesenrrollado" x="372" y="380" scale="0.3849284" glow="no" layer="1" hasInfluenceArea="no">
+        <condition>
+          <active flag="codiceRecuperado" />
+        </condition>
+      </object-ref>
+      <object-ref idTarget="botonSalirMercadoSanMiguel" x="47" y="86" scale="0.1536191" glow="no" layer="0" hasInfluenceArea="no">
+        <condition>
+          <active flag="codiceRecuperado" />
+        </condition>
+      </object-ref>
+    </objects>
+  </scene>
+  <map-scene id="MapaJuego" cameraType="Aerial2D" renderStyle="Tile" tileMetaIdentifier="OSMTile" usesGameplayArea="yes" gameplayArea="40.4125729710596 -3.71781527995988 0.00793969609117084 0.0171661376952987" center="(40.4165890465576, -3.70711053609963)" zoom="19" start="no">
     <map-element targetId="Foto" layer="0">
       <condition />
       <ext-elem-ref scale="0.2661203" orientation="2" transformManager="uAdventure.Geo.GeopositionedDescriptor">
@@ -692,6 +829,103 @@ Confiamos en ti, agente.</show-text>
         <param name="Position">(40.4180564880371, -3.71221208572388)</param>
         <param name="Rotation">0</param>
         <param name="InteractionRange">40.8</param>
+        <param name="RevealOnlyOnRange">True</param>
+        <param name="Hint">False</param>
+        <param name="RevealParticleTexture">leaf_particle.png</param>
+        <actions />
+      </ext-elem-ref>
+    </map-element>
+    <map-element targetId="PlazaRamales" layer="0">
+      <condition />
+    </map-element>
+    <map-element targetId="PalacioUceda" layer="0">
+      <condition />
+    </map-element>
+    <map-element targetId="CruzVerde" layer="0">
+      <condition />
+    </map-element>
+    <map-element targetId="PlazaVilla" layer="0">
+      <condition />
+    </map-element>
+    <map-element targetId="SanMiguel" layer="0">
+      <condition />
+    </map-element>
+    <map-element targetId="Fin-PlazaMayor" layer="0">
+      <condition />
+    </map-element>
+    <map-element targetId="fotoCruzverde" layer="0">
+      <condition />
+      <ext-elem-ref scale="0.1220756" orientation="2" transformManager="uAdventure.Geo.GeopositionedDescriptor">
+        <param name="Position">(40.4140090942383, -3.71181774139404)</param>
+        <param name="Rotation">0</param>
+        <param name="InteractionRange">15.9</param>
+        <param name="RevealOnlyOnRange">True</param>
+        <param name="Hint">False</param>
+        <param name="RevealParticleTexture">leaf_particle.png</param>
+        <actions />
+      </ext-elem-ref>
+    </map-element>
+    <map-element targetId="MercadoSanMiguelItem" layer="0">
+      <condition />
+      <ext-elem-ref scale="0.281718" orientation="2" transformManager="uAdventure.Geo.GeopositionedDescriptor">
+        <param name="Position">(40.4151725769043, -3.70900416374207)</param>
+        <param name="Rotation">0</param>
+        <param name="InteractionRange">48.2</param>
+        <param name="RevealOnlyOnRange">True</param>
+        <param name="Hint">False</param>
+        <param name="RevealParticleTexture">leaf_particle.png</param>
+        <actions />
+      </ext-elem-ref>
+    </map-element>
+    <map-element targetId="PalaciodeUcedaItem" layer="0">
+      <condition />
+      <ext-elem-ref scale="0.1958403" orientation="2" transformManager="uAdventure.Geo.GeopositionedDescriptor">
+        <param name="Position">(40.4147872924805, -3.71293640136719)</param>
+        <param name="Rotation">0</param>
+        <param name="InteractionRange">51.3</param>
+        <param name="RevealOnlyOnRange">True</param>
+        <param name="Hint">False</param>
+        <param name="RevealParticleTexture">leaf_particle.png</param>
+        <actions />
+      </ext-elem-ref>
+    </map-element>
+    <map-element targetId="DuqueDeUceda" layer="0">
+      <condition>
+        <active flag="escudoRecuperado" />
+      </condition>
+      <ext-elem-ref scale="0.4588053" orientation="2" transformManager="uAdventure.Geo.GeopositionedDescriptor">
+        <param name="Position">(40.4148406982422, -3.71293640136719)</param>
+        <param name="Rotation">0</param>
+        <param name="InteractionRange">55.56</param>
+        <param name="RevealOnlyOnRange">True</param>
+        <param name="Hint">False</param>
+        <param name="RevealParticleTexture">leaf_particle.png</param>
+        <actions />
+      </ext-elem-ref>
+    </map-element>
+    <map-element targetId="Guardia" layer="0">
+      <condition>
+        <active flag="codiceRecuperado" />
+      </condition>
+      <ext-elem-ref scale="0.4077749" orientation="2" transformManager="uAdventure.Geo.GeopositionedDescriptor">
+        <param name="Position">(40.4150924682617, -3.70899891853333)</param>
+        <param name="Rotation">0</param>
+        <param name="InteractionRange">39.06</param>
+        <param name="RevealOnlyOnRange">False</param>
+        <param name="Hint">False</param>
+        <param name="RevealParticleTexture">leaf_particle.png</param>
+        <actions />
+      </ext-elem-ref>
+    </map-element>
+    <map-element targetId="chocolateria" layer="0">
+      <condition />
+    </map-element>
+    <map-element targetId="Ladron" layer="0">
+      <condition />
+      <ext-elem-ref scale="1" orientation="2" transformManager="uAdventure.Geo.GeopositionedDescriptor">
+        <param name="Position">(40.4167213439941, -3.70698189735413)</param>
+        <param name="Rotation">0</param>
+        <param name="InteractionRange">25</param>
         <param name="RevealOnlyOnRange">True</param>
         <param name="Hint">False</param>
         <param name="RevealParticleTexture">leaf_particle.png</param>
@@ -882,13 +1116,21 @@ Confiamos en ti, agente.</show-text>
         <Polygon>
           <exterior>
             <LinearRing>
-              <posList>40.4184497222562 -3.7118768215179 40.4181679193272 -3.71189291477199 40.418212844491 -3.71252055168148 40.4184905631444 -3.71249372959132</posList>
+              <posList>40.4184497222562 -3.7118768215179 40.418159751092 -3.71190364360923 40.4182087603662 -3.71252055168265 40.4184905631444 -3.71249372959132</posList>
             </LinearRing>
           </exterior>
         </Polygon>
       </geometry>
     </geometries>
-    <actions />
+    <actions>
+      <exit-action>
+        <effect>
+          <trigger-conversation idTarget="conversacionHaciaRamales" guid="6ed77107-37cf-4ddd-aa1e-627e036464c8" />
+          <condition />
+        </effect>
+        <only-from-inside>True</only-from-inside>
+      </exit-action>
+    </actions>
   </geo-element>
   <geo-element id="PlazaRamales">
     <description>
@@ -910,7 +1152,15 @@ Confiamos en ti, agente.</show-text>
         </Polygon>
       </geometry>
     </geometries>
-    <actions />
+    <actions>
+      <enter-action>
+        <effect>
+          <trigger-conversation idTarget="ConversationEnRamales" guid="a1a804b2-250a-4221-bb5e-296af68e8ad5" />
+          <condition />
+        </effect>
+        <only-from-outside>True</only-from-outside>
+      </enter-action>
+    </actions>
   </geo-element>
   <geo-element id="PalacioUceda">
     <description>
@@ -926,13 +1176,27 @@ Confiamos en ti, agente.</show-text>
         <Polygon>
           <exterior>
             <LinearRing>
-              <posList>40.415308983834 -3.71226305961613 40.4149618186884 -3.71212358474737 40.4148311209916 -3.71348078250888 40.4151496965888 -3.713502240181</posList>
+              <posList>40.415308983834 -3.71226574182513 40.4149618186884 -3.71212626695637 40.4148311209916 -3.71348346471788 40.4151496965888 -3.71350492239</posList>
             </LinearRing>
           </exterior>
         </Polygon>
       </geometry>
     </geometries>
-    <actions />
+    <actions>
+      <enter-action>
+        <condition>
+          <inactive flag="escudoRecuperado" />
+        </condition>
+        <effect>
+          <trigger-conversation idTarget="ConversationPalaciodeUceda" guid="627c2f63-7827-46e5-ba23-cb5020c98dee" />
+          <condition />
+        </effect>
+        <only-from-outside>True</only-from-outside>
+      </enter-action>
+      <enter-action>
+        <only-from-outside>True</only-from-outside>
+      </enter-action>
+    </actions>
   </geo-element>
   <geo-element id="CruzVerde">
     <description>
@@ -976,7 +1240,28 @@ Confiamos en ti, agente.</show-text>
         </Polygon>
       </geometry>
     </geometries>
-    <actions />
+    <actions>
+      <enter-action>
+        <condition>
+          <inactive flag="escudoRecuperado" />
+        </condition>
+        <effect>
+          <trigger-conversation idTarget="ConversacionPlazaVilla" guid="d63fc98a-9484-4658-8d3d-b74c75d131aa" />
+          <condition />
+        </effect>
+        <only-from-outside>True</only-from-outside>
+      </enter-action>
+      <enter-action>
+        <condition>
+          <active flag="escudoRecuperado" />
+        </condition>
+        <effect>
+          <trigger-conversation idTarget="ConversationPlazaVilla2" guid="e1281fad-bccf-4d3b-852f-57f85de6393a" />
+          <condition />
+        </effect>
+        <only-from-outside>True</only-from-outside>
+      </enter-action>
+    </actions>
   </geo-element>
   <geo-element id="SanMiguel">
     <description>
@@ -992,13 +1277,21 @@ Confiamos en ti, agente.</show-text>
         <Polygon>
           <exterior>
             <LinearRing>
-              <posList>40.4156295989033 -3.70869912862759 40.4152824358014 -3.70857842922195 40.4151068114323 -3.70937236309033 40.4154846074727 -3.70948233365996</posList>
+              <posList>40.4156704414983 -3.70870449299446 40.4152824358014 -3.70857842922195 40.4150986428252 -3.70936699870301 40.4155234080375 -3.70949038031769</posList>
             </LinearRing>
           </exterior>
         </Polygon>
       </geometry>
     </geometries>
-    <actions />
+    <actions>
+      <exit-action>
+        <effect>
+          <trigger-conversation idTarget="ConversacionPerseguirLadron" guid="ceb1d0f9-6703-42e6-90b0-0851092f05fd" />
+          <condition />
+        </effect>
+        <only-from-inside>True</only-from-inside>
+      </exit-action>
+    </actions>
   </geo-element>
   <geo-element id="Fin-PlazaMayor">
     <description>
@@ -1018,24 +1311,6 @@ Confiamos en ti, agente.</show-text>
             </LinearRing>
           </exterior>
         </Polygon>
-      </geometry>
-    </geometries>
-    <actions />
-  </geo-element>
-  <geo-element id="Chocolateria">
-    <description>
-      <name>
-      </name>
-      <brief>
-      </brief>
-      <detailed>
-      </detailed>
-    </description>
-    <geometries>
-      <geometry influence="0">
-        <LineString>
-          <posList>40.4149944928045 -3.70764166772372 40.4136650400858 -3.70743781983863 40.4135282132 -3.70776504933844 40.4129318897927 -3.70837659299382</posList>
-        </LineString>
       </geometry>
     </geometries>
     <actions />
@@ -1061,6 +1336,36 @@ Confiamos en ti, agente.</show-text>
       </geometry>
     </geometries>
     <actions />
+  </geo-element>
+  <geo-element id="chocolateria">
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <geometries>
+      <geometry influence="0">
+        <Polygon>
+          <exterior>
+            <LinearRing>
+              <posList>40.4168602849911 -3.70680208206217 40.416756838317 -3.70672698020973 40.4167000837423 -3.70706225633661 40.4168333553481 -3.70709712505381</posList>
+            </LinearRing>
+          </exterior>
+        </Polygon>
+      </geometry>
+    </geometries>
+    <actions>
+      <enter-action>
+        <effect>
+          <trigger-conversation idTarget="ConversacionLadron" guid="9792bc24-373a-487b-a324-50e6b379f044" />
+          <condition />
+        </effect>
+        <only-from-outside>True</only-from-outside>
+      </enter-action>
+    </actions>
   </geo-element>
   <object id="Foto" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
     <resources name="No name">
@@ -1260,6 +1565,224 @@ Vamos Iñigo en marcha.</speak-player>
   <object id="Estatua3" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
     <resources name="No name">
       <asset type="image" uri="assets/image/estatuafake.png" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+  </object>
+  <object id="PalaciodeUcedaItem" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
+    <resources name="No name">
+      <asset type="image" uri="assets/image/PalacioUceda.jpg" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <actions>
+      <examine needsGoTo="no" keepDistance="0" not-effects="no">
+        <effect>
+          <trigger-scene idTarget="PalaciodeUcedaScene" x="531" y="529" transitionTime="0" transitionType="0" guid="566a9b40-f509-443a-91d8-17d84ee40b7e" />
+          <condition />
+        </effect>
+      </examine>
+    </actions>
+  </object>
+  <object id="botonSalirUceda" returnsWhenDragged="yes" behaviour="first-action" resources-transition-time="0">
+    <resources name="No name">
+      <asset type="image" uri="assets/image/botonAtras.png" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <actions>
+      <use needsGoTo="yes" keepDistance="35" not-effects="no">
+        <effect>
+          <trigger-scene idTarget="MapaJuego" x="325" y="324" transitionTime="0" transitionType="0" guid="1be6b8d9-9b96-40f2-ad10-b3f9e7f094d3" />
+          <condition />
+          <trigger-conversation idTarget="ConversationBuscarElEscudo" guid="523de12d-30be-4ed0-b0db-d70b940c2711" />
+          <condition />
+          <remove-element idTarget="PalaciodeUcedaItem" guid="ac41aa09-ebc1-4c75-910a-e463a2299e54" />
+          <condition />
+        </effect>
+      </use>
+    </actions>
+  </object>
+  <object id="fotoCruzverde" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
+    <resources name="No name">
+      <asset type="image" uri="assets/image/CruzVerde.PNG" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <actions>
+      <examine needsGoTo="no" keepDistance="0" not-effects="no">
+        <effect>
+          <trigger-scene idTarget="PlazadeLaCruzVerdeScene" x="294" y="242" transitionTime="0" transitionType="0" guid="801f7869-1b27-4130-8694-bb4805e6b2cb" />
+          <condition />
+        </effect>
+      </examine>
+    </actions>
+  </object>
+  <object id="escudoUceda" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
+    <resources name="No name">
+      <asset type="image" uri="assets/image/EscudoFachada.png" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <actions>
+      <examine needsGoTo="no" keepDistance="0" not-effects="no">
+        <effect>
+          <activate flag="escudoRecuperado" guid="d15064b0-a194-4e66-88fb-3151cb7275f6" />
+          <condition />
+          <speak-player guid="eedb5e32-a194-476d-a7a5-c1b32df21c10">Aqui esta el escudo,el ladrón lo habia ocultado en la fuente para llevarselo luego</speak-player>
+          <condition />
+        </effect>
+      </examine>
+    </actions>
+  </object>
+  <object id="botonSalirCruzVerde" returnsWhenDragged="yes" behaviour="first-action" resources-transition-time="0">
+    <resources name="No name">
+      <asset type="image" uri="assets/image/botonAtras.png" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <actions>
+      <use needsGoTo="yes" keepDistance="35" not-effects="no">
+        <effect>
+          <trigger-scene idTarget="MapaJuego" x="325" y="324" transitionTime="0" transitionType="0" guid="2d776897-e868-486a-81a5-27ea8a153298" />
+          <condition />
+          <speak-char idTarget="Inigo" guid="c295a457-05ec-405a-ad7b-7a36a50592d5">Deberiamos avisar a la guardia del palacio</speak-char>
+          <condition />
+          <navigate navigation-type="Ordered" guid="064d2e89-a886-4278-a779-a10a68a08369">
+            <step locks="False">PalacioUceda</step>
+          </navigate>
+          <condition />
+          <remove-element idTarget="fotoCruzverde" guid="1f2c4495-2881-4a34-ad98-fc1b33a9c44f" />
+          <condition />
+        </effect>
+      </use>
+    </actions>
+  </object>
+  <object id="codice" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
+    <resources name="No name">
+      <asset type="image" uri="assets/image/pergamino.png" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <actions>
+      <examine needsGoTo="no" keepDistance="0" not-effects="no">
+        <effect>
+          <activate flag="codiceRecuperado" guid="7806e2f9-c3c9-45a5-86d4-64d1cca13e2e" />
+          <condition />
+          <speak-player guid="58a33c8c-fa0f-47f7-a06e-c68bfeb3de2e">Este es el codice del Duque de Lerma, valido de FelipeIII</speak-player>
+          <condition />
+          <speak-player guid="7086f3dc-86d7-43c2-a095-572231137521">Es una partitura con mucho valor, que se escuchaba en la corte del rey</speak-player>
+          <condition />
+        </effect>
+      </examine>
+    </actions>
+  </object>
+  <object id="MercadoSanMiguelItem" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
+    <resources name="No name">
+      <asset type="image" uri="assets/image/MercadoSanMiguel.jpg" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <actions>
+      <examine needsGoTo="no" keepDistance="0" not-effects="no">
+        <effect>
+          <trigger-scene idTarget="MercadoSanMiguelScene" x="363" y="369" transitionTime="0" transitionType="0" guid="f7982b5a-c9b0-44ac-a830-2321ebb02857" />
+          <condition />
+          <speak-char idTarget="Inigo" guid="61466ecb-a060-4518-960b-86738d629954">Esto esta muy concurrido, espero que no nos cueste mucho encontrar el códice, mira bien por los rincones</speak-char>
+          <condition />
+        </effect>
+      </examine>
+    </actions>
+  </object>
+  <object id="botonSalirMercadoSanMiguel" returnsWhenDragged="yes" behaviour="first-action" resources-transition-time="0">
+    <resources name="No name">
+      <asset type="image" uri="assets/image/botonAtras.png" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <actions>
+      <use needsGoTo="yes" keepDistance="35" not-effects="no">
+        <effect>
+          <trigger-scene idTarget="MapaJuego" x="325" y="324" transitionTime="0" transitionType="0" guid="1fa3b061-cda9-4f91-a414-9b08ad550d21" />
+          <condition />
+          <remove-element idTarget="MercadoSanMiguelItem" guid="8281fb91-3208-4ffe-a84d-b109fc17b3cb" />
+          <condition />
+          <speak-char idTarget="Guardia" guid="727441d8-68b9-4653-9d9e-2a7b81d0c4e7">Estupendo, nosotros nos encargaremos de devolverlo al señor, muchas gracias por vuestra ayuda.</speak-char>
+          <condition />
+          <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="c8123c56-1f4d-470e-90fc-ef52de087825">*Se van los dos*</show-text>
+          <condition />
+          <speak-char idTarget="Inigo" guid="61cccd14-18ae-4ac8-814d-0ea3c6cd8fab">Deberíamos seguir buscando al ladrón, salgamos del mercado.</speak-char>
+          <condition />
+        </effect>
+      </use>
+    </actions>
+  </object>
+  <object id="CodiceDesenrrollado" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
+    <resources name="No name">
+      <asset type="image" uri="assets/image/codex-lerma.png" />
       <asset type="icon" uri="assets/special/EmptyIcon.png" />
     </resources>
     <description>
@@ -1832,6 +2355,456 @@ Vamos Iñigo en marcha.</speak-player>
         <resources name="No name" />
         <text>*Es verdad, la estatua en esta época aún no existía. No fue hasta 1843 que se trasladó aquí, a la Plaza de Oriente.*</text>
       </speak-player>
+      <condition />
+      <child nodeindex="1" />
+    </dialogue-node>
+    <dialogue-node nodeindex="1" editor-x="708" editor-y="50">
+      <speak-player>
+        <resources name="No name" />
+        <text>Si no requiere mas de nuestros servicios, nos retiramos su majestad</text>
+      </speak-player>
+      <condition />
+      <speak-char idTarget="FelipeIV">
+        <resources name="No name" />
+        <text>Podeis retiraros</text>
+      </speak-char>
+      <condition />
+      <end-conversation />
+    </dialogue-node>
+  </graph-conversation>
+  <graph-conversation id="conversacionHaciaRamales">
+    <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
+      <speak-char idTarget="Inigo">
+        <resources name="No name" />
+        <text>Aquí muy cerca está la capilla a la que suelo ir. Podemos ir allí a echar un vistazo. </text>
+      </speak-char>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>¿Te apetece ir a verlo?</text>
+      </speak-player>
+      <condition />
+      <child nodeindex="1" />
+    </dialogue-node>
+    <option-node nodeindex="1" keepShowing="yes" preListening="yes" editor-x="575" editor-y="36" x="575" y="36">
+      <speak-player>
+        <text>Si, porque no, asi conozco un poco mas de la ciudad</text>
+        <resources name="No name" />
+      </speak-player>
+      <condition />
+      <child nodeindex="2" />
+      <speak-player>
+        <text>Me da lo mismo, como tu veas</text>
+        <resources name="No name" />
+      </speak-player>
+      <condition />
+      <child nodeindex="2" />
+      <speak-player>
+        <text>No, que tengo un poco de prisa</text>
+        <resources name="No name" />
+      </speak-player>
+      <condition />
+      <child nodeindex="3" />
+    </option-node>
+    <dialogue-node nodeindex="2" editor-x="1051" editor-y="23">
+      <speak-char idTarget="Inigo">
+        <resources name="No name" />
+        <text>Vale, pues vamos para allá</text>
+      </speak-char>
+      <condition />
+      <end-conversation>
+        <effect>
+          <navigate navigation-type="Ordered" guid="a07926f0-6a08-494f-8493-b6b6213a341f">
+            <step locks="False">PlazaRamales</step>
+          </navigate>
+          <condition />
+        </effect>
+      </end-conversation>
+    </dialogue-node>
+    <dialogue-node nodeindex="3" editor-x="1052" editor-y="279">
+      <speak-char idTarget="Inigo">
+        <resources name="No name" />
+        <text>Vamos, si te va a encantar y no vamos a tardar nada</text>
+      </speak-char>
+      <condition />
+      <end-conversation>
+        <effect>
+          <navigate navigation-type="Ordered" guid="07d71b79-9516-43f6-8164-21b1990512d7">
+            <step locks="False">PlazaRamales</step>
+          </navigate>
+          <condition />
+        </effect>
+      </end-conversation>
+    </dialogue-node>
+  </graph-conversation>
+  <graph-conversation id="ConversationEnRamales">
+    <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
+      <speak-player>
+        <resources name="No name" />
+        <text>La plaza de ramales, donde se enterró a Velazquez, un buen lugar para buscar </text>
+      </speak-player>
+      <condition />
+      <speak-char idTarget="Inigo">
+        <resources name="No name" />
+        <text>Ese tipo de allí tiene unas pintas un poco raras. </text>
+      </speak-char>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>Cierto. Espera un momento, lleva zapatos con suela moderna y ropas que no son de esta época. ¡Ese va a ser el ladrón! </text>
+      </speak-player>
+      <condition />
+      <speak-char idTarget="Inigo">
+        <resources name="No name" />
+        <text> Fijate si lleva algo enrollado a la espalda, es posible que sea el cuadro que buscamos. ¡Vayamos tras él! </text>
+      </speak-char>
+      <condition />
+      <end-conversation>
+        <effect>
+          <navigate navigation-type="Ordered" guid="5c515c9d-dbcc-466f-9b4f-f5bedc39ac71">
+            <step locks="False">PalacioUceda</step>
+          </navigate>
+          <condition />
+        </effect>
+      </end-conversation>
+    </dialogue-node>
+  </graph-conversation>
+  <graph-conversation id="ConversationPalaciodeUceda">
+    <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
+      <speak-player>
+        <resources name="No name" />
+        <text>Lo he perdido de vista </text>
+      </speak-player>
+      <condition />
+      <speak-char idTarget="Inigo">
+        <resources name="No name" />
+        <text>Yo tampoco lo veo </text>
+      </speak-char>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text> Busquemos por esta zona, igual sigue por aquí. </text>
+      </speak-player>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>Mira, el palacio de los duques de Uceda, hijo del valido del rey felipe III. Se finalizó en 1613 y  también es conocido como el Palacio de Consejos o Capitanería General. </text>
+      </speak-player>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text> Uhmm le falta algo a la fachada....</text>
+      </speak-player>
+      <condition />
+      <end-conversation />
+    </dialogue-node>
+  </graph-conversation>
+  <graph-conversation id="ConversationBuscarElEscudo">
+    <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
+      <speak-char idTarget="Inigo">
+        <resources name="No name" />
+        <text> El escudo es muy grande, no es fácil de ocultar. Por esta zona solo se me ocurren dos sitios donde poder esconder algo tan grande y pesado: La plaza de la Villa y la plaza de la Cruz Verde. </text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="Inigo">
+        <resources name="No name" />
+        <text>¿hacia donde quieres ir?</text>
+      </speak-char>
+      <condition />
+      <child nodeindex="1" />
+    </dialogue-node>
+    <option-node nodeindex="1" keepShowing="yes" preListening="yes" editor-x="446" editor-y="50" x="446" y="50">
+      <speak-player>
+        <text>Plaza de la villa</text>
+        <resources name="No name" />
+      </speak-player>
+      <condition />
+      <child nodeindex="2" />
+      <speak-player>
+        <text>Plaza de la Cruz Verde</text>
+        <resources name="No name" />
+      </speak-player>
+      <condition />
+      <child nodeindex="3" />
+    </option-node>
+    <dialogue-node nodeindex="2" editor-x="938" editor-y="16">
+      <speak-char idTarget="Inigo">
+        <resources name="No name" />
+        <text>Pues sigueme y te llevo al ayuntamiento</text>
+      </speak-char>
+      <condition />
+      <end-conversation>
+        <effect>
+          <navigate navigation-type="Ordered" guid="f64b51a4-ee3d-4c8e-9eb7-e71ff307c751">
+            <step locks="False">PlazaVilla</step>
+          </navigate>
+          <condition />
+        </effect>
+      </end-conversation>
+    </dialogue-node>
+    <dialogue-node nodeindex="3" editor-x="923" editor-y="291">
+      <speak-player>
+        <resources name="No name" />
+        <text>Pues sigueme y te llevo a la fuente, que no esta lejos</text>
+      </speak-player>
+      <condition />
+      <end-conversation>
+        <effect>
+          <navigate navigation-type="Ordered" guid="a2b0f912-2dc8-456e-909e-cbc4bfcaad06">
+            <step locks="False">CruzVerde</step>
+          </navigate>
+          <condition />
+        </effect>
+      </end-conversation>
+    </dialogue-node>
+  </graph-conversation>
+  <graph-conversation id="ConversationDuquedeUceda">
+    <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
+      <speak-char idTarget="DuqueDeUceda">
+        <resources name="No name" />
+        <text> ¡Oh! ¿vosotros sois los que habéis localizado el escudo de mi fachada?  </text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="Inigo">
+        <resources name="No name" />
+        <text>Si, no está muy lejos. Está en la fuente de la Plaza de la Cruz Verde </text>
+      </speak-char>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>No hemos podido cargar con el debido a su peso.</text>
+      </speak-player>
+      <condition />
+      <speak-char idTarget="DuqueDeUceda">
+        <resources name="No name" />
+        <text>No os preocupéis, ahora mandaré yo a mis guardias. </text>
+      </speak-char>
+      <condition />
+      <child nodeindex="1" />
+    </dialogue-node>
+    <dialogue-node nodeindex="1" editor-x="480" editor-y="69">
+      <speak-char idTarget="DuqueDeUceda">
+        <resources name="No name" />
+        <text>Sabiendo lo buenos que sois localizando cosas,¿podríais buscar el códice de mi padre, el duque de Lerma? </text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="DuqueDeUceda">
+        <resources name="No name" />
+        <text>Llevamos toda la mañana buscándolo y nadie lo encuentra, creemos que lo han robado. Mis guardias os acompañarán. </text>
+      </speak-char>
+      <condition />
+      <child nodeindex="2" />
+    </dialogue-node>
+    <dialogue-node nodeindex="2" editor-x="965" editor-y="69">
+      <speak-char idTarget="Inigo">
+        <resources name="No name" />
+        <text> Podemos ir a la plaza de la Villa, igual allí conseguimos información, ya que es una zona muy concurrida.</text>
+      </speak-char>
+      <condition>
+        <inactive flag="VisitadaPlazaVilla" />
+      </condition>
+      <speak-player>
+        <resources name="No name" />
+        <text>He escuchado en la plaza de la Villa que el ladrón fue visto por última vez en el Mercado de San Miguel. Vayamos ahí a investigar. </text>
+      </speak-player>
+      <condition>
+        <active flag="VisitadaPlazaVilla" />
+      </condition>
+      <end-conversation>
+        <effect>
+          <navigate navigation-type="Ordered" guid="1aa1c704-da06-49c4-ab7c-6e9b2bfcad89">
+            <step locks="False">SanMiguel</step>
+          </navigate>
+          <condition>
+            <active flag="VisitadaPlazaVilla" />
+          </condition>
+          <navigate navigation-type="Ordered" guid="fafe5bed-36d2-44cb-aba3-6baa1868a620">
+            <step locks="False">PlazaVilla</step>
+          </navigate>
+          <condition>
+            <inactive flag="VisitadaPlazaVilla" />
+          </condition>
+        </effect>
+      </end-conversation>
+    </dialogue-node>
+  </graph-conversation>
+  <graph-conversation id="ConversacionPlazaVilla">
+    <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
+      <speak-char idTarget="Inigo">
+        <resources name="No name" />
+        <text>No parece que el escudo esté por aquí. deberiamos mirar en la plaza de la Cruz Verde</text>
+      </speak-char>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>Espera, estoy escuchando a dos mujeres</text>
+      </speak-player>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>Dicen que han robado el códice de los duques de uceda.</text>
+      </speak-player>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>Que paso por el mercado esta mañana y vio a un tendero con pergaminos y partituras</text>
+      </speak-player>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>Pero parece que no saben nada del escudo</text>
+      </speak-player>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>Vámonos</text>
+      </speak-player>
+      <condition />
+      <end-conversation>
+        <effect>
+          <navigate navigation-type="Ordered" guid="7fb7e7f5-e166-4c56-8e24-d85017ffd4b6">
+            <step locks="False">CruzVerde</step>
+          </navigate>
+          <condition />
+          <activate flag="VisitadaPlazaVilla" guid="d8fbd871-fb90-4cb4-bbd2-aa7890d98887" />
+          <condition />
+        </effect>
+      </end-conversation>
+    </dialogue-node>
+  </graph-conversation>
+  <graph-conversation id="ConversationPlazaVilla2">
+    <dialogue-node nodeindex="0" editor-x="76" editor-y="38">
+      <speak-player>
+        <resources name="No name" />
+        <text>Estoy escuchando a dos mujeres hablar sobre el códice</text>
+      </speak-player>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>Dicen que se han enterado esta mañana de que lo han robado</text>
+      </speak-player>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>Y una de ellas afirma que cuando paso por el mercado de san Miguel esta mañana habia un tendero con pergaminos y partituras</text>
+      </speak-player>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>Podría tratarse del códice</text>
+      </speak-player>
+      <condition />
+      <speak-char idTarget="Inigo">
+        <resources name="No name" />
+        <text>Pues vamos para allá</text>
+      </speak-char>
+      <condition />
+      <end-conversation>
+        <effect>
+          <navigate navigation-type="Ordered" guid="3850cf3c-eed7-487a-ac6f-6cfddbe1edf7">
+            <step locks="False">SanMiguel</step>
+          </navigate>
+          <condition />
+        </effect>
+      </end-conversation>
+    </dialogue-node>
+  </graph-conversation>
+  <graph-conversation id="ConversacionPerseguirLadron">
+    <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
+      <speak-char idTarget="Inigo">
+        <resources name="No name" />
+        <text>Con tanta gente va a ser muy dificil distinguir a nadie por aqui</text>
+      </speak-char>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>¡Mira, fijate! alli al otro lado de la calle Mayor</text>
+      </speak-player>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>¿No es ese el ladrón al que hemos perseguido antes?</text>
+      </speak-player>
+      <condition />
+      <speak-char idTarget="Inigo">
+        <resources name="No name" />
+        <text>¡Si, es él!</text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="Inigo">
+        <resources name="No name" />
+        <text>Mierda,nos ha visto y ha hechado a correr</text>
+      </speak-char>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>tras el, no podemos perderle otra vez</text>
+      </speak-player>
+      <condition />
+      <end-conversation>
+        <effect>
+          <navigate navigation-type="Ordered" guid="5e4f2ff6-aa17-4b7e-ba81-db63eaeadac6">
+            <step locks="False">chocolateria</step>
+          </navigate>
+          <condition />
+        </effect>
+      </end-conversation>
+    </dialogue-node>
+  </graph-conversation>
+  <graph-conversation id="ConversacionLadron">
+    <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
+      <speak-player>
+        <resources name="No name" />
+        <text>Alto.</text>
+      </speak-player>
+      <condition />
+      <speak-char idTarget="Ladron">
+        <resources name="No name" />
+        <text>Ni en broma.</text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="Inigo">
+        <resources name="No name" />
+        <text>No tienes escapatoria, somos dos contra uno.</text>
+      </speak-char>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>Iñigo, coge el cuadro, yo me encargo de él, ahora vendrás conmigo. </text>
+      </speak-player>
+      <condition />
+      <speak-char idTarget="Ladron">
+        <resources name="No name" />
+        <text>¿Cómo me habéis atrapado?</text>
+      </speak-char>
+      <condition />
+      <child nodeindex="1" />
+    </dialogue-node>
+    <dialogue-node nodeindex="1" editor-x="755" editor-y="50">
+      <speak-player>
+        <resources name="No name" />
+        <text>Solo seguimos tu rastro, has sido demasiado ambicioso tratando de robar tantas cosas.</text>
+      </speak-player>
+      <condition />
+      <speak-char idTarget="Ladron">
+        <resources name="No name" />
+        <text>Yo solo quería hacer dinero vendiendo estos artículos en el presente. Por eso los iba robando y dejando escondidos para poder recuperarlos luego. </text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="Ladron">
+        <resources name="No name" />
+        <text>Pero no esperaba que vendrían del presente a por mi. </text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="Inigo">
+        <resources name="No name" />
+        <text>No se que dices del presente pero te hemos pillado y vas a pagar por ello</text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="Inigo">
+        <resources name="No name" />
+        <text> Lo mejor será llevar el cuadro a la Plaza mayor. </text>
+      </speak-char>
       <condition />
       <end-conversation />
     </dialogue-node>
