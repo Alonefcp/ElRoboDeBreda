@@ -7,21 +7,23 @@
 <entry key="Chapter0.Mapa.Y">17</entry>
 <entry key="Chapter0.Introduccion.X">117</entry>
 <entry key="Chapter0.Introduccion.Y">-27</entry>
-<entry key="Chapter0.ImagenPlazaMayor.X">-175</entry>
-<entry key="Chapter0.ImagenPlazaMayor.Y">203</entry>
+<entry key="Chapter0.ImagenPlazaMayor.X">-213</entry>
+<entry key="Chapter0.ImagenPlazaMayor.Y">227</entry>
 <entry key="Chapter0.MenuPrincipal.X">362</entry>
 <entry key="Chapter0.MenuPrincipal.Y">-4</entry>
-<entry key="Chapter0.escenaSol.X">-20</entry>
-<entry key="Chapter0.escenaSol.Y">205</entry>
-<entry key="Chapter0.ScenaSanGines.X">142</entry>
-<entry key="Chapter0.ScenaSanGines.Y">190</entry>
-<entry key="Chapter0.EscenaSanMartin.X">303</entry>
-<entry key="Chapter0.EscenaSanMartin.Y">170</entry>
+<entry key="Chapter0.escenaSol.X">-40</entry>
+<entry key="Chapter0.escenaSol.Y">238</entry>
+<entry key="Chapter0.ScenaSanGines.X">129</entry>
+<entry key="Chapter0.ScenaSanGines.Y">203</entry>
+<entry key="Chapter0.EscenaSanMartin.X">295</entry>
+<entry key="Chapter0.EscenaSanMartin.Y">183</entry>
 <entry key="Chapter0.PalaciodeUcedaScene.X">-161</entry>
 <entry key="Chapter0.PalaciodeUcedaScene.Y">8</entry>
-<entry key="Chapter0.PlazadeLaCruzVerdeScene.X">662</entry>
-<entry key="Chapter0.PlazadeLaCruzVerdeScene.Y">18</entry>
-<entry key="Chapter0.MercadoSanMiguelScene.X">618</entry>
-<entry key="Chapter0.MercadoSanMiguelScene.Y">170</entry>
+<entry key="Chapter0.PlazadeLaCruzVerdeScene.X">553</entry>
+<entry key="Chapter0.PlazadeLaCruzVerdeScene.Y">10</entry>
+<entry key="Chapter0.MercadoSanMiguelScene.X">568</entry>
+<entry key="Chapter0.MercadoSanMiguelScene.Y">226</entry>
+<entry key="Chapter0.EscenaCreditos.X">825</entry>
+<entry key="Chapter0.EscenaCreditos.Y">183</entry>
 </properties>
 

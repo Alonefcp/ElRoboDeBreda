@@ -142,35 +142,155 @@
     <voice name="" synthesizeAlways="no" />
     <actions>
       <talk-to needsGoTo="yes" keepDistance="35" not-effects="no">
-        <documentation>Created with target conversation: InicialInigo</documentation>
         <condition>
-          <equals var="InigoConversacion" value="0" />
+          <equals var="InigoRecordatorios" value="0" />
         </condition>
         <effect>
-          <trigger-conversation idTarget="InicialInigo" guid="a122da6b-0fc7-4cef-afa7-2dd394b107c4" />
+          <trigger-conversation idTarget="RecordatorioTaberna" guid="e349455e-f789-45bb-a541-e5bd352211aa" />
           <condition />
         </effect>
       </talk-to>
       <talk-to needsGoTo="yes" keepDistance="35" not-effects="no">
         <condition>
-          <equals var="InigoConversacion" value="2" />
+          <equals var="InigoRecordatorios" value="1" />
         </condition>
         <effect>
-          <trigger-conversation idTarget="AyudaConversacionSanGines" guid="58c40d37-2cae-4704-82b2-162af1575f80" />
+          <trigger-conversation idTarget="RecordatorioCarcel" guid="8a5aee01-230f-4752-800d-e993e75d3371" />
           <condition />
         </effect>
       </talk-to>
       <talk-to needsGoTo="yes" keepDistance="35" not-effects="no">
-        <documentation>Created with target conversation: conversacionHaciaRamales</documentation>
+        <condition>
+          <equals var="InigoRecordatorios" value="2" />
+        </condition>
         <effect>
-          <trigger-conversation idTarget="conversacionHaciaRamales" guid="d336a797-cc5c-4178-8595-9a8263120864" />
+          <trigger-conversation idTarget="RecordatorioSol" guid="5414f7f5-75d8-4c65-a807-b8374b5b6b91" />
           <condition />
         </effect>
       </talk-to>
       <talk-to needsGoTo="yes" keepDistance="35" not-effects="no">
-        <documentation>Created with target conversation: ConversationEnRamales</documentation>
+        <condition>
+          <equals var="InigoRecordatorios" value="3" />
+        </condition>
         <effect>
-          <trigger-conversation idTarget="ConversationEnRamales" guid="ab286e27-01fc-45bd-bf16-d4371c9e0679" />
+          <trigger-conversation idTarget="RecordatorioSanGines" guid="825aaaf4-71bb-4be1-acd8-fd002b21dd37" />
+          <condition />
+        </effect>
+      </talk-to>
+      <talk-to needsGoTo="yes" keepDistance="35" not-effects="no">
+        <condition>
+          <equals var="InigoRecordatorios" value="4" />
+        </condition>
+        <effect>
+          <trigger-conversation idTarget="RecordatorioFachadaSanGines" guid="84788e4a-3693-4b61-9767-2568842ded7d" />
+          <condition />
+        </effect>
+      </talk-to>
+      <talk-to needsGoTo="yes" keepDistance="35" not-effects="no">
+        <condition>
+          <equals var="InigoRecordatorios" value="5" />
+        </condition>
+        <effect>
+          <trigger-conversation idTarget="RecordatorioSanMartin" guid="f060a8d7-f913-45b2-94ca-ba42438f2968" />
+          <condition />
+        </effect>
+      </talk-to>
+      <talk-to needsGoTo="yes" keepDistance="35" not-effects="no">
+        <condition>
+          <equals var="InigoRecordatorios" value="6" />
+        </condition>
+        <effect>
+          <trigger-conversation idTarget="RecordatorioEstatuas" guid="ae9a6255-54c8-4046-937c-ea788974ad36" />
+          <condition />
+        </effect>
+      </talk-to>
+      <talk-to needsGoTo="yes" keepDistance="35" not-effects="no">
+        <condition>
+          <equals var="InigoRecordatorios" value="7" />
+        </condition>
+        <effect>
+          <trigger-conversation idTarget="RecordatorioDevolverEstatua" guid="3c634835-42cb-4ad5-8bf1-1e62b63adf22" />
+          <condition />
+        </effect>
+      </talk-to>
+      <talk-to needsGoTo="yes" keepDistance="35" not-effects="no">
+        <condition>
+          <equals var="InigoRecordatorios" value="8" />
+        </condition>
+        <effect>
+          <trigger-conversation idTarget="RecordatorioMonasterio" guid="7db61015-341a-45a1-b1b8-769d32515145" />
+          <condition />
+        </effect>
+      </talk-to>
+      <talk-to needsGoTo="yes" keepDistance="35" not-effects="no">
+        <condition>
+          <equals var="InigoRecordatorios" value="9" />
+        </condition>
+        <effect>
+          <trigger-conversation idTarget="RecordatorioPalacioReal" guid="b1afbed3-038f-41d3-aca7-b2b27f43b70e" />
+          <condition />
+        </effect>
+      </talk-to>
+      <talk-to needsGoTo="yes" keepDistance="35" not-effects="no">
+        <condition>
+          <equals var="InigoRecordatorios" value="10" />
+        </condition>
+        <effect>
+          <trigger-conversation idTarget="RecordatorioRamales" guid="c3fe284c-3a0c-423c-8439-b6836bd824c3" />
+          <condition />
+        </effect>
+      </talk-to>
+      <talk-to needsGoTo="yes" keepDistance="35" not-effects="no">
+        <condition>
+          <equals var="InigoRecordatorios" value="11" />
+        </condition>
+        <effect>
+          <trigger-conversation idTarget="RecordatorioPalacioUceda" guid="04cd925a-4e3c-4eed-aadf-5da25277a346" />
+          <condition />
+        </effect>
+      </talk-to>
+      <talk-to needsGoTo="yes" keepDistance="35" not-effects="no">
+        <condition>
+          <equals var="InigoRecordatorios" value="12" />
+        </condition>
+        <effect>
+          <trigger-conversation idTarget="RecordatorioPlazas" guid="b35873ea-f10c-4403-b393-7bcf2bb91f75" />
+          <condition />
+        </effect>
+      </talk-to>
+      <talk-to needsGoTo="yes" keepDistance="35" not-effects="no">
+        <condition>
+          <equals var="InigoRecordatorios" value="13" />
+        </condition>
+        <effect>
+          <trigger-conversation idTarget="RecordatorioPalacioDeUcedaTrasPlazas" guid="d5b2b355-afa1-4f0b-8c41-3babcb584e83" />
+          <condition />
+        </effect>
+      </talk-to>
+      <talk-to needsGoTo="yes" keepDistance="35" not-effects="no">
+        <condition>
+          <equals var="InigoRecordatorios" value="14" />
+        </condition>
+        <effect>
+          <trigger-conversation idTarget="RecordatorioSanMiguel" guid="d3236c52-69a9-4381-9abf-8feb1654d482" />
+          <condition />
+        </effect>
+      </talk-to>
+      <talk-to needsGoTo="yes" keepDistance="35" not-effects="no">
+        <condition>
+          <equals var="InigoRecordatorios" value="15" />
+        </condition>
+        <effect>
+          <trigger-conversation idTarget="RecordatorioChocolateria" guid="829eef3b-bbac-44c0-9440-5c0972da231c" />
+          <condition />
+        </effect>
+      </talk-to>
+      <talk-to needsGoTo="yes" keepDistance="35" not-effects="no">
+        <condition>
+          <equals var="InigoRecordatorios" value="16" />
+        </condition>
+        <effect>
+          <trigger-conversation idTarget="RecordatorioPlazaMayorFinal" guid="99a8e163-e43b-4e43-b9b0-8a2be3f15b6e" />
           <condition />
         </effect>
       </talk-to>
@@ -178,10 +298,10 @@
   </character>
   <character id="Ladron" behaviour="normal">
     <resources name="No name">
-      <asset type="standup" uri="assets/special/EmptyAnimation" />
-      <asset type="standdown" uri="assets/special/EmptyAnimation" />
-      <asset type="standright" uri="assets/special/EmptyAnimation" />
-      <asset type="standleft" uri="assets/special/EmptyAnimation" />
+      <asset type="standup" uri="assets/animation/LadronAnim.eaa.xml" />
+      <asset type="standdown" uri="assets/animation/LadronAnim.eaa.xml" />
+      <asset type="standright" uri="assets/animation/LadronAnim.eaa.xml" />
+      <asset type="standleft" uri="assets/animation/LadronAnim.eaa.xml" />
       <asset type="speakup" uri="assets/special/EmptyAnimation" />
       <asset type="speakdown" uri="assets/special/EmptyAnimation" />
       <asset type="speakright" uri="assets/special/EmptyAnimation" />
@@ -366,37 +486,6 @@
       </talk-to>
     </actions>
   </character>
-  <character id="Velazquez" behaviour="normal">
-    <resources name="No name">
-      <asset type="standup" uri="assets/special/EmptyAnimation" />
-      <asset type="standdown" uri="assets/special/EmptyAnimation" />
-      <asset type="standright" uri="assets/special/EmptyAnimation" />
-      <asset type="standleft" uri="assets/special/EmptyAnimation" />
-      <asset type="speakup" uri="assets/special/EmptyAnimation" />
-      <asset type="speakdown" uri="assets/special/EmptyAnimation" />
-      <asset type="speakright" uri="assets/special/EmptyAnimation" />
-      <asset type="speakleft" uri="assets/special/EmptyAnimation" />
-      <asset type="useright" uri="assets/special/EmptyAnimation" />
-      <asset type="useleft" uri="assets/special/EmptyAnimation" />
-      <asset type="walkup" uri="assets/special/EmptyAnimation" />
-      <asset type="walkdown" uri="assets/special/EmptyAnimation" />
-      <asset type="walkright" uri="assets/special/EmptyAnimation" />
-      <asset type="walkleft" uri="assets/special/EmptyAnimation" />
-    </resources>
-    <textcolor showsSpeechBubble="no" bubbleBkgColor="#FFFFFF" bubbleBorderColor="#000000">
-      <frontcolor color="#FFFFFF" />
-      <bordercolor color="#000000" />
-    </textcolor>
-    <description>
-      <name>
-      </name>
-      <brief>
-      </brief>
-      <detailed>
-      </detailed>
-    </description>
-    <voice name="" synthesizeAlways="no" />
-  </character>
   <character id="FelipeIV" behaviour="normal">
     <resources name="No name">
       <asset type="standup" uri="assets/animation/FelipeIVAnim.eaa.xml" />
@@ -437,6 +526,37 @@
       </talk-to>
     </actions>
   </character>
+  <character id="Velazquez" behaviour="normal">
+    <resources name="No name">
+      <asset type="standup" uri="assets/animation/VelazquezAnim.eaa.xml" />
+      <asset type="standdown" uri="assets/animation/VelazquezAnim.eaa.xml" />
+      <asset type="standright" uri="assets/animation/VelazquezAnim.eaa.xml" />
+      <asset type="standleft" uri="assets/animation/VelazquezAnim.eaa.xml" />
+      <asset type="speakup" uri="assets/special/EmptyAnimation" />
+      <asset type="speakdown" uri="assets/special/EmptyAnimation" />
+      <asset type="speakright" uri="assets/special/EmptyAnimation" />
+      <asset type="speakleft" uri="assets/special/EmptyAnimation" />
+      <asset type="useright" uri="assets/special/EmptyAnimation" />
+      <asset type="useleft" uri="assets/special/EmptyAnimation" />
+      <asset type="walkup" uri="assets/special/EmptyAnimation" />
+      <asset type="walkdown" uri="assets/special/EmptyAnimation" />
+      <asset type="walkright" uri="assets/special/EmptyAnimation" />
+      <asset type="walkleft" uri="assets/special/EmptyAnimation" />
+    </resources>
+    <textcolor showsSpeechBubble="yes" bubbleBkgColor="#FF7F00" bubbleBorderColor="#000000">
+      <frontcolor color="#FFFFFF" />
+      <bordercolor color="#000000" />
+    </textcolor>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <voice name="" synthesizeAlways="no" />
+  </character>
   <character id="Guardia" behaviour="normal">
     <resources name="No name">
       <asset type="standup" uri="assets/animation/GuardiaAnim.eaa.xml" />
@@ -468,7 +588,7 @@
     </description>
     <voice name="" synthesizeAlways="no" />
   </character>
-  <scene id="MenuPrincipal" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="yes" playerLayer="-1" playerScale="1" class="accesible" type="area">
+  <scene id="MenuPrincipal" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
     <documentation>
     </documentation>
     <resources name="No name">
@@ -478,12 +598,12 @@
     </name>
     <default-initial-position x="400" y="450" />
     <exits>
-      <exit rectangular="yes" x="263" y="288" width="100" height="100" hasInfluenceArea="no" idTarget="Introduccion" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
+      <exit rectangular="yes" x="364" y="503" width="345" height="103" hasInfluenceArea="no" idTarget="Introduccion" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
         <exit-look text="" cursor-path="" sound-path="" />
       </exit>
     </exits>
   </scene>
-  <scene id="Introduccion" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
+  <scene id="Introduccion" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="yes" playerLayer="-1" playerScale="1" class="accesible" type="area">
     <documentation>
     </documentation>
     <resources name="No name">
@@ -493,7 +613,7 @@
     </name>
     <default-initial-position x="400" y="450" />
     <exits>
-      <exit rectangular="yes" x="257" y="1" width="477" height="556" hasInfluenceArea="no" idTarget="MapaJuego" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
+      <exit rectangular="yes" x="71" y="13" width="445" height="540" hasInfluenceArea="no" idTarget="MapaJuego" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
         <exit-look text="" cursor-path="" sound-path="" />
         <effect>
           <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="4ed4abe1-d3bb-44e4-95cf-81fbf9d5393d">Buenas tardes, nos acaban de informar de que ha desaparecido del Museo del Prado, el cuadro "La Rendición de Breda" de Velázquez.</show-text>
@@ -509,9 +629,16 @@ Confiamos en ti, agente.</show-text>
           <condition />
           <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="becf7590-81dc-4fd9-883b-c47fd00961f1">Para empezar dirigete hacia la Plaza Mayor. Es el mejor lugar para comenzar la búsqueda.</show-text>
           <condition />
+          <navigate navigation-type="Ordered" guid="57df3d80-027a-4f57-851e-802652339467">
+            <step locks="False">PlazaMayor</step>
+          </navigate>
+          <condition />
         </effect>
       </exit>
     </exits>
+    <objects>
+      <object-ref idTarget="ImagenBreda" x="748" y="399" scale="0.3449871" glow="no" layer="0" hasInfluenceArea="no" />
+    </objects>
   </scene>
   <scene id="ImagenPlazaMayor" hideInventory="no" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
     <documentation>
@@ -626,8 +753,8 @@ Confiamos en ti, agente.</show-text>
       <object-ref idTarget="Estatua3" x="532" y="667" scale="0.2331693" glow="no" layer="0" hasInfluenceArea="no" />
     </objects>
     <characters>
-      <character-ref idTarget="Mercader" x="716" y="687" scale="0.4078919" orientation="2" glow="no" layer="4" hasInfluenceArea="no" />
-      <character-ref idTarget="Inigo" x="926" y="878" scale="2.122508" orientation="2" glow="no" layer="3" hasInfluenceArea="no" />
+      <character-ref idTarget="Mercader" x="711" y="681" scale="0.4078919" orientation="2" glow="no" layer="4" hasInfluenceArea="no" />
+      <character-ref idTarget="Inigo" x="927" y="836" scale="2.122508" orientation="2" glow="no" layer="3" hasInfluenceArea="no" />
     </characters>
   </scene>
   <scene id="PalaciodeUcedaScene" hideInventory="no" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
@@ -714,7 +841,17 @@ Confiamos en ti, agente.</show-text>
       </object-ref>
     </objects>
   </scene>
-  <map-scene id="MapaJuego" cameraType="Aerial2D" renderStyle="Tile" tileMetaIdentifier="OSMTile" usesGameplayArea="yes" gameplayArea="40.4125729710596 -3.71781527995988 0.00793969609117084 0.0171661376952987" center="(40.4165890465576, -3.70711053609963)" zoom="19" start="no">
+  <scene id="EscenaCreditos" hideInventory="no" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
+    <documentation>
+    </documentation>
+    <resources name="No name">
+      <asset type="background" uri="assets/special/EmptyBackground.png" />
+    </resources>
+    <name>
+    </name>
+    <default-initial-position x="400" y="450" />
+  </scene>
+  <map-scene id="MapaJuego" cameraType="Aerial2D" renderStyle="Tile" tileMetaIdentifier="OSMTile" usesGameplayArea="yes" gameplayArea="40.4125729710596 -3.71781527995988 0.00793969609117084 0.0171661376952987" center="(40.4153658166336, -3.70632464885829)" zoom="19" start="no">
     <map-element targetId="Foto" layer="0">
       <condition />
       <ext-elem-ref scale="0.2661203" orientation="2" transformManager="uAdventure.Geo.GeopositionedDescriptor">
@@ -752,7 +889,9 @@ Confiamos en ti, agente.</show-text>
       </ext-elem-ref>
     </map-element>
     <map-element targetId="Inigo" layer="0">
-      <condition />
+      <condition>
+        <active flag="FotoConsultada" />
+      </condition>
       <ext-elem-ref scale="2.1" orientation="2" transformManager="uAdventure.Geo.ScreenDescriptor">
         <param name="Position">(61.52798, 775.316)</param>
         <param name="Rotation">0</param>
@@ -776,10 +915,10 @@ Confiamos en ti, agente.</show-text>
         <active flag="EstatuaRecuperada" />
       </condition>
       <ext-elem-ref scale="0.388689" orientation="2" transformManager="uAdventure.Geo.GeopositionedDescriptor">
-        <param name="Position">(40.4181289672852, -3.70652842521667)</param>
+        <param name="Position">(40.4177703857422, -3.70700192451477)</param>
         <param name="Rotation">0</param>
-        <param name="InteractionRange">53.24</param>
-        <param name="RevealOnlyOnRange">True</param>
+        <param name="InteractionRange">39.46</param>
+        <param name="RevealOnlyOnRange">False</param>
         <param name="Hint">False</param>
         <param name="RevealParticleTexture">leaf_particle.png</param>
         <actions />
@@ -903,6 +1042,16 @@ Confiamos en ti, agente.</show-text>
         <actions />
       </ext-elem-ref>
     </map-element>
+    <map-element targetId="Velazquez" layer="0">
+      <condition>
+        <active flag="apareceVelazquez" />
+      </condition>
+      <ext-elem-ref scale="0.3020757" orientation="2" transformManager="uAdventure.Geo.ScreenDescriptor">
+        <param name="Position">(732.4224, 594.7845)</param>
+        <param name="Rotation">0</param>
+        <actions />
+      </ext-elem-ref>
+    </map-element>
     <map-element targetId="Guardia" layer="0">
       <condition>
         <active flag="codiceRecuperado" />
@@ -922,15 +1071,18 @@ Confiamos en ti, agente.</show-text>
     </map-element>
     <map-element targetId="Ladron" layer="0">
       <condition />
-      <ext-elem-ref scale="1" orientation="2" transformManager="uAdventure.Geo.GeopositionedDescriptor">
-        <param name="Position">(40.4167213439941, -3.70698189735413)</param>
+      <ext-elem-ref scale="1.019568" orientation="2" transformManager="uAdventure.Geo.GeopositionedDescriptor">
+        <param name="Position">(40.4167098999023, -3.70693349838257)</param>
         <param name="Rotation">0</param>
-        <param name="InteractionRange">25</param>
+        <param name="InteractionRange">8.94</param>
         <param name="RevealOnlyOnRange">True</param>
         <param name="Hint">False</param>
         <param name="RevealParticleTexture">leaf_particle.png</param>
         <actions />
       </ext-elem-ref>
+    </map-element>
+    <map-element targetId="PlazaMayor" layer="0">
+      <condition />
     </map-element>
   </map-scene>
   <geo-element id="PlazaMayor">
@@ -1020,7 +1172,7 @@ Confiamos en ti, agente.</show-text>
         <Polygon>
           <exterior>
             <LinearRing>
-              <posList>40.4169079605438 -3.70442832708344 40.4167139615407 -3.70438809394823 40.4166935405605 -3.70465095043168 40.4168834554063 -3.70468581914888</posList>
+              <posList>40.4169100026389 -3.70442832708344 40.4167160036358 -3.70438809394823 40.4166955826556 -3.70465095043168 40.4168854975014 -3.70468581914888</posList>
             </LinearRing>
           </exterior>
         </Polygon>
@@ -1097,9 +1249,20 @@ Confiamos en ti, agente.</show-text>
           <condition />
           <speak-char idTarget="Inigo" guid="1f3e2978-f33a-4be8-aec6-106d82202d02">Mira, este mercader vende estatuas. Echales un buen vistazo.</speak-char>
           <condition />
+          <increment var="InigoRecordatorios" value="1" guid="76d149ba-c146-4d72-8738-6c8133e873f4" />
+          <condition />
         </effect>
         <only-from-outside>True</only-from-outside>
       </enter-action>
+      <exit-action>
+        <effect>
+          <activate flag="EstatuaRecuperada" guid="119c0237-732b-4d7b-9553-c6f781f9ee23" />
+          <condition />
+          <trigger-conversation idTarget="ConversacionMonja" guid="079cb45b-26c0-4b67-b4af-628d9be3e0d5" />
+          <condition />
+        </effect>
+        <only-from-inside>True</only-from-inside>
+      </exit-action>
     </actions>
   </geo-element>
   <geo-element id="PalacioReal">
@@ -1313,7 +1476,19 @@ Confiamos en ti, agente.</show-text>
         </Polygon>
       </geometry>
     </geometries>
-    <actions />
+    <actions>
+      <enter-action>
+        <effect>
+          <activate flag="apareceVelazquez" guid="73ee2e8e-0706-405f-9901-91597dadd59d" />
+          <condition>
+            <active flag="cuadroRecuprado" />
+          </condition>
+          <trigger-conversation idTarget="ConversacionFinal" guid="3c9f588c-0be2-4127-9d48-4d2a35611bc8" />
+          <condition />
+        </effect>
+        <only-from-outside>True</only-from-outside>
+      </enter-action>
+    </actions>
   </geo-element>
   <geo-element id="MonasterioDescalzas">
     <description>
@@ -1450,6 +1625,8 @@ Vamos Iñigo en marcha.</speak-player>
             <step locks="False">SanGines</step>
           </navigate>
           <condition />
+          <increment var="InigoRecordatorios" value="1" guid="f89c048f-31b1-4586-a721-3e869862873b" />
+          <condition />
         </effect>
       </examine>
     </actions>
@@ -1497,6 +1674,8 @@ Vamos Iñigo en marcha.</speak-player>
         <effect>
           <trigger-scene idTarget="ScenaSanGines" x="208" y="384" transitionTime="0" transitionType="0" guid="6a468b2e-eae6-45dd-b54c-113afc2b0a0a" />
           <condition />
+          <increment var="InigoRecordatorios" value="1" guid="6f5a2d2d-83cc-43ca-8de1-1aff54830943" />
+          <condition />
         </effect>
       </examine>
     </actions>
@@ -1528,7 +1707,7 @@ Vamos Iñigo en marcha.</speak-player>
             <step locks="False">PlazaSanMartin</step>
           </navigate>
           <condition />
-          <increment var="InigoConversacion" value="1" guid="3e7ee33b-c3c1-450f-849a-190fb7937327" />
+          <increment var="InigoRecordatorios" value="1" guid="7db22e59-fecf-4134-9664-6ad4dffdb3c8" />
           <condition />
         </effect>
       </use>
@@ -1696,6 +1875,8 @@ Vamos Iñigo en marcha.</speak-player>
           <condition />
           <remove-element idTarget="fotoCruzverde" guid="1f2c4495-2881-4a34-ad98-fc1b33a9c44f" />
           <condition />
+          <increment var="InigoRecordatorios" value="1" guid="5e7e74c0-ac4d-4d62-836e-094f1a347960" />
+          <condition />
         </effect>
       </use>
     </actions>
@@ -1794,6 +1975,20 @@ Vamos Iñigo en marcha.</speak-player>
       </detailed>
     </description>
   </object>
+  <object id="ImagenBreda" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
+    <resources name="No name">
+      <asset type="image" uri="assets/image/RendicionBreda.png" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+  </object>
   <graph-conversation id="ConversacionCaridad">
     <dialogue-node nodeindex="0" editor-x="33" editor-y="62">
       <speak-char idTarget="Caridad">
@@ -1854,6 +2049,8 @@ Vamos Iñigo en marcha.</speak-player>
           <navigate navigation-type="Ordered" guid="6ad63e49-2f24-4cd0-80c7-3f8d5924ad96">
             <step locks="False">Carcel</step>
           </navigate>
+          <condition />
+          <increment var="InigoRecordatorios" value="1" guid="62cefd6e-fab1-4bd3-b880-da5471627fbc" />
           <condition />
         </effect>
       </end-conversation>
@@ -1936,8 +2133,6 @@ Vamos Iñigo en marcha.</speak-player>
           <navigate navigation-type="Ordered" guid="8d487e45-6ee3-4f26-919c-533485329926">
             <step locks="False">Taberna</step>
           </navigate>
-          <condition />
-          <increment var="InigoConversacion" value="1" guid="e3df0e29-6128-43fd-b4ea-ff23c5e61b32" />
           <condition />
         </effect>
       </end-conversation>
@@ -2039,6 +2234,8 @@ Vamos Iñigo en marcha.</speak-player>
             <step locks="False">Sol</step>
           </navigate>
           <condition />
+          <increment var="InigoRecordatorios" value="1" guid="36244f90-b594-4920-ac36-f51f9c4639db" />
+          <condition />
         </effect>
       </end-conversation>
     </dialogue-node>
@@ -2055,12 +2252,7 @@ Vamos Iñigo en marcha.</speak-player>
         <text>¡Mira! ese tipo salió corriendo al vernos, no he visto por donde ha ido.</text>
       </speak-char>
       <condition />
-      <end-conversation>
-        <effect>
-          <increment var="InigoConversacion" value="1" guid="d90064ef-5798-4f4b-a24d-f17de3b944a2" />
-          <condition />
-        </effect>
-      </end-conversation>
+      <end-conversation />
     </dialogue-node>
   </graph-conversation>
   <graph-conversation id="ConversacionSanGines">
@@ -2165,6 +2357,8 @@ Vamos Iñigo en marcha.</speak-player>
           <condition />
           <activate flag="HabladoConMonja" guid="bcc9f5ee-49df-4d0f-8b04-4a9448f02de2" />
           <condition />
+          <increment var="InigoRecordatorios" value="1" guid="e61beafd-d659-4ae5-b6e7-f60352710418" />
+          <condition />
         </effect>
       </end-conversation>
     </dialogue-node>
@@ -2229,6 +2423,8 @@ Vamos Iñigo en marcha.</speak-player>
           <navigate navigation-type="Ordered" guid="2af82cc8-6c3c-42bf-9156-bcfac581294e">
             <step locks="False">PalacioReal</step>
           </navigate>
+          <condition />
+          <increment var="InigoRecordatorios" value="1" guid="6781b319-c48e-4a3e-9f63-0e0a1694051a" />
           <condition />
         </effect>
       </end-conversation>
@@ -2295,9 +2491,7 @@ Vamos Iñigo en marcha.</speak-player>
         <effect>
           <trigger-scene idTarget="MapaJuego" x="325" y="324" transitionTime="0" transitionType="0" guid="c00fda26-0795-42f6-bbb3-709a65c3bb54" />
           <condition />
-          <activate flag="EstatuaRecuperada" guid="7bac8ae8-0505-4620-80ed-189d98ea1be7" />
-          <condition />
-          <trigger-conversation idTarget="ConversacionMonja" guid="4135005d-24e4-44b8-bf08-79c5e7ee274f" />
+          <increment var="InigoRecordatorios" value="1" guid="f651c954-8b6b-480a-b29c-bc67ebe50950" />
           <condition />
         </effect>
       </end-conversation>
@@ -2418,6 +2612,8 @@ Vamos Iñigo en marcha.</speak-player>
             <step locks="False">PlazaRamales</step>
           </navigate>
           <condition />
+          <increment var="InigoRecordatorios" value="1" guid="85604ee2-0397-4260-8508-a9c21f209b5e" />
+          <condition />
         </effect>
       </end-conversation>
     </dialogue-node>
@@ -2432,6 +2628,8 @@ Vamos Iñigo en marcha.</speak-player>
           <navigate navigation-type="Ordered" guid="07d71b79-9516-43f6-8164-21b1990512d7">
             <step locks="False">PlazaRamales</step>
           </navigate>
+          <condition />
+          <increment var="InigoRecordatorios" value="1" guid="2b7972fe-3ef3-4374-9f43-b1173d84ff0c" />
           <condition />
         </effect>
       </end-conversation>
@@ -2464,6 +2662,8 @@ Vamos Iñigo en marcha.</speak-player>
           <navigate navigation-type="Ordered" guid="5c515c9d-dbcc-466f-9b4f-f5bedc39ac71">
             <step locks="False">PalacioUceda</step>
           </navigate>
+          <condition />
+          <increment var="InigoRecordatorios" value="1" guid="9cbd77df-4dfc-4316-a17d-cdcd7483d557" />
           <condition />
         </effect>
       </end-conversation>
@@ -2539,6 +2739,8 @@ Vamos Iñigo en marcha.</speak-player>
             <step locks="False">PlazaVilla</step>
           </navigate>
           <condition />
+          <increment var="InigoRecordatorios" value="1" guid="f93d44d6-de8c-4989-b0d8-dee3d4f25f70" />
+          <condition />
         </effect>
       </end-conversation>
     </dialogue-node>
@@ -2553,6 +2755,8 @@ Vamos Iñigo en marcha.</speak-player>
           <navigate navigation-type="Ordered" guid="a2b0f912-2dc8-456e-909e-cbc4bfcaad06">
             <step locks="False">CruzVerde</step>
           </navigate>
+          <condition />
+          <increment var="InigoRecordatorios" value="2" guid="38ac9375-cf93-4d30-9f28-ef33fabfebdf" />
           <condition />
         </effect>
       </end-conversation>
@@ -2624,6 +2828,8 @@ Vamos Iñigo en marcha.</speak-player>
           <condition>
             <inactive flag="VisitadaPlazaVilla" />
           </condition>
+          <increment var="InigoRecordatorios" value="1" guid="5615cd0d-0e7f-41fb-9b28-515bfe4a725c" />
+          <condition />
         </effect>
       </end-conversation>
     </dialogue-node>
@@ -2637,7 +2843,7 @@ Vamos Iñigo en marcha.</speak-player>
       <condition />
       <speak-player>
         <resources name="No name" />
-        <text>Espera, estoy escuchando a dos mujeres</text>
+        <text>Espera, estoy escuchando a dos mujeres.</text>
       </speak-player>
       <condition />
       <speak-player>
@@ -2676,27 +2882,27 @@ Vamos Iñigo en marcha.</speak-player>
     <dialogue-node nodeindex="0" editor-x="76" editor-y="38">
       <speak-player>
         <resources name="No name" />
-        <text>Estoy escuchando a dos mujeres hablar sobre el códice</text>
+        <text>Estoy escuchando a dos mujeres hablar sobre el códice.</text>
       </speak-player>
       <condition />
       <speak-player>
         <resources name="No name" />
-        <text>Dicen que se han enterado esta mañana de que lo han robado</text>
+        <text>Dicen que se han enterado esta mañana de que lo han robado.</text>
       </speak-player>
       <condition />
       <speak-player>
         <resources name="No name" />
-        <text>Y una de ellas afirma que cuando paso por el mercado de san Miguel esta mañana habia un tendero con pergaminos y partituras</text>
+        <text>Y una de ellas afirma que cuando paso por el mercado de san Miguel esta mañana habia un tendero con pergaminos y partituras.</text>
       </speak-player>
       <condition />
       <speak-player>
         <resources name="No name" />
-        <text>Podría tratarse del códice</text>
+        <text>Podría tratarse del códice.</text>
       </speak-player>
       <condition />
       <speak-char idTarget="Inigo">
         <resources name="No name" />
-        <text>Pues vamos para allá</text>
+        <text>Pues vamos para allá.</text>
       </speak-char>
       <condition />
       <end-conversation>
@@ -2746,6 +2952,8 @@ Vamos Iñigo en marcha.</speak-player>
           <navigate navigation-type="Ordered" guid="5e4f2ff6-aa17-4b7e-ba81-db63eaeadac6">
             <step locks="False">chocolateria</step>
           </navigate>
+          <condition />
+          <increment var="InigoRecordatorios" value="1" guid="e0cf2291-5292-4219-a42a-61763fbaaf85" />
           <condition />
         </effect>
       </end-conversation>
@@ -2804,6 +3012,240 @@ Vamos Iñigo en marcha.</speak-player>
       <speak-char idTarget="Inigo">
         <resources name="No name" />
         <text> Lo mejor será llevar el cuadro a la Plaza mayor. </text>
+      </speak-char>
+      <condition />
+      <end-conversation>
+        <effect>
+          <activate flag="cuadroRecuprado" guid="aa0c7bcd-c2bd-4d03-b18f-8d9863e25f95" />
+          <condition />
+          <navigate navigation-type="Ordered" guid="2005ca9b-4d93-4633-b38c-c677faf1b830">
+            <step locks="False">Fin-PlazaMayor</step>
+          </navigate>
+          <condition />
+          <increment var="InigoRecordatorios" value="1" guid="181398d1-c747-4cf6-8f2a-cc4e582b3d5d" />
+          <condition />
+        </effect>
+      </end-conversation>
+    </dialogue-node>
+  </graph-conversation>
+  <graph-conversation id="ConversacionFinal">
+    <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
+      <speak-char idTarget="Inigo">
+        <resources name="No name" />
+        <text>Velázquez, señor, aquí traigo su cuadro. </text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="Velazquez">
+        <resources name="No name" />
+        <text>Madre mia, menos mal que lo habéis recuperado, aquí tenéis vuestra recompensa.</text>
+      </speak-char>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>Muchas gracias señor, es usted muy generoso. </text>
+      </speak-player>
+      <condition />
+      <speak-char idTarget="Velazquez">
+        <resources name="No name" />
+        <text>¿Y que vais a hacer con este delincuente?.</text>
+      </speak-char>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>Por él no se preocupe señor, yo me encargaré de que reciba su merecido.</text>
+      </speak-player>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>Íñigo, amigo mío, es hora de despedirnos.</text>
+      </speak-player>
+      <condition />
+      <child nodeindex="1" />
+    </dialogue-node>
+    <dialogue-node nodeindex="1" editor-x="646" editor-y="89">
+      <speak-char idTarget="Inigo">
+        <resources name="No name" />
+        <text>Fue un placer, ve a llevarle al calabozo y luego nos vemos en la taberna. </text>
+      </speak-char>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>Claro… Luego voy…</text>
+      </speak-player>
+      <condition />
+      <end-conversation>
+        <effect>
+          <trigger-scene idTarget="EscenaCreditos" x="400" y="450" transitionTime="0" transitionType="0" guid="10bde964-3b1b-413f-b84a-c02e48a31ab7" />
+          <condition />
+        </effect>
+      </end-conversation>
+    </dialogue-node>
+  </graph-conversation>
+  <graph-conversation id="RecordatorioTaberna">
+    <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
+      <speak-char idTarget="Inigo">
+        <resources name="No name" />
+        <text>Recuerda que tenemos que ir a la taberna de la Lebrijana.</text>
+      </speak-char>
+      <condition />
+      <end-conversation />
+    </dialogue-node>
+  </graph-conversation>
+  <graph-conversation id="RecordatorioCarcel">
+    <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
+      <speak-char idTarget="Inigo">
+        <resources name="No name" />
+        <text>Vayamos a la cárcel.</text>
+      </speak-char>
+      <condition />
+      <end-conversation />
+    </dialogue-node>
+  </graph-conversation>
+  <graph-conversation id="RecordatorioSol">
+    <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
+      <speak-char idTarget="Inigo">
+        <resources name="No name" />
+        <text>¡Rapido! Tenemos que llegar a sol. A ver si coseguimos ver al ladrón.</text>
+      </speak-char>
+      <condition />
+      <end-conversation />
+    </dialogue-node>
+  </graph-conversation>
+  <graph-conversation id="RecordatorioSanGines">
+    <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
+      <speak-char idTarget="Inigo">
+        <resources name="No name" />
+        <text>Vayamos a hacia la Iglesia de San Ginés.</text>
+      </speak-char>
+      <condition />
+      <end-conversation />
+    </dialogue-node>
+  </graph-conversation>
+  <graph-conversation id="RecordatorioSanMartin">
+    <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
+      <speak-char idTarget="Inigo">
+        <resources name="No name" />
+        <text>Vayamos al mercado de San Martin, a ver si encontramos la estatua.</text>
+      </speak-char>
+      <condition />
+      <end-conversation />
+    </dialogue-node>
+  </graph-conversation>
+  <graph-conversation id="RecordatorioMonasterio">
+    <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
+      <speak-char idTarget="Inigo">
+        <resources name="No name" />
+        <text>Vamos apresurémonos a ver que necesitan las monjas.</text>
+      </speak-char>
+      <condition />
+      <end-conversation />
+    </dialogue-node>
+  </graph-conversation>
+  <graph-conversation id="RecordatorioPalacioReal">
+    <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
+      <speak-char idTarget="Inigo">
+        <resources name="No name" />
+        <text>Será mejor que vayamos al Palacio Real.</text>
+      </speak-char>
+      <condition />
+      <end-conversation />
+    </dialogue-node>
+  </graph-conversation>
+  <graph-conversation id="RecordatorioRamales">
+    <dialogue-node nodeindex="0" editor-x="122" editor-y="109">
+      <speak-char idTarget="Inigo">
+        <resources name="No name" />
+        <text>¡Venga! vayamos a la paza de Ramales.</text>
+      </speak-char>
+      <condition />
+      <end-conversation />
+    </dialogue-node>
+  </graph-conversation>
+  <graph-conversation id="RecordatorioDevolverEstatua">
+    <dialogue-node nodeindex="0" editor-x="127" editor-y="43">
+      <speak-char idTarget="Inigo">
+        <resources name="No name" />
+        <text>Dirigámonos a la iglesia de San Ginés para devolver la estatua.</text>
+      </speak-char>
+      <condition />
+      <end-conversation />
+    </dialogue-node>
+  </graph-conversation>
+  <graph-conversation id="RecordatorioFachadaSanGines">
+    <dialogue-node nodeindex="0" editor-x="157" editor-y="56">
+      <speak-char idTarget="Inigo">
+        <resources name="No name" />
+        <text>Mira bien la fachada, igual falta algo.</text>
+      </speak-char>
+      <condition />
+      <end-conversation />
+    </dialogue-node>
+  </graph-conversation>
+  <graph-conversation id="RecordatorioPalacioUceda">
+    <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
+      <speak-char idTarget="Inigo">
+        <resources name="No name" />
+        <text>Vamos,el ladrón ha escapado en dirección hacia el palacio de los Duques de Uceda.</text>
+      </speak-char>
+      <condition />
+      <end-conversation />
+    </dialogue-node>
+  </graph-conversation>
+  <graph-conversation id="RecordatorioEstatuas">
+    <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
+      <speak-char idTarget="Inigo">
+        <resources name="No name" />
+        <text>Mira bien bien las estatuas, a ver cual pertenece a la iglesia de San Ginés.</text>
+      </speak-char>
+      <condition />
+      <end-conversation />
+    </dialogue-node>
+  </graph-conversation>
+  <graph-conversation id="RecordatorioPlazas">
+    <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
+      <speak-char idTarget="Inigo">
+        <resources name="No name" />
+        <text>Venga vayamos hacia la plaza.</text>
+      </speak-char>
+      <condition />
+      <end-conversation />
+    </dialogue-node>
+  </graph-conversation>
+  <graph-conversation id="RecordatorioPalacioDeUcedaTrasPlazas">
+    <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
+      <speak-char idTarget="Inigo">
+        <resources name="No name" />
+        <text>Volvamos al Placio de los duques de Uceda para devolver el escudo.</text>
+      </speak-char>
+      <condition />
+      <end-conversation />
+    </dialogue-node>
+  </graph-conversation>
+  <graph-conversation id="RecordatorioSanMiguel">
+    <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
+      <speak-char idTarget="Inigo">
+        <resources name="No name" />
+        <text>Venga, vayamos a buscar  el códice.</text>
+      </speak-char>
+      <condition />
+      <end-conversation />
+    </dialogue-node>
+  </graph-conversation>
+  <graph-conversation id="RecordatorioChocolateria">
+    <dialogue-node nodeindex="0" editor-x="121" editor-y="52">
+      <speak-char idTarget="Inigo">
+        <resources name="No name" />
+        <text>¡Rápido! el ladrón se dirige hacia la parte trasera de la iglesia de San Ginés.</text>
+      </speak-char>
+      <condition />
+      <end-conversation />
+    </dialogue-node>
+  </graph-conversation>
+  <graph-conversation id="RecordatorioPlazaMayorFinal">
+    <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
+      <speak-char idTarget="Inigo">
+        <resources name="No name" />
+        <text>Vayamos a la Plaza Mayor para devolver el cuadro a Velázquez.</text>
       </speak-char>
       <condition />
       <end-conversation />
