@@ -63,6 +63,9 @@
     <voice name="" synthesizeAlways="no" />
     <actions>
       <talk-to needsGoTo="yes" keepDistance="35" not-effects="no">
+        <condition>
+          <equals var="Etapa" value="1" />
+        </condition>
         <effect>
           <trigger-conversation idTarget="ConversacionCaridad" guid="33a72d40-347a-468d-951b-df8bd90c109a" />
           <condition />
@@ -103,6 +106,9 @@
     <actions>
       <talk-to needsGoTo="yes" keepDistance="35" not-effects="no">
         <documentation>Created with target conversation: conversacionLope</documentation>
+        <condition>
+          <equals var="Etapa" value="2" />
+        </condition>
         <effect>
           <trigger-conversation idTarget="conversacionLope" guid="6640f4fa-4f68-4d3c-9775-f019bd6f0992" />
           <condition />
@@ -399,6 +405,9 @@
     <voice name="" synthesizeAlways="no" />
     <actions>
       <talk-to needsGoTo="yes" keepDistance="35" not-effects="no">
+        <condition>
+          <equals var="Etapa" value="11" />
+        </condition>
         <effect>
           <trigger-conversation idTarget="ConversationDuquedeUceda" guid="01704f7a-e6ec-412e-a083-3cd15bcea335" />
           <condition />
@@ -439,6 +448,9 @@
     <actions>
       <talk-to needsGoTo="yes" keepDistance="35" not-effects="no">
         <documentation>Created with target conversation: ConversacionMarianaAustria</documentation>
+        <condition>
+          <equals var="Etapa" value="6" />
+        </condition>
         <effect>
           <trigger-conversation idTarget="ConversacionMarianaAustria" guid="b71fe294-cd21-4a94-99c1-578d490b5a09" />
           <condition />
@@ -519,6 +531,9 @@
     <actions>
       <talk-to needsGoTo="yes" keepDistance="35" not-effects="no">
         <documentation>Created with target conversation: ConversacionFelipeIV</documentation>
+        <condition>
+          <equals var="Etapa" value="7" />
+        </condition>
         <effect>
           <trigger-conversation idTarget="ConversacionFelipeIV" guid="2d246768-9e9b-4f6a-a330-0a1ffbc2a306" />
           <condition />
@@ -603,7 +618,7 @@
       </exit>
     </exits>
   </scene>
-  <scene id="Introduccion" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="yes" playerLayer="-1" playerScale="1" class="accesible" type="area">
+  <scene id="Introduccion" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
     <documentation>
     </documentation>
     <resources name="No name">
@@ -790,6 +805,8 @@ Confiamos en ti, agente.</show-text>
               <condition />
               <activate flag="escudoConsultado" guid="348d63e9-7347-469e-bb58-c9762acc6257" />
               <condition />
+              <increment var="Etapa" value="1" guid="32b21d90-192e-42ae-90eb-b37b03aea521" />
+              <condition />
             </effect>
           </examine>
         </actions>
@@ -841,6 +858,44 @@ Confiamos en ti, agente.</show-text>
       </object-ref>
     </objects>
   </scene>
+  <scene id="EscenaColeccionables" hideInventory="no" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
+    <documentation>
+    </documentation>
+    <resources name="No name">
+      <asset type="background" uri="assets/background/LibroColeccionables.png" />
+    </resources>
+    <name>
+    </name>
+    <default-initial-position x="400" y="450" />
+    <objects>
+      <object-ref idTarget="ColeccionableFuenteCanos" x="305" y="428" scale="0.2902798" glow="no" layer="1" hasInfluenceArea="no">
+        <condition>
+          <active flag="cogidoColeccionableFuente" />
+        </condition>
+      </object-ref>
+      <object-ref idTarget="ColeccionableMonedas" x="1007" y="332" scale="0.5529695" glow="no" layer="2" hasInfluenceArea="no">
+        <condition>
+          <active flag="cogidoColeccionableMonedas" />
+        </condition>
+      </object-ref>
+      <object-ref idTarget="ColeccionableLibro" x="576" y="435" scale="0.4139377" glow="no" layer="3" hasInfluenceArea="no">
+        <condition>
+          <active flag="cogidoColeccionableLibro" />
+        </condition>
+      </object-ref>
+      <object-ref idTarget="ColeccionableRosario" x="433" y="825" scale="0.3653467" glow="no" layer="4" hasInfluenceArea="no">
+        <condition>
+          <active flag="cogidoColeccionableRosario" />
+        </condition>
+      </object-ref>
+      <object-ref idTarget="ColeccionableEscudo" x="1004" y="805" scale="0.4600717" glow="no" layer="5" hasInfluenceArea="no">
+        <condition>
+          <active flag="cogidoColeccionableEscudo" />
+        </condition>
+      </object-ref>
+      <object-ref idTarget="BotonAtrasEscenaColeccionables" x="89" y="167" scale="0.3043288" glow="no" layer="0" hasInfluenceArea="no" />
+    </objects>
+  </scene>
   <scene id="EscenaCreditos" hideInventory="no" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
     <documentation>
     </documentation>
@@ -851,7 +906,7 @@ Confiamos en ti, agente.</show-text>
     </name>
     <default-initial-position x="400" y="450" />
   </scene>
-  <map-scene id="MapaJuego" cameraType="Aerial2D" renderStyle="Tile" tileMetaIdentifier="OSMTile" usesGameplayArea="yes" gameplayArea="40.4125729710596 -3.71781527995988 0.00793969609117084 0.0171661376952987" center="(40.4153658166336, -3.70632464885829)" zoom="19" start="no">
+  <map-scene id="MapaJuego" cameraType="Aerial2D" renderStyle="Tile" tileMetaIdentifier="OSMTile" usesGameplayArea="yes" gameplayArea="40.4125729710596 -3.71781527995988 0.00793969609117084 0.0171661376952987" center="(40.4163448557841, -3.70618249177905)" zoom="19" start="yes">
     <map-element targetId="Foto" layer="0">
       <condition />
       <ext-elem-ref scale="0.2661203" orientation="2" transformManager="uAdventure.Geo.GeopositionedDescriptor">
@@ -865,7 +920,9 @@ Confiamos en ti, agente.</show-text>
       </ext-elem-ref>
     </map-element>
     <map-element targetId="FotoSanGines" layer="0">
-      <condition />
+      <condition>
+        <equals var="Etapa" value="4" />
+      </condition>
       <ext-elem-ref scale="0.12" orientation="2" transformManager="uAdventure.Geo.GeopositionedDescriptor">
         <param name="Position">(40.4171600341797, -3.70692014694214)</param>
         <param name="Rotation">0</param>
@@ -877,7 +934,9 @@ Confiamos en ti, agente.</show-text>
       </ext-elem-ref>
     </map-element>
     <map-element targetId="Caridad" layer="0">
-      <condition />
+      <condition>
+        <equals var="Etapa" value="1" />
+      </condition>
       <ext-elem-ref scale="0.4719685" orientation="2" transformManager="uAdventure.Geo.GeopositionedDescriptor">
         <param name="Position">(40.4127655029297, -3.70830678939819)</param>
         <param name="Rotation">0</param>
@@ -899,7 +958,9 @@ Confiamos en ti, agente.</show-text>
       </ext-elem-ref>
     </map-element>
     <map-element targetId="Lope" layer="0">
-      <condition />
+      <condition>
+        <equals var="Etapa" value="2" />
+      </condition>
       <ext-elem-ref scale="0.08830845" orientation="2" transformManager="uAdventure.Geo.GeopositionedDescriptor">
         <param name="Position">(40.4147033691406, -3.70605635643005)</param>
         <param name="Rotation">0</param>
@@ -927,6 +988,7 @@ Confiamos en ti, agente.</show-text>
     <map-element targetId="MarianaDeAustria" layer="0">
       <condition>
         <active flag="HabladoConMonja" />
+        <equals var="Etapa" value="6" />
       </condition>
       <ext-elem-ref scale="0.1224859" orientation="2" transformManager="uAdventure.Geo.GeopositionedDescriptor">
         <param name="Position">(40.4179763793945, -3.70580434799194)</param>
@@ -956,14 +1018,13 @@ Confiamos en ti, agente.</show-text>
     <map-element targetId="MonasterioDescalzas" layer="0">
       <condition />
     </map-element>
-    <map-element targetId="MonasterioDescalzas" layer="0">
-      <condition />
-    </map-element>
     <map-element targetId="PalacioReal" layer="0">
       <condition />
     </map-element>
     <map-element targetId="FelipeIV" layer="0">
-      <condition />
+      <condition>
+        <equals var="Etapa" value="7" />
+      </condition>
       <ext-elem-ref scale="0.1024112" orientation="2" transformManager="uAdventure.Geo.GeopositionedDescriptor">
         <param name="Position">(40.4180564880371, -3.71221208572388)</param>
         <param name="Rotation">0</param>
@@ -993,7 +1054,9 @@ Confiamos en ti, agente.</show-text>
       <condition />
     </map-element>
     <map-element targetId="fotoCruzverde" layer="0">
-      <condition />
+      <condition>
+        <equals var="Etapa" value="10" />
+      </condition>
       <ext-elem-ref scale="0.1220756" orientation="2" transformManager="uAdventure.Geo.GeopositionedDescriptor">
         <param name="Position">(40.4140090942383, -3.71181774139404)</param>
         <param name="Rotation">0</param>
@@ -1005,7 +1068,9 @@ Confiamos en ti, agente.</show-text>
       </ext-elem-ref>
     </map-element>
     <map-element targetId="MercadoSanMiguelItem" layer="0">
-      <condition />
+      <condition>
+        <equals var="Etapa" value="13" />
+      </condition>
       <ext-elem-ref scale="0.281718" orientation="2" transformManager="uAdventure.Geo.GeopositionedDescriptor">
         <param name="Position">(40.4151725769043, -3.70900416374207)</param>
         <param name="Rotation">0</param>
@@ -1017,7 +1082,9 @@ Confiamos en ti, agente.</show-text>
       </ext-elem-ref>
     </map-element>
     <map-element targetId="PalaciodeUcedaItem" layer="0">
-      <condition />
+      <condition>
+        <equals var="Etapa" value="9" />
+      </condition>
       <ext-elem-ref scale="0.1958403" orientation="2" transformManager="uAdventure.Geo.GeopositionedDescriptor">
         <param name="Position">(40.4147872924805, -3.71293640136719)</param>
         <param name="Rotation">0</param>
@@ -1054,6 +1121,7 @@ Confiamos en ti, agente.</show-text>
     </map-element>
     <map-element targetId="Guardia" layer="0">
       <condition>
+        <equals var="Etapa" value="13" />
         <active flag="codiceRecuperado" />
       </condition>
       <ext-elem-ref scale="0.4077749" orientation="2" transformManager="uAdventure.Geo.GeopositionedDescriptor">
@@ -1070,11 +1138,13 @@ Confiamos en ti, agente.</show-text>
       <condition />
     </map-element>
     <map-element targetId="Ladron" layer="0">
-      <condition />
-      <ext-elem-ref scale="1.019568" orientation="2" transformManager="uAdventure.Geo.GeopositionedDescriptor">
-        <param name="Position">(40.4167098999023, -3.70693349838257)</param>
+      <condition>
+        <equals var="Etapa" value="14" />
+      </condition>
+      <ext-elem-ref scale="0.5130761" orientation="2" transformManager="uAdventure.Geo.GeopositionedDescriptor">
+        <param name="Position">(40.4165992736816, -3.70692276954651)</param>
         <param name="Rotation">0</param>
-        <param name="InteractionRange">8.94</param>
+        <param name="InteractionRange">27.7</param>
         <param name="RevealOnlyOnRange">True</param>
         <param name="Hint">False</param>
         <param name="RevealParticleTexture">leaf_particle.png</param>
@@ -1083,6 +1153,74 @@ Confiamos en ti, agente.</show-text>
     </map-element>
     <map-element targetId="PlazaMayor" layer="0">
       <condition />
+    </map-element>
+    <map-element targetId="BotonEscenaColeccionables" layer="0">
+      <condition />
+      <ext-elem-ref scale="0.1436053" orientation="2" transformManager="uAdventure.Geo.ScreenDescriptor">
+        <param name="Position">(725.6494, 173.306)</param>
+        <param name="Rotation">0</param>
+        <actions />
+      </ext-elem-ref>
+    </map-element>
+    <map-element targetId="MapaLibro" layer="0">
+      <condition />
+      <ext-elem-ref scale="0.1136678" orientation="2" transformManager="uAdventure.Geo.GeopositionedDescriptor">
+        <param name="Position">(40.4137077331543, -3.70803332328796)</param>
+        <param name="Rotation">0</param>
+        <param name="InteractionRange">16.75</param>
+        <param name="RevealOnlyOnRange">True</param>
+        <param name="Hint">True</param>
+        <param name="RevealParticleTexture">leaf_particle.png</param>
+        <actions />
+      </ext-elem-ref>
+    </map-element>
+    <map-element targetId="MapaRosario" layer="0">
+      <condition />
+      <ext-elem-ref scale="0.2054593" orientation="2" transformManager="uAdventure.Geo.GeopositionedDescriptor">
+        <param name="Position">(40.4145889282227, -3.71096229553223)</param>
+        <param name="Rotation">0</param>
+        <param name="InteractionRange">25</param>
+        <param name="RevealOnlyOnRange">True</param>
+        <param name="Hint">True</param>
+        <param name="RevealParticleTexture">leaf_particle.png</param>
+        <actions />
+      </ext-elem-ref>
+    </map-element>
+    <map-element targetId="MapaMonedas" layer="0">
+      <condition />
+      <ext-elem-ref scale="0.3066041" orientation="2" transformManager="uAdventure.Geo.GeopositionedDescriptor">
+        <param name="Position">(40.4157943725586, -3.70433974266052)</param>
+        <param name="Rotation">0</param>
+        <param name="InteractionRange">25</param>
+        <param name="RevealOnlyOnRange">True</param>
+        <param name="Hint">True</param>
+        <param name="RevealParticleTexture">leaf_particle.png</param>
+        <actions />
+      </ext-elem-ref>
+    </map-element>
+    <map-element targetId="MapaEscudo" layer="0">
+      <condition />
+      <ext-elem-ref scale="0.1163928" orientation="2" transformManager="uAdventure.Geo.GeopositionedDescriptor">
+        <param name="Position">(40.4165267944336, -3.7109808921814)</param>
+        <param name="Rotation">0</param>
+        <param name="InteractionRange">20.9</param>
+        <param name="RevealOnlyOnRange">True</param>
+        <param name="Hint">True</param>
+        <param name="RevealParticleTexture">leaf_particle.png</param>
+        <actions />
+      </ext-elem-ref>
+    </map-element>
+    <map-element targetId="MapaFuenteCanos" layer="0">
+      <condition />
+      <ext-elem-ref scale="0.1028591" orientation="2" transformManager="uAdventure.Geo.GeopositionedDescriptor">
+        <param name="Position">(40.4181594848633, -3.7091007232666)</param>
+        <param name="Rotation">0</param>
+        <param name="InteractionRange">25</param>
+        <param name="RevealOnlyOnRange">True</param>
+        <param name="Hint">True</param>
+        <param name="RevealParticleTexture">leaf_particle.png</param>
+        <actions />
+      </ext-elem-ref>
     </map-element>
   </map-scene>
   <geo-element id="PlazaMayor">
@@ -1150,6 +1288,9 @@ Confiamos en ti, agente.</show-text>
     </geometries>
     <actions>
       <enter-action>
+        <condition>
+          <equals var="Etapa" value="2" />
+        </condition>
         <effect>
           <trigger-conversation idTarget="ConversationCarcel" guid="804b279d-71f8-423e-82a5-725fd066f3a9" />
           <condition />
@@ -1180,6 +1321,9 @@ Confiamos en ti, agente.</show-text>
     </geometries>
     <actions>
       <enter-action>
+        <condition>
+          <equals var="Etapa" value="3" />
+        </condition>
         <effect>
           <trigger-scene idTarget="escenaSol" x="228" y="387" transitionTime="0" transitionType="0" guid="7eb3b93b-f475-4a57-8c79-f38d67acf5ba" />
           <condition>
@@ -1214,6 +1358,9 @@ Confiamos en ti, agente.</show-text>
     </geometries>
     <actions>
       <enter-action>
+        <condition>
+          <equals var="Etapa" value="4" />
+        </condition>
         <effect>
           <trigger-conversation idTarget="ConversationAlLlegarSanGines" guid="f4e81709-00e7-4d4a-889b-3cd33c841b55" />
           <condition />
@@ -1244,6 +1391,9 @@ Confiamos en ti, agente.</show-text>
     </geometries>
     <actions>
       <enter-action>
+        <condition>
+          <equals var="Etapa" value="5" />
+        </condition>
         <effect>
           <trigger-scene idTarget="EscenaSanMartin" x="492" y="534" transitionTime="0" transitionType="0" guid="77dccc88-6c5c-4e57-975b-8ebcb4792952" />
           <condition />
@@ -1255,6 +1405,9 @@ Confiamos en ti, agente.</show-text>
         <only-from-outside>True</only-from-outside>
       </enter-action>
       <exit-action>
+        <condition>
+          <equals var="Etapa" value="5" />
+        </condition>
         <effect>
           <activate flag="EstatuaRecuperada" guid="119c0237-732b-4d7b-9553-c6f781f9ee23" />
           <condition />
@@ -1287,6 +1440,9 @@ Confiamos en ti, agente.</show-text>
     </geometries>
     <actions>
       <exit-action>
+        <condition>
+          <equals var="Etapa" value="7" />
+        </condition>
         <effect>
           <trigger-conversation idTarget="conversacionHaciaRamales" guid="6ed77107-37cf-4ddd-aa1e-627e036464c8" />
           <condition />
@@ -1317,6 +1473,9 @@ Confiamos en ti, agente.</show-text>
     </geometries>
     <actions>
       <enter-action>
+        <condition>
+          <equals var="Etapa" value="8" />
+        </condition>
         <effect>
           <trigger-conversation idTarget="ConversationEnRamales" guid="a1a804b2-250a-4221-bb5e-296af68e8ad5" />
           <condition />
@@ -1339,7 +1498,7 @@ Confiamos en ti, agente.</show-text>
         <Polygon>
           <exterior>
             <LinearRing>
-              <posList>40.415308983834 -3.71226574182513 40.4149618186884 -3.71212626695637 40.4148311209916 -3.71348346471788 40.4151496965888 -3.71350492239</posList>
+              <posList>40.4153048995382 -3.71226574182513 40.4149577343926 -3.71212626695637 40.4148270366958 -3.71348346471788 40.415145612293 -3.71350492239</posList>
             </LinearRing>
           </exterior>
         </Polygon>
@@ -1349,14 +1508,12 @@ Confiamos en ti, agente.</show-text>
       <enter-action>
         <condition>
           <inactive flag="escudoRecuperado" />
+          <equals var="Etapa" value="9" />
         </condition>
         <effect>
           <trigger-conversation idTarget="ConversationPalaciodeUceda" guid="627c2f63-7827-46e5-ba23-cb5020c98dee" />
           <condition />
         </effect>
-        <only-from-outside>True</only-from-outside>
-      </enter-action>
-      <enter-action>
         <only-from-outside>True</only-from-outside>
       </enter-action>
     </actions>
@@ -1397,7 +1554,7 @@ Confiamos en ti, agente.</show-text>
         <Polygon>
           <exterior>
             <LinearRing>
-              <posList>40.415407006297 -3.71018775463099 40.4149740717794 -3.71023066997523 40.4149597767243 -3.71052839517588 40.415349826426 -3.71063836574548</posList>
+              <posList>40.415407006297 -3.71018239021295 40.4149740717794 -3.71022530555719 40.4149597767243 -3.71052303075784 40.415349826426 -3.71063300132744</posList>
             </LinearRing>
           </exterior>
         </Polygon>
@@ -1407,6 +1564,7 @@ Confiamos en ti, agente.</show-text>
       <enter-action>
         <condition>
           <inactive flag="escudoRecuperado" />
+          <equals var="Etapa" value="10" />
         </condition>
         <effect>
           <trigger-conversation idTarget="ConversacionPlazaVilla" guid="d63fc98a-9484-4658-8d3d-b74c75d131aa" />
@@ -1417,6 +1575,7 @@ Confiamos en ti, agente.</show-text>
       <enter-action>
         <condition>
           <active flag="escudoRecuperado" />
+          <equals var="Etapa" value="12" />
         </condition>
         <effect>
           <trigger-conversation idTarget="ConversationPlazaVilla2" guid="e1281fad-bccf-4d3b-852f-57f85de6393a" />
@@ -1448,6 +1607,9 @@ Confiamos en ti, agente.</show-text>
     </geometries>
     <actions>
       <exit-action>
+        <condition>
+          <equals var="Etapa" value="13" />
+        </condition>
         <effect>
           <trigger-conversation idTarget="ConversacionPerseguirLadron" guid="ceb1d0f9-6703-42e6-90b0-0851092f05fd" />
           <condition />
@@ -1478,6 +1640,9 @@ Confiamos en ti, agente.</show-text>
     </geometries>
     <actions>
       <enter-action>
+        <condition>
+          <equals var="Etapa" value="15" />
+        </condition>
         <effect>
           <activate flag="apareceVelazquez" guid="73ee2e8e-0706-405f-9901-91597dadd59d" />
           <condition>
@@ -1504,7 +1669,7 @@ Confiamos en ti, agente.</show-text>
         <Polygon>
           <exterior>
             <LinearRing>
-              <posList>40.4182190096948 -3.70549852848058 40.4179331586052 -3.70567018985754 40.4181192315816 -3.70622272491469 40.4184159626016 -3.70605374574673</posList>
+              <posList>40.4183292805538 -3.70542879104621 40.4180434294642 -3.70560045242317 40.4182295024406 -3.70615298748032 40.4185262334606 -3.70598400831236</posList>
             </LinearRing>
           </exterior>
         </Polygon>
@@ -1526,7 +1691,7 @@ Confiamos en ti, agente.</show-text>
         <Polygon>
           <exterior>
             <LinearRing>
-              <posList>40.4168602849911 -3.70680208206217 40.416756838317 -3.70672698020973 40.4167000837423 -3.70706225633661 40.4168333553481 -3.70709712505381</posList>
+              <posList>40.4169387526296 -3.70671826302988 40.4166814543565 -3.70663779675944 40.4165956865303 -3.70705085694773 40.4168652371928 -3.70713668763621</posList>
             </LinearRing>
           </exterior>
         </Polygon>
@@ -1534,6 +1699,9 @@ Confiamos en ti, agente.</show-text>
     </geometries>
     <actions>
       <enter-action>
+        <condition>
+          <equals var="Etapa" value="14" />
+        </condition>
         <effect>
           <trigger-conversation idTarget="ConversacionLadron" guid="9792bc24-373a-487b-a324-50e6b379f044" />
           <condition />
@@ -1559,6 +1727,7 @@ Confiamos en ti, agente.</show-text>
       <examine needsGoTo="no" keepDistance="0" not-effects="no">
         <condition>
           <inactive flag="FotoConsultada" />
+          <equals var="Etapa" value="0" />
         </condition>
         <effect>
           <trigger-scene idTarget="ImagenPlazaMayor" x="250" y="207" transitionTime="0" transitionType="0" guid="721efab9-e4fb-4a5d-acc4-c8a0520bfba4" />
@@ -1671,6 +1840,9 @@ Vamos Iñigo en marcha.</speak-player>
     </description>
     <actions>
       <examine needsGoTo="no" keepDistance="0" not-effects="no">
+        <condition>
+          <equals var="Etapa" value="4" />
+        </condition>
         <effect>
           <trigger-scene idTarget="ScenaSanGines" x="208" y="384" transitionTime="0" transitionType="0" guid="6a468b2e-eae6-45dd-b54c-113afc2b0a0a" />
           <condition />
@@ -1818,6 +1990,9 @@ Vamos Iñigo en marcha.</speak-player>
     </description>
     <actions>
       <examine needsGoTo="no" keepDistance="0" not-effects="no">
+        <condition>
+          <equals var="Etapa" value="10" />
+        </condition>
         <effect>
           <trigger-scene idTarget="PlazadeLaCruzVerdeScene" x="294" y="242" transitionTime="0" transitionType="0" guid="801f7869-1b27-4130-8694-bb4805e6b2cb" />
           <condition />
@@ -1844,6 +2019,8 @@ Vamos Iñigo en marcha.</speak-player>
           <activate flag="escudoRecuperado" guid="d15064b0-a194-4e66-88fb-3151cb7275f6" />
           <condition />
           <speak-player guid="eedb5e32-a194-476d-a7a5-c1b32df21c10">Aqui esta el escudo,el ladrón lo habia ocultado en la fuente para llevarselo luego</speak-player>
+          <condition />
+          <increment var="Etapa" value="1" guid="6620e9e0-3073-422c-b207-364ef0a149f7" />
           <condition />
         </effect>
       </examine>
@@ -1922,6 +2099,9 @@ Vamos Iñigo en marcha.</speak-player>
     </description>
     <actions>
       <examine needsGoTo="no" keepDistance="0" not-effects="no">
+        <condition>
+          <equals var="Etapa" value="13" />
+        </condition>
         <effect>
           <trigger-scene idTarget="MercadoSanMiguelScene" x="363" y="369" transitionTime="0" transitionType="0" guid="f7982b5a-c9b0-44ac-a830-2321ebb02857" />
           <condition />
@@ -1989,6 +2169,315 @@ Vamos Iñigo en marcha.</speak-player>
       </detailed>
     </description>
   </object>
+  <object id="ColeccionableLibro" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
+    <resources name="No name">
+      <asset type="image" uri="assets/image/Coleccionable-Libro.png" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <actions>
+      <examine needsGoTo="no" keepDistance="0" not-effects="no">
+        <condition>
+          <active flag="cogidoColeccionableLibro" />
+        </condition>
+        <effect>
+          <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="a0f5b510-0e78-41d2-be5a-2403d1b4b01f">Examinado libro</show-text>
+          <condition />
+        </effect>
+      </examine>
+    </actions>
+  </object>
+  <object id="ColeccionableFuenteCanos" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
+    <resources name="No name">
+      <asset type="image" uri="assets/image/Coleccionable-Fuente.png" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <actions>
+      <examine needsGoTo="no" keepDistance="0" not-effects="no">
+        <condition>
+          <active flag="cogidoColeccionableFuente" />
+        </condition>
+        <effect>
+          <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="14ada5c3-e7ee-4322-86dc-7a2e12ef0d8e">Examinada la fuente</show-text>
+          <condition />
+        </effect>
+      </examine>
+    </actions>
+  </object>
+  <object id="ColeccionableEscudo" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
+    <resources name="No name">
+      <asset type="image" uri="assets/image/Coleccionable-Escudo.png" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <actions>
+      <examine needsGoTo="no" keepDistance="0" not-effects="no">
+        <condition>
+          <active flag="cogidoColeccionableEscudo" />
+        </condition>
+        <effect>
+          <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="0472322d-75ba-4767-81cc-b828bee353c9">Examinado escudo</show-text>
+          <condition />
+        </effect>
+      </examine>
+    </actions>
+  </object>
+  <object id="ColeccionableRosario" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
+    <resources name="No name">
+      <asset type="image" uri="assets/image/Coleccionable-Rosario.png" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <actions>
+      <examine needsGoTo="no" keepDistance="0" not-effects="no">
+        <condition>
+          <active flag="cogidoColeccionableRosario" />
+        </condition>
+        <effect>
+          <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="9c646ab8-cb2f-4303-991f-0d0e18b069eb">Examinado Rosario</show-text>
+          <condition />
+        </effect>
+      </examine>
+    </actions>
+  </object>
+  <object id="MapaRosario" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
+    <resources name="No name">
+      <asset type="image" uri="assets/image/Coleccionable-Rosario.png" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <actions>
+      <grab needsGoTo="yes" keepDistance="35" not-effects="no">
+        <effect>
+          <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="52649189-97ab-494c-986e-edef1b458f4b">Encontraste algo.</show-text>
+          <condition />
+          <remove-element idTarget="MapaRosario" guid="2f62c581-8aad-4040-8597-0db57df5c7fe" />
+          <condition />
+          <activate flag="cogidoColeccionableRosario" guid="c7955741-68ab-4ef2-9c85-c0e022036ef8" />
+          <condition />
+          <trigger-scene idTarget="EscenaColeccionables" x="704" y="711" transitionTime="2" transitionType="4" guid="40ce70bc-1d03-4810-80c9-ed58c04d65ae" />
+          <condition />
+        </effect>
+      </grab>
+    </actions>
+  </object>
+  <object id="BotonEscenaColeccionables" returnsWhenDragged="yes" behaviour="first-action" resources-transition-time="0">
+    <resources name="No name">
+      <asset type="image" uri="assets/image/LibroColeccionables.png" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <actions>
+      <examine needsGoTo="no" keepDistance="0" not-effects="no">
+        <effect>
+          <trigger-scene idTarget="EscenaColeccionables" x="704" y="711" transitionTime="0" transitionType="0" guid="9a39cec1-b108-43d7-befa-65cf160b4422" />
+          <condition />
+        </effect>
+      </examine>
+    </actions>
+  </object>
+  <object id="MapaFuenteCanos" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
+    <resources name="No name">
+      <asset type="image" uri="assets/image/Coleccionable-Fuente.png" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <actions>
+      <grab needsGoTo="yes" keepDistance="35" not-effects="no">
+        <effect>
+          <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="edefa4e7-ee52-4fa7-9772-f4740cb7fca0">Encontraste una fuente.</show-text>
+          <condition />
+          <remove-element idTarget="MapaFuenteCanos" guid="7d731a14-8bab-45f7-b004-26e719ffae42" />
+          <condition />
+          <activate flag="cogidoColeccionableFuente" guid="b027dd89-f5b0-4ddd-a76a-fb565a32403f" />
+          <condition />
+          <trigger-scene idTarget="EscenaColeccionables" x="704" y="711" transitionTime="2" transitionType="4" guid="512e16c6-abdf-44cd-9ff9-4defece4bee1" />
+          <condition />
+        </effect>
+      </grab>
+    </actions>
+  </object>
+  <object id="MapaMonedas" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
+    <resources name="No name">
+      <asset type="image" uri="assets/image/Coleccionable-Monedas.png" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <actions>
+      <grab needsGoTo="yes" keepDistance="35" not-effects="no">
+        <effect>
+          <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="582187ff-12f1-4471-91d9-3256f0861db0">Has encontrado unas monedas.</show-text>
+          <condition />
+          <remove-element idTarget="MapaMonedas" guid="65039a8e-6535-43ac-af31-202b5234a38b" />
+          <condition />
+          <activate flag="cogidoColeccionableMonedas" guid="3af27a42-fb5d-4e2f-8c24-02a9003fb344" />
+          <condition />
+          <trigger-scene idTarget="EscenaColeccionables" x="704" y="711" transitionTime="2" transitionType="4" guid="cc2012be-c8c6-49fb-9502-8f1acd2e71f9" />
+          <condition />
+        </effect>
+      </grab>
+    </actions>
+  </object>
+  <object id="MapaEscudo" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
+    <resources name="No name">
+      <asset type="image" uri="assets/image/Coleccionable-Escudo.png" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <actions>
+      <grab needsGoTo="yes" keepDistance="35" not-effects="no">
+        <effect>
+          <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="c8679e86-c71c-4033-91ef-70b12155cd4b">Encontraste un algo.</show-text>
+          <condition />
+          <remove-element idTarget="MapaEscudo" guid="bb7b0f08-f7da-492a-8f80-00464505f5bb" />
+          <condition />
+          <activate flag="cogidoColeccionableEscudo" guid="ff669555-22ab-45e7-937d-911e6c68506b" />
+          <condition />
+          <trigger-scene idTarget="EscenaColeccionables" x="704" y="711" transitionTime="2" transitionType="4" guid="4ea150a2-2e21-4c4d-9660-2543b03b9a96" />
+          <condition />
+        </effect>
+      </grab>
+    </actions>
+  </object>
+  <object id="MapaLibro" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
+    <resources name="No name">
+      <asset type="image" uri="assets/image/Coleccionable-Libro.png" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <actions>
+      <grab needsGoTo="yes" keepDistance="35" not-effects="no">
+        <effect>
+          <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="78943541-ee56-4351-b779-7b6fbee2349c">Has recogido algo del suelo.</show-text>
+          <condition />
+          <remove-element idTarget="MapaLibro" guid="123e24e0-3e36-43eb-a56b-65cdf53c07e0" />
+          <condition />
+          <activate flag="cogidoColeccionableLibro" guid="07945f0e-e6b2-4322-a020-b41b4dd139d6" />
+          <condition />
+          <trigger-scene idTarget="EscenaColeccionables" x="704" y="711" transitionTime="2" transitionType="4" guid="e4333190-7155-43c2-8a8c-3689e8bfe47f" />
+          <condition />
+        </effect>
+      </grab>
+    </actions>
+  </object>
+  <object id="ColeccionableMonedas" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
+    <resources name="No name">
+      <asset type="image" uri="assets/image/Coleccionable-Monedas.png" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <actions>
+      <examine needsGoTo="no" keepDistance="0" not-effects="no">
+        <condition>
+          <active flag="cogidoColeccionableMonedas" />
+        </condition>
+        <effect>
+          <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="3b2a6a7c-d143-40d9-b7e7-5026294b83fe">Examinadas monedas</show-text>
+          <condition />
+        </effect>
+      </examine>
+    </actions>
+  </object>
+  <object id="BotonAtrasEscenaColeccionables" returnsWhenDragged="yes" behaviour="first-action" resources-transition-time="0">
+    <resources name="No name">
+      <asset type="image" uri="assets/image/botonAtras.png" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <actions>
+      <examine needsGoTo="no" keepDistance="0" not-effects="no">
+        <effect>
+          <trigger-scene idTarget="MapaJuego" x="540" y="542" transitionTime="0" transitionType="0" guid="87d4e401-4b54-4e2a-ac86-6523ecd63730" />
+          <condition />
+        </effect>
+      </examine>
+    </actions>
+  </object>
   <graph-conversation id="ConversacionCaridad">
     <dialogue-node nodeindex="0" editor-x="33" editor-y="62">
       <speak-char idTarget="Caridad">
@@ -2051,6 +2540,8 @@ Vamos Iñigo en marcha.</speak-player>
           </navigate>
           <condition />
           <increment var="InigoRecordatorios" value="1" guid="62cefd6e-fab1-4bd3-b880-da5471627fbc" />
+          <condition />
+          <increment var="Etapa" value="1" guid="9cc705e9-f597-4563-8cfb-fda2709ee5c9" />
           <condition />
         </effect>
       </end-conversation>
@@ -2133,6 +2624,8 @@ Vamos Iñigo en marcha.</speak-player>
           <navigate navigation-type="Ordered" guid="8d487e45-6ee3-4f26-919c-533485329926">
             <step locks="False">Taberna</step>
           </navigate>
+          <condition />
+          <increment var="Etapa" value="14" guid="3f6e3b6c-a755-47ec-af6e-69d6899745ca" />
           <condition />
         </effect>
       </end-conversation>
@@ -2236,6 +2729,8 @@ Vamos Iñigo en marcha.</speak-player>
           <condition />
           <increment var="InigoRecordatorios" value="1" guid="36244f90-b594-4920-ac36-f51f9c4639db" />
           <condition />
+          <increment var="Etapa" value="1" guid="4322c2eb-69db-416a-b452-aa8250c1e452" />
+          <condition />
         </effect>
       </end-conversation>
     </dialogue-node>
@@ -2252,7 +2747,12 @@ Vamos Iñigo en marcha.</speak-player>
         <text>¡Mira! ese tipo salió corriendo al vernos, no he visto por donde ha ido.</text>
       </speak-char>
       <condition />
-      <end-conversation />
+      <end-conversation>
+        <effect>
+          <increment var="Etapa" value="1" guid="b4ce82d3-6a66-4646-96e9-a1e3b03ccea8" />
+          <condition />
+        </effect>
+      </end-conversation>
     </dialogue-node>
   </graph-conversation>
   <graph-conversation id="ConversacionSanGines">
@@ -2277,7 +2777,12 @@ Vamos Iñigo en marcha.</speak-player>
         <text>Pues vayamos allí.</text>
       </speak-player>
       <condition />
-      <end-conversation />
+      <end-conversation>
+        <effect>
+          <increment var="Etapa" value="1" guid="0a6683a1-c195-4775-8641-d8be60748be7" />
+          <condition />
+        </effect>
+      </end-conversation>
     </dialogue-node>
   </graph-conversation>
   <graph-conversation id="ConversationAlLlegarSanGines">
@@ -2359,6 +2864,8 @@ Vamos Iñigo en marcha.</speak-player>
           <condition />
           <increment var="InigoRecordatorios" value="1" guid="e61beafd-d659-4ae5-b6e7-f60352710418" />
           <condition />
+          <increment var="Etapa" value="1" guid="ac5d4be9-8bde-4852-881c-f115631e414b" />
+          <condition />
         </effect>
       </end-conversation>
     </dialogue-node>
@@ -2425,6 +2932,8 @@ Vamos Iñigo en marcha.</speak-player>
           </navigate>
           <condition />
           <increment var="InigoRecordatorios" value="1" guid="6781b319-c48e-4a3e-9f63-0e0a1694051a" />
+          <condition />
+          <increment var="Etapa" value="1" guid="30a03cb3-6606-4de3-b4d4-af156b718a90" />
           <condition />
         </effect>
       </end-conversation>
@@ -2614,6 +3123,8 @@ Vamos Iñigo en marcha.</speak-player>
           <condition />
           <increment var="InigoRecordatorios" value="1" guid="85604ee2-0397-4260-8508-a9c21f209b5e" />
           <condition />
+          <increment var="Etapa" value="1" guid="59ebff52-5e8b-457f-bbf3-20a312f93c95" />
+          <condition />
         </effect>
       </end-conversation>
     </dialogue-node>
@@ -2630,6 +3141,8 @@ Vamos Iñigo en marcha.</speak-player>
           </navigate>
           <condition />
           <increment var="InigoRecordatorios" value="1" guid="2b7972fe-3ef3-4374-9f43-b1173d84ff0c" />
+          <condition />
+          <increment var="Etapa" value="1" guid="6845bb5c-e416-4678-b3d5-dc54fb36eba6" />
           <condition />
         </effect>
       </end-conversation>
@@ -2664,6 +3177,8 @@ Vamos Iñigo en marcha.</speak-player>
           </navigate>
           <condition />
           <increment var="InigoRecordatorios" value="1" guid="9cbd77df-4dfc-4316-a17d-cdcd7483d557" />
+          <condition />
+          <increment var="Etapa" value="1" guid="84db4a46-da0b-4c28-a02f-67d52336c9aa" />
           <condition />
         </effect>
       </end-conversation>
@@ -2830,6 +3345,14 @@ Vamos Iñigo en marcha.</speak-player>
           </condition>
           <increment var="InigoRecordatorios" value="1" guid="5615cd0d-0e7f-41fb-9b28-515bfe4a725c" />
           <condition />
+          <increment var="Etapa" value="2" guid="2ef8dcdf-f71d-47ca-9f12-498b6400de9e" />
+          <condition>
+            <active flag="VisitadaPlazaVilla" />
+          </condition>
+          <increment var="Etapa" value="1" guid="3f0074e6-913b-4422-85aa-c0960f78882d" />
+          <condition>
+            <inactive flag="VisitadaPlazaVilla" />
+          </condition>
         </effect>
       </end-conversation>
     </dialogue-node>
@@ -2911,6 +3434,8 @@ Vamos Iñigo en marcha.</speak-player>
             <step locks="False">SanMiguel</step>
           </navigate>
           <condition />
+          <increment var="Etapa" value="1" guid="a4d79501-2083-4127-8593-c4b2d588652c" />
+          <condition />
         </effect>
       </end-conversation>
     </dialogue-node>
@@ -2954,6 +3479,8 @@ Vamos Iñigo en marcha.</speak-player>
           </navigate>
           <condition />
           <increment var="InigoRecordatorios" value="1" guid="e0cf2291-5292-4219-a42a-61763fbaaf85" />
+          <condition />
+          <increment var="Etapa" value="1" guid="a6fb8e98-d19e-46aa-9349-0cda37b65091" />
           <condition />
         </effect>
       </end-conversation>
@@ -3023,6 +3550,8 @@ Vamos Iñigo en marcha.</speak-player>
           </navigate>
           <condition />
           <increment var="InigoRecordatorios" value="1" guid="181398d1-c747-4cf6-8f2a-cc4e582b3d5d" />
+          <condition />
+          <increment var="Etapa" value="1" guid="e2dbaf41-232c-48f1-a96a-ef22ac50fd6f" />
           <condition />
         </effect>
       </end-conversation>
