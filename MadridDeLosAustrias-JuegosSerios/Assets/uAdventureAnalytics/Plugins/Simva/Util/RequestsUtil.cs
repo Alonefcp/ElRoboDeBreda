@@ -5,9 +5,9 @@ using UnityEngine;
 using UnityEngine.Networking;
 using UnityFx.Async;
 using UnityFx.Async.Promises;
-#if UNITY_ANDROID || UNITY_IOS 
-using Vuopaja;
-#endif
+//#if UNITY_ANDROID || UNITY_IOS 
+//using Vuopaja;
+//#endif
 
 namespace Simva
 {
@@ -47,21 +47,21 @@ namespace Simva
             UnityWebRequestAsyncOperation asyncRequest;
             string backgroundError = null;
 
-#if UNITY_ANDROID || UNITY_IOS
-            if (inBackground)
-            {
-                var webRequestWrapper = new WebRequestWrapper();
-                webRequestWrapper.Failed += (wrappedRequest, error) =>
-                {
-                    backgroundError = error;
-                };
-                asyncRequest = webRequestWrapper.Send(webRequest, 100);
-            }
-            else
-            {
-                asyncRequest = webRequest.SendWebRequest();
-            }
-#else
+//#if UNITY_ANDROID || UNITY_IOS
+//            if (inBackground)
+//            {
+//                var webRequestWrapper = new WebRequestWrapper();
+//                webRequestWrapper.Failed += (wrappedRequest, error) =>
+//                {
+//                    backgroundError = error;
+//                };
+//                asyncRequest = webRequestWrapper.Send(webRequest, 100);
+//            }
+//            else
+//            {
+//                asyncRequest = webRequest.SendWebRequest();
+//            }
+//#else
             if (inBackground)
             {
                 Application.runInBackground = true;
@@ -74,7 +74,7 @@ namespace Simva
                     Application.runInBackground = false;
                 };
             }
-#endif
+//#endif
 
             if (webRequest.uploadHandler != null)
             {
