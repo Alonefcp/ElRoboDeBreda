@@ -633,16 +633,16 @@
         <effect>
           <show-text x="300" y="700" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="4ed4abe1-d3bb-44e4-95cf-81fbf9d5393d">Buenas tardes, nos acaban de informar de que ha desaparecido del Museo del Prado, el cuadro "La Rendición de Breda" de Velázquez.</show-text>
           <condition />
-          <show-text x="300" y="700" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="153a52a2-0dd3-4aba-8d96-395ab3dc206f">Tenemos que encargarnos de esto cuanto antes, como miembro de la division de crimenes temporales, te hemos asignado a ti esta misión.</show-text>
+          <show-text x="300" y="700" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="153a52a2-0dd3-4aba-8d96-395ab3dc206f">Tenemos que encargarnos de esto cuanto antes, como miembro de la división de crímenes temporales, te hemos asignado a ti esta misión.</show-text>
           <condition />
-          <show-text x="300" y="700" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="9e3b2611-25e8-4472-9fde-5c86ffd702f7">Tendrás que devolver el cuadro a su dueño legitimo para restaurarlo en el presente.</show-text>
+          <show-text x="300" y="700" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="9e3b2611-25e8-4472-9fde-5c86ffd702f7">Tendrás que devolver el cuadro a su dueño legítimo para restaurarlo en el presente.</show-text>
           <condition />
-          <show-text x="300" y="700" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="0e3aea0b-1f4a-48ae-a0d4-f2ca9d187835">Sabemos que hay mas alteraciones temporales, lo que supone mas objetos robados,pero no hemos sido capaces de identificarlas.</show-text>
+          <show-text x="300" y="700" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="0e3aea0b-1f4a-48ae-a0d4-f2ca9d187835">Sabemos que hay más alteraciones temporales, lo que supone más objetos robados, pero no hemos sido capaces de identificarlas.</show-text>
           <condition />
-          <show-text x="300" y="700" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="1a2e45f9-5651-46d4-9f15-1c9a689e2b07">Trae a ese ladrón ante la justicia, antes de que siga robando mas objetos del pasado.
+          <show-text x="300" y="700" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="1a2e45f9-5651-46d4-9f15-1c9a689e2b07">Trae a ese ladrón ante la justicia, antes de que siga robando más objetos del pasado.
 Confiamos en ti, agente.</show-text>
           <condition />
-          <show-text x="300" y="700" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="becf7590-81dc-4fd9-883b-c47fd00961f1">Para empezar dirigete hacia la Plaza Mayor. Es el mejor lugar para comenzar la búsqueda.</show-text>
+          <show-text x="300" y="700" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="becf7590-81dc-4fd9-883b-c47fd00961f1">Para empezar dirígete hacia la Plaza Mayor. Es el mejor lugar para comenzar la búsqueda.</show-text>
           <condition />
           <navigate navigation-type="Ordered" guid="57df3d80-027a-4f57-851e-802652339467">
             <step locks="False">PlazaMayor</step>
@@ -801,7 +801,7 @@ Confiamos en ti, agente.</show-text>
         <actions>
           <examine needsGoTo="no" keepDistance="0" not-effects="no">
             <effect>
-              <speak-player guid="45940fd3-6b10-475d-905d-1d87b669ce12">¡Eso es! falta el escudo de la fachada</speak-player>
+              <speak-player guid="45940fd3-6b10-475d-905d-1d87b669ce12">¡Eso es! falta el escudo de la fachada.</speak-player>
               <condition />
               <activate flag="escudoConsultado" guid="348d63e9-7347-469e-bb58-c9762acc6257" />
               <condition />
@@ -888,7 +888,7 @@ Confiamos en ti, agente.</show-text>
         <effect>
           <show-text x="300" y="700" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="4ed4abe1-d3bb-44e4-95cf-81fbf9d5393d">Veo que ya estas de vuelta agente, enhorabuena por su excelente trabajo.</show-text>
           <condition />
-          <show-text x="300" y="700" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="153a52a2-0dd3-4aba-8d96-395ab3dc206f">Por fin el cuadro a vuelto a su estado original en el Museo del Prado. La brecha temporal ha sido arreglada y el ladrón esta a buen recaudo.</show-text>
+          <show-text x="300" y="700" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="153a52a2-0dd3-4aba-8d96-395ab3dc206f">Por fin el cuadro a vuelto a su estado original en el Museo del Prado. La brecha temporal ha sido arreglada y el ladrón está a buen recaudo.</show-text>
           <condition />
           <show-text x="300" y="700" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="9e3b2611-25e8-4472-9fde-5c86ffd702f7">Gracias por todo agente, nos veremos en la próxima misión.</show-text>
           <condition />
@@ -937,7 +937,7 @@ Confiamos en ti, agente.</show-text>
       <object-ref idTarget="BotonAtrasEscenaColeccionables" x="89" y="167" scale="0.3043288" glow="no" layer="0" hasInfluenceArea="no" />
     </objects>
   </scene>
-  <map-scene id="MapaJuego" cameraType="Aerial2D" renderStyle="Tile" tileMetaIdentifier="OSMTile" usesGameplayArea="yes" gameplayArea="40.4125729710596 -3.71781527995988 0.00793969609117084 0.0171661376952987" center="(40.4154442797241, -3.70653386115928)" zoom="18" start="no">
+  <map-scene id="MapaJuego" cameraType="Aerial2D" renderStyle="Tile" tileMetaIdentifier="OSMTile" usesGameplayArea="yes" gameplayArea="40.4125729710596 -3.71781527995988 0.00793969609117084 0.0171661376952987" center="(40.4154932909748, -3.70615566968772)" zoom="18" start="no">
     <map-element targetId="Foto" layer="0">
       <condition />
       <ext-elem-ref scale="0.3179099" orientation="2" transformManager="uAdventure.Geo.GeopositionedDescriptor">
@@ -969,7 +969,7 @@ Confiamos en ti, agente.</show-text>
         <equals var="Etapa" value="1" />
       </condition>
       <ext-elem-ref scale="0.5775352" orientation="2" transformManager="uAdventure.Geo.GeopositionedDescriptor">
-        <param name="Position">(40.4126014709473, -3.70825052261353)</param>
+        <param name="Position">(40.4126434326172, -3.70838332176209)</param>
         <param name="Rotation">0</param>
         <param name="InteractionRange">24.7</param>
         <param name="RevealOnlyOnRange">True</param>
@@ -993,7 +993,7 @@ Confiamos en ti, agente.</show-text>
         <equals var="Etapa" value="2" />
       </condition>
       <ext-elem-ref scale="0.12354" orientation="2" transformManager="uAdventure.Geo.GeopositionedDescriptor">
-        <param name="Position">(40.4147415161133, -3.70598125457764)</param>
+        <param name="Position">(40.4147834777832, -3.70594787597656)</param>
         <param name="Rotation">0</param>
         <param name="InteractionRange">25.14</param>
         <param name="RevealOnlyOnRange">True</param>
@@ -1057,9 +1057,9 @@ Confiamos en ti, agente.</show-text>
         <equals var="Etapa" value="7" />
       </condition>
       <ext-elem-ref scale="0.1362625" orientation="2" transformManager="uAdventure.Geo.GeopositionedDescriptor">
-        <param name="Position">(40.41796875, -3.71264672279358)</param>
+        <param name="Position">(40.4179801940918, -3.71221208572388)</param>
         <param name="Rotation">0</param>
-        <param name="InteractionRange">40.8</param>
+        <param name="InteractionRange">38.51</param>
         <param name="RevealOnlyOnRange">True</param>
         <param name="Hint">False</param>
         <param name="RevealParticleTexture">leaf_particle.png</param>
@@ -1256,18 +1256,18 @@ Confiamos en ti, agente.</show-text>
   </map-scene>
   <geo-element id="PlazaMayor">
     <description>
-      <name>Plaza Mayor</name>
+      <name>Inicio Plaza Mayor</name>
       <brief>
       </brief>
       <detailed>
       </detailed>
     </description>
     <geometries>
-      <geometry influence="5">
+      <geometry influence="0">
         <Polygon>
           <exterior>
             <LinearRing>
-              <posList>40.4156934155337 -3.70683699846233 40.4151257013634 -3.70677798986398 40.4151052799011 -3.70721787214242 40.4156811627605 -3.70727151632274</posList>
+              <posList>40.4157608057516 -3.70676726114637 40.4150889427162 -3.70671093459334 40.415066479095 -3.70720982555196 40.4157363002274 -3.70726883415028</posList>
             </LinearRing>
           </exterior>
         </Polygon>
@@ -1277,8 +1277,7 @@ Confiamos en ti, agente.</show-text>
   </geo-element>
   <geo-element id="Taberna">
     <description>
-      <name>
-      </name>
+      <name>Taberna</name>
       <brief>
       </brief>
       <detailed>
@@ -1299,8 +1298,7 @@ Confiamos en ti, agente.</show-text>
   </geo-element>
   <geo-element id="Carcel">
     <description>
-      <name>
-      </name>
+      <name>Carcel</name>
       <brief>
       </brief>
       <detailed>
@@ -1332,8 +1330,7 @@ Confiamos en ti, agente.</show-text>
   </geo-element>
   <geo-element id="Sol">
     <description>
-      <name>
-      </name>
+      <name>Sol</name>
       <brief>
       </brief>
       <detailed>
@@ -1369,8 +1366,7 @@ Confiamos en ti, agente.</show-text>
   </geo-element>
   <geo-element id="SanGines">
     <description>
-      <name>
-      </name>
+      <name>San Gines</name>
       <brief>
       </brief>
       <detailed>
@@ -1402,8 +1398,7 @@ Confiamos en ti, agente.</show-text>
   </geo-element>
   <geo-element id="PlazaSanMartin">
     <description>
-      <name>
-      </name>
+      <name>San Martin</name>
       <brief>
       </brief>
       <detailed>
@@ -1451,8 +1446,7 @@ Confiamos en ti, agente.</show-text>
   </geo-element>
   <geo-element id="PalacioReal">
     <description>
-      <name>
-      </name>
+      <name>Palacio Real</name>
       <brief>
       </brief>
       <detailed>
@@ -1463,7 +1457,7 @@ Confiamos en ti, agente.</show-text>
         <Polygon>
           <exterior>
             <LinearRing>
-              <posList>40.4184497222562 -3.7118768215179 40.418159751092 -3.71190364360923 40.4182087603662 -3.71252055168265 40.4184905631444 -3.71249372959132</posList>
+              <posList>40.4185967493424 -3.71185536384438 40.4180576483479 -3.7119143724427 40.4181066576964 -3.71256883144235 40.4186253379043 -3.71249372958995</posList>
             </LinearRing>
           </exterior>
         </Polygon>
@@ -1484,8 +1478,7 @@ Confiamos en ti, agente.</show-text>
   </geo-element>
   <geo-element id="PlazaRamales">
     <description>
-      <name>
-      </name>
+      <name>Ramales</name>
       <brief>
       </brief>
       <detailed>
@@ -1517,8 +1510,7 @@ Confiamos en ti, agente.</show-text>
   </geo-element>
   <geo-element id="PalacioUceda">
     <description>
-      <name>
-      </name>
+      <name>Palacio Uceda</name>
       <brief>
       </brief>
       <detailed>
@@ -1551,8 +1543,7 @@ Confiamos en ti, agente.</show-text>
   </geo-element>
   <geo-element id="CruzVerde">
     <description>
-      <name>
-      </name>
+      <name>Cruz Verde</name>
       <brief>
       </brief>
       <detailed>
@@ -1573,8 +1564,7 @@ Confiamos en ti, agente.</show-text>
   </geo-element>
   <geo-element id="PlazaVilla">
     <description>
-      <name>
-      </name>
+      <name>Plaza Villa</name>
       <brief>
       </brief>
       <detailed>
@@ -1618,8 +1608,7 @@ Confiamos en ti, agente.</show-text>
   </geo-element>
   <geo-element id="SanMiguel">
     <description>
-      <name>
-      </name>
+      <name>San Miguel</name>
       <brief>
       </brief>
       <detailed>
@@ -1651,8 +1640,7 @@ Confiamos en ti, agente.</show-text>
   </geo-element>
   <geo-element id="Fin-PlazaMayor">
     <description>
-      <name>
-      </name>
+      <name>Fin Plaza Mayor</name>
       <brief>
       </brief>
       <detailed>
@@ -1663,7 +1651,7 @@ Confiamos en ti, agente.</show-text>
         <Polygon>
           <exterior>
             <LinearRing>
-              <posList>40.4156398095558 -3.7073975324632 40.4151211064564 -3.70737071037304 40.415104769286 -3.70792860984813 40.4156193882496 -3.70797688961041</posList>
+              <posList>40.4157235368521 -3.70742435455195 40.4150761792336 -3.70737607478977 40.4150659684957 -3.7079742074001 40.4156867785421 -3.70803589820736</posList>
             </LinearRing>
           </exterior>
         </Polygon>
@@ -1688,8 +1676,7 @@ Confiamos en ti, agente.</show-text>
   </geo-element>
   <geo-element id="MonasterioDescalzas">
     <description>
-      <name>
-      </name>
+      <name>Monasterio Descalzas</name>
       <brief>
       </brief>
       <detailed>
@@ -1765,7 +1752,7 @@ Confiamos en ti, agente.</show-text>
           <condition>
             <inactive flag="FotoConsultada" />
           </condition>
-          <speak-player guid="61530ee8-6db0-4af2-9d05-9d28562236b9">*Los edificios de la Plaza Mayor no han cambiado mucho pero hay otros elementos aquitectónicos decorativos que no concuerdan, debo de localízalos.*</speak-player>
+          <speak-player guid="61530ee8-6db0-4af2-9d05-9d28562236b9">*Los edificios de la Plaza Mayor no han cambiado mucho pero hay otros elementos aquitectónicos decorativos que no concuerdan, debo localizarlos.*</speak-player>
           <condition />
         </effect>
       </examine>
@@ -1819,7 +1806,7 @@ Confiamos en ti, agente.</show-text>
           <activate flag="verHuellasEnSol" guid="d193767c-6aa4-43ca-962f-c3330d8e56f2" />
           <condition />
           <speak-player guid="54066b4d-fd28-4639-8392-2e12e7364273">Huellas de deportiva, seguro que es nuestro ladrón, vamos a seguirlas para ver en que dirección huyó.
-Vamos Iñigo en marcha.</speak-player>
+Vamos íñigo en marcha.</speak-player>
           <condition />
           <navigate navigation-type="Ordered" guid="3375b382-862a-451d-98ae-c558a9dbbc87">
             <step locks="False">SanGines</step>
@@ -2049,7 +2036,7 @@ Vamos Iñigo en marcha.</speak-player>
         <effect>
           <activate flag="escudoRecuperado" guid="d15064b0-a194-4e66-88fb-3151cb7275f6" />
           <condition />
-          <speak-player guid="eedb5e32-a194-476d-a7a5-c1b32df21c10">Aqui esta el escudo,el ladrón lo habia ocultado en la fuente para llevarselo luego</speak-player>
+          <speak-player guid="eedb5e32-a194-476d-a7a5-c1b32df21c10">Aquí está el escudo, el ladrón lo había ocultado en la fuente para llevarselo luego.</speak-player>
           <condition />
           <increment var="Etapa" value="1" guid="6620e9e0-3073-422c-b207-364ef0a149f7" />
           <condition />
@@ -2107,9 +2094,9 @@ Vamos Iñigo en marcha.</speak-player>
         <effect>
           <activate flag="codiceRecuperado" guid="7806e2f9-c3c9-45a5-86d4-64d1cca13e2e" />
           <condition />
-          <speak-player guid="58a33c8c-fa0f-47f7-a06e-c68bfeb3de2e">Este es el codice del Duque de Lerma, valido de FelipeIII</speak-player>
+          <speak-player guid="58a33c8c-fa0f-47f7-a06e-c68bfeb3de2e">Este es el códice del Duque de Lerma, que también fue valido de Felipe III.</speak-player>
           <condition />
-          <speak-player guid="7086f3dc-86d7-43c2-a095-572231137521">Es una partitura con mucho valor, que se escuchaba en la corte del rey</speak-player>
+          <speak-player guid="7086f3dc-86d7-43c2-a095-572231137521">Es una partitura con mucho valor, que se escuchaba en la corte del rey.</speak-player>
           <condition />
         </effect>
       </examine>
@@ -2164,7 +2151,7 @@ Vamos Iñigo en marcha.</speak-player>
           <condition />
           <speak-char idTarget="Guardia" guid="727441d8-68b9-4653-9d9e-2a7b81d0c4e7">Estupendo, nosotros nos encargaremos de devolverlo al señor, muchas gracias por vuestra ayuda.</speak-char>
           <condition />
-          <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="c8123c56-1f4d-470e-90fc-ef52de087825">*Se van los dos*</show-text>
+          <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="c8123c56-1f4d-470e-90fc-ef52de087825">*Se van los dos.*</show-text>
           <condition />
           <speak-char idTarget="Inigo" guid="61cccd14-18ae-4ac8-814d-0ea3c6cd8fab">Deberíamos seguir buscando al ladrón, salgamos del mercado.</speak-char>
           <condition />
@@ -2270,7 +2257,7 @@ La trama se desarrolla en el pueblo cordobés de Fuente Obejuna en tiempos de lo
           <active flag="cogidoColeccionableEscudo" />
         </condition>
         <effect>
-          <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="0472322d-75ba-4767-81cc-b828bee353c9">Escudo proveniente de la Orden de Santiago que fue una orden religiosa y militar surgida en el siglo XII. Su objetivo era proteger a los peregrinos en el camino de Santiago.</show-text>
+          <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="0472322d-75ba-4767-81cc-b828bee353c9">Escudo proveniente de la Orden de Santiago que fue una orden religiosa y militar surgida en el siglo XII. Su objetivo era proteger a los peregrinos en el camino de Santiago.</show-text>
           <condition />
         </effect>
       </examine>
@@ -2525,10 +2512,10 @@ La trama se desarrolla en el pueblo cordobés de Fuente Obejuna en tiempos de lo
     </description>
   </object>
   <graph-conversation id="ConversacionCaridad">
-    <dialogue-node nodeindex="0" editor-x="33" editor-y="62">
+    <dialogue-node nodeindex="0" editor-x="13" editor-y="59">
       <speak-char idTarget="Caridad">
         <resources name="No name" />
-        <text>¡Iñigo!,¿cómo te atreves a asomar la cara por aquí? </text>
+        <text>¡Íñigo!, ¿cómo te atreves a asomar la cara por aquí?. </text>
       </speak-char>
       <condition />
       <speak-char idTarget="Inigo">
@@ -2543,17 +2530,22 @@ La trama se desarrolla en el pueblo cordobés de Fuente Obejuna en tiempos de lo
       <condition />
       <speak-char idTarget="Inigo">
         <resources name="No name" />
-        <text>Jajaja, siempre tan oportuno. Necesitamos información porque han robado un cuadro a Velazquez pero la gente no suelta prenda. </text>
+        <text>Jajaja, siempre tan oportuno. Necesitamos información porque han robado un cuadro a Velázquez pero la gente no suelta prenda. </text>
       </speak-char>
       <condition />
       <speak-char idTarget="Caridad">
         <resources name="No name" />
-        <text>Normal, con esas pintas que me llevais los dos espantáis a la gente. Tengo una idea, poneros estos trajes de mensajero real. Así la gente igual os ayuda algo mas.  </text>
+        <text>Normal, con esas pintas que me lleváis los dos espantáis a la gente. </text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="Caridad">
+        <resources name="No name" />
+        <text>Tengo una idea, poneros estos trajes de mensajero real. Así la gente igual os ayuda algo más.  </text>
       </speak-char>
       <condition />
       <child nodeindex="1" />
     </dialogue-node>
-    <dialogue-node nodeindex="1" editor-x="583" editor-y="55">
+    <dialogue-node nodeindex="1" editor-x="356" editor-y="69">
       <speak-player>
         <resources name="No name" />
         <text>Caridad, ¿sabes algo sobre algún ladrón o algún robo?.</text>
@@ -2561,7 +2553,7 @@ La trama se desarrolla en el pueblo cordobés de Fuente Obejuna en tiempos de lo
       <condition />
       <speak-char idTarget="Caridad">
         <resources name="No name" />
-        <text>Antes Alatriste me estuvo hablando de un ladrón que se escapó de la cárcel, que tenía unas pintas raras me dijo.</text>
+        <text>Antes Alatriste me estuvo hablando de un ladrón que se escapó de la cárcel y que tenía unas pintas raras.</text>
       </speak-char>
       <condition />
       <speak-player>
@@ -2576,7 +2568,12 @@ La trama se desarrolla en el pueblo cordobés de Fuente Obejuna en tiempos de lo
       <condition />
       <speak-char idTarget="Caridad">
         <resources name="No name" />
-        <text>Más os vale que me devolváis los trajes como os los lleváis si no os las veréis conmigo. Venga iros ya que tengo mucho trabajo que hacer.</text>
+        <text>Más os vale que me devolváis los trajes como os los lleváis si no os las veréis conmigo. </text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="Caridad">
+        <resources name="No name" />
+        <text>Venga iros ya que tengo mucho trabajo que hacer.</text>
       </speak-char>
       <condition />
       <end-conversation>
@@ -2607,32 +2604,32 @@ La trama se desarrolla en el pueblo cordobés de Fuente Obejuna en tiempos de lo
       <condition />
       <speak-char idTarget="Inigo">
         <resources name="No name" />
-        <text>íñigo, ese es mi nombre. No pasa nada, voy apurado,estoy buscando algo. </text>
+        <text>íñigo, ese es mi nombre. No pasa nada. Voy apurado, estoy buscando algo. </text>
       </speak-char>
       <condition />
       <speak-player>
         <resources name="No name" />
-        <text>¿Y que estás buscando íñigo?</text>
+        <text>¿Y qué estás buscando íñigo?</text>
       </speak-player>
       <condition />
       <speak-char idTarget="Inigo">
         <resources name="No name" />
-        <text>Han robado un cuadro al maestro Velazquez, seguro que si lo recupero me darán una buena recompensa.</text>
+        <text>Han robado un cuadro al maestro Velázquez, seguro que si lo recupero me darán una buena recompensa.</text>
       </speak-char>
       <condition />
       <speak-player>
         <resources name="No name" />
-        <text>*Seguro que es la Rendición de breda.*</text>
+        <text>*Seguro que es la Rendición de Breda.*</text>
       </speak-player>
       <condition />
       <speak-char idTarget="Inigo">
         <resources name="No name" />
-        <text>¿La que?.</text>
+        <text>¿La qué?.</text>
       </speak-char>
       <condition />
       <speak-player>
         <resources name="No name" />
-        <text>Da lo mismo, casualmente vengo buscando a ese ladrón, igual podemos ayudarnos…</text>
+        <text>Da lo mismo, casualmente vengo buscando al ladrón de ese cuadro, igual podemos ayudarnos…</text>
       </speak-player>
       <condition />
       <speak-char idTarget="Inigo">
@@ -2671,7 +2668,7 @@ La trama se desarrolla en el pueblo cordobés de Fuente Obejuna en tiempos de lo
             <step locks="False">Taberna</step>
           </navigate>
           <condition />
-          <increment var="Etapa" value="1" guid="3f6e3b6c-a755-47ec-af6e-69d6899745ca" />
+          <increment var="Etapa" value="0" guid="3f6e3b6c-a755-47ec-af6e-69d6899745ca" />
           <condition />
         </effect>
       </end-conversation>
@@ -2681,47 +2678,47 @@ La trama se desarrolla en el pueblo cordobés de Fuente Obejuna en tiempos de lo
     <dialogue-node nodeindex="0" editor-x="79" editor-y="57">
       <speak-char idTarget="Inigo">
         <resources name="No name" />
-        <text>Ya hemos llegado</text>
+        <text>Ya hemos llegado.</text>
       </speak-char>
       <condition />
       <speak-player>
         <resources name="No name" />
-        <text>El ministerio de asuntos exteriores, como ha cambiado la cosa. De una carcel en esta época a un edificio de un ministerio.</text>
+        <text>*El ministerio de asuntos exteriores, como ha cambiado la cosa. De una cárcel en esta época a un edificio de un ministerio.*</text>
       </speak-player>
       <condition />
       <speak-player>
         <resources name="No name" />
-        <text>Lo acabaron en 1636 y casi 400 años despues sigue aquí.</text>
+        <text>*Lo acabaron en 1636 y casi 400 años después sigue aquí.*</text>
       </speak-player>
       <condition />
       <speak-char idTarget="Inigo">
         <resources name="No name" />
-        <text>¿...? ¿Que murmuras?</text>
+        <text>¿...? ¿Qué murmuras?.</text>
       </speak-char>
       <condition />
       <speak-player>
         <resources name="No name" />
-        <text>Nada nada, no importa</text>
+        <text>Nada nada, no importa.</text>
       </speak-player>
       <condition />
       <end-conversation />
     </dialogue-node>
   </graph-conversation>
   <graph-conversation id="conversacionLope">
-    <dialogue-node nodeindex="0" editor-x="33" editor-y="60">
+    <dialogue-node nodeindex="0" editor-x="0" editor-y="393">
       <speak-player>
         <resources name="No name" />
-        <text>*Ay va es Lope de Vega, ¿Que hace aquí?*</text>
+        <text>*Ay va es Lope de Vega, ¿Qué hace aquí?*</text>
       </speak-player>
       <condition />
       <speak-player>
         <resources name="No name" />
-        <text>Disculpe caballero, ¿nos podría ayudar? </text>
+        <text>Disculpe caballero, ¿nos podría ayudar?.</text>
       </speak-player>
       <condition />
       <speak-char idTarget="Lope">
         <resources name="No name" />
-        <text>Por supuesto, Lope de Vega a vuestro servicio. Que ya me han liberado por fin.</text>
+        <text>Por supuesto, Lope de Vega a vuestro servicio. ¡Que ya me han liberado por fin!.</text>
       </speak-char>
       <condition />
       <speak-player>
@@ -2731,7 +2728,7 @@ La trama se desarrolla en el pueblo cordobés de Fuente Obejuna en tiempos de lo
       <condition />
       <speak-char idTarget="Lope">
         <resources name="No name" />
-        <text>¿Te refieres al preso fugado? Si fue mi compañero de celda, un tipo un poco raro.</text>
+        <text>¿Te refieres al preso fugado? Si, fue mi compañero de celda, un tipo un poco raro.</text>
       </speak-char>
       <condition />
       <speak-player>
@@ -2741,7 +2738,7 @@ La trama se desarrolla en el pueblo cordobés de Fuente Obejuna en tiempos de lo
       <condition />
       <child nodeindex="1" />
     </dialogue-node>
-    <dialogue-node nodeindex="1" editor-x="602" editor-y="120">
+    <dialogue-node nodeindex="1" editor-x="273" editor-y="43">
       <speak-char idTarget="Lope">
         <resources name="No name" />
         <text>Le encerraron hace tres días por intento de robo, y se escapó hace unas horas.</text>
@@ -2759,12 +2756,12 @@ La trama se desarrolla en el pueblo cordobés de Fuente Obejuna en tiempos de lo
       <condition />
       <speak-char idTarget="Inigo">
         <resources name="No name" />
-        <text>Podemos ir hacia allí a ver si encontramos mas información.</text>
+        <text>Podemos ir hacia allí a ver si encontramos más información.</text>
       </speak-char>
       <condition />
       <speak-player>
         <resources name="No name" />
-        <text>Muchas gracias, tenga buen dia Lope de Vega.</text>
+        <text>Muchas gracias, tenga buen día Lope de Vega.</text>
       </speak-player>
       <condition />
       <end-conversation>
@@ -2785,12 +2782,12 @@ La trama se desarrolla en el pueblo cordobés de Fuente Obejuna en tiempos de lo
     <dialogue-node nodeindex="0" editor-x="168" editor-y="70">
       <speak-char idTarget="Inigo">
         <resources name="No name" />
-        <text> La Puerta del Sol, será mejor que cuides tus bolsillos, por aqui hay listillo suelto te lo digo yo.</text>
+        <text> La Puerta del Sol, será mejor que cuides tus bolsillos, por aquí hay mucho listillo suelto, te lo digo yo.</text>
       </speak-char>
       <condition />
       <speak-char idTarget="Inigo">
         <resources name="No name" />
-        <text>¡Mira! ese tipo salió corriendo al vernos, no he visto por donde ha ido.</text>
+        <text>¡Mira! ese tipo salió corriendo al vernos, pero no he visto por donde ha ido.</text>
       </speak-char>
       <condition />
       <end-conversation>
@@ -2802,7 +2799,7 @@ La trama se desarrolla en el pueblo cordobés de Fuente Obejuna en tiempos de lo
     </dialogue-node>
   </graph-conversation>
   <graph-conversation id="ConversacionSanGines">
-    <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
+    <dialogue-node nodeindex="0" editor-x="151" editor-y="34">
       <speak-player>
         <resources name="No name" />
         <text>La escultura de la fachada no está.</text>
@@ -2835,17 +2832,17 @@ La trama se desarrolla en el pueblo cordobés de Fuente Obejuna en tiempos de lo
     <dialogue-node nodeindex="0" editor-x="26" editor-y="54">
       <speak-char idTarget="Inigo">
         <resources name="No name" />
-        <text>Aquí se pierde el rastro, estamos seguros de que estuvo aquí?. </text>
+        <text>Aquí se pierde el rastro, ¿estamos seguros de que estuvo aquí?. </text>
       </speak-char>
       <condition />
       <speak-player>
         <resources name="No name" />
-        <text>Vaya la iglesia de San Ginés, una de las más antiguas de Madrid, que en el presente sigue en pie.</text>
+        <text>*Vaya la iglesia de San Ginés, una de las más antiguas de Madrid, que en el presente aún sigue en pie.*</text>
       </speak-player>
       <condition />
       <speak-player>
         <resources name="No name" />
-        <text>Si no me equivoco, se construyó en 1645 sobre los restos de lo fue una ermita mozárabe.</text>
+        <text>*Si no me equivoco, se construyó en 1645 sobre los restos de lo fue una ermita mozárabe.*</text>
       </speak-player>
       <condition />
       <speak-player>
@@ -2872,7 +2869,7 @@ La trama se desarrolla en el pueblo cordobés de Fuente Obejuna en tiempos de lo
     </dialogue-node>
   </graph-conversation>
   <graph-conversation id="ConversacionMonja">
-    <dialogue-node nodeindex="0" editor-x="43" editor-y="26">
+    <dialogue-node nodeindex="0" editor-x="75" editor-y="17">
       <speak-char idTarget="Monja">
         <resources name="No name" />
         <text>Disculpe buen hombre, ¿podría acompañarme al monasterio de las Descalzas?, es por un asunto de la realeza.</text>
@@ -2880,7 +2877,7 @@ La trama se desarrolla en el pueblo cordobés de Fuente Obejuna en tiempos de lo
       <condition />
       <speak-player>
         <resources name="No name" />
-        <text>¿Un asunto de la realeza?</text>
+        <text>¿Un asunto de la realeza?.</text>
       </speak-player>
       <condition />
       <speak-player>
@@ -2890,12 +2887,12 @@ La trama se desarrolla en el pueblo cordobés de Fuente Obejuna en tiempos de lo
       <condition />
       <speak-char idTarget="Monja">
         <resources name="No name" />
-        <text>No se preocupe,ahora la lleva alguna de mis hermanas. Sigame por pavor.</text>
+        <text>No se preocupe, ahora la lleva alguna de mis hermanas. Sigame por pavor.</text>
       </speak-char>
       <condition />
       <speak-player>
         <resources name="No name" />
-        <text>*Es verdad en el monasterio de las Descalzas, Finalizado en 1564 y tuvo gran relevancia para la Casa de los Austria.*</text>
+        <text>*Es verdad el monasterio de las Descalzas, fundado en 1559 por Juana de Austria, hermana de Felipe II, tuvo gran relevancia para la Casa de los Austria.*</text>
       </speak-player>
       <condition />
       <end-conversation>
@@ -2917,15 +2914,15 @@ La trama se desarrolla en el pueblo cordobés de Fuente Obejuna en tiempos de lo
     </dialogue-node>
   </graph-conversation>
   <graph-conversation id="ConversacionMarianaAustria">
-    <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
+    <dialogue-node nodeindex="0" editor-x="0" editor-y="87">
       <speak-char idTarget="MarianaDeAustria">
         <resources name="No name" />
-        <text>Que bien que hayas llegado,llévale estos planos a mi marido al Palacio Real. </text>
+        <text>Que bien que hayáis llegado, llévadle estos planos a mi marido al Palacio Real. </text>
       </speak-char>
       <condition />
       <speak-player>
         <resources name="No name" />
-        <text>¿Disculpe?¿Qué le lleve que a quién?</text>
+        <text>¿Disculpe?¿Qué le llevemos qué a quién?.</text>
       </speak-player>
       <condition />
       <speak-char idTarget="MarianaDeAustria">
@@ -2935,7 +2932,7 @@ La trama se desarrolla en el pueblo cordobés de Fuente Obejuna en tiempos de lo
       <condition />
       <speak-char idTarget="Inigo">
         <resources name="No name" />
-        <text>No se preocupe su majestad, ahora mismo se los llevaremos a Felipe IV. </text>
+        <text>No se preocupe su majestad, ahora mismo se los llevamos a Felipe IV. </text>
       </speak-char>
       <condition />
       <speak-char idTarget="MarianaDeAustria">
@@ -2945,30 +2942,30 @@ La trama se desarrolla en el pueblo cordobés de Fuente Obejuna en tiempos de lo
       <condition />
       <speak-player>
         <resources name="No name" />
-        <text>¿A que ha venido eso? </text>
+        <text>¿A qué ha venido eso?.</text>
       </speak-player>
       <condition />
       <speak-char idTarget="Inigo">
         <resources name="No name" />
-        <text>Por la ropa que tienes puesta, la reina habrá pensado que eres un mensajero real. </text>
+        <text>Por la ropa que tenemos puesta, la reina habrá pensado que somos mensajeros reales. </text>
       </speak-char>
       <condition />
       <child nodeindex="1" />
     </dialogue-node>
-    <dialogue-node nodeindex="1" editor-x="731" editor-y="106">
+    <dialogue-node nodeindex="1" editor-x="485" editor-y="402">
       <speak-player>
         <resources name="No name" />
-        <text>Claro, Mariana de Austria, la segunda esposa de Felipe IV.Como no he podido darme cuenta. </text>
+        <text>*Claro, Mariana de Austria, la segunda esposa de Felipe IV. Como no he podido darme cuenta.* </text>
       </speak-player>
       <condition />
       <speak-player>
         <resources name="No name" />
-        <text>Aquí estuvo viviendo junto con otros miembros de la Casa de los Austria.</text>
+        <text>*Aquí estuvo viviendo junto con otros miembros de la Casa de los Austria.*</text>
       </speak-player>
       <condition />
       <speak-char idTarget="Inigo">
         <resources name="No name" />
-        <text>Será mejor que hagamos lo que ha dicho,para no tener problemas.</text>
+        <text>Será mejor que hagamos lo que ha dicho, para no tener problemas.</text>
       </speak-char>
       <condition />
       <end-conversation>
@@ -2991,7 +2988,7 @@ La trama se desarrolla en el pueblo cordobés de Fuente Obejuna en tiempos de lo
         <resources name="No name">
           <asset type="image" uri="" />
         </resources>
-        <text>¿Le interesa alguna señor?</text>
+        <text>¿Le interesa alguna señor?.</text>
       </speak-char>
       <condition />
       <child nodeindex="1" />
@@ -3016,20 +3013,20 @@ La trama se desarrolla en el pueblo cordobés de Fuente Obejuna en tiempos de lo
       <condition />
       <child nodeindex="4" />
     </option-node>
-    <dialogue-node nodeindex="2" editor-x="785" editor-y="38">
+    <dialogue-node nodeindex="2" editor-x="818" editor-y="12">
       <speak-player>
         <resources name="No name" />
-        <text>humm parece que esta es la estatua.</text>
+        <text>Humm parece que esta es la estatua.</text>
       </speak-player>
       <condition />
       <speak-player>
         <resources name="No name" />
-        <text>Quiero esta,pero no la voy a pagar, porque es robada y la voy a devolver a su respectivo lugar.</text>
+        <text>Quiero esta, pero no la voy a pagar, porque es robada y la voy a devolver a su respectivo lugar.</text>
       </speak-player>
       <condition />
       <speak-char idTarget="Mercader">
         <resources name="No name" />
-        <text>Cómo se atreve a decir eso.</text>
+        <text>¡Cómo se atreve a decir eso!.</text>
       </speak-char>
       <condition />
       <speak-player>
@@ -3069,7 +3066,7 @@ La trama se desarrolla en el pueblo cordobés de Fuente Obejuna en tiempos de lo
     </dialogue-node>
   </graph-conversation>
   <graph-conversation id="ConversacionFelipeIV">
-    <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
+    <dialogue-node nodeindex="0" editor-x="61" editor-y="43">
       <speak-player>
         <resources name="No name" />
         <text>Disculpe su majestad, le traigo unos planos de parte de su esposa Mariana. </text>
@@ -3077,7 +3074,7 @@ La trama se desarrolla en el pueblo cordobés de Fuente Obejuna en tiempos de lo
       <condition />
       <speak-char idTarget="FelipeIV">
         <resources name="No name" />
-        <text>Gracias mensajero.Por fin los tengo. Llevo esperando estos planos meses por parte de Velázquez.</text>
+        <text>Gracias mensajero. ¡Por fin los tengo!. Llevo esperando estos planos meses por parte de Velázquez.</text>
       </speak-char>
       <condition />
       <speak-char idTarget="Inigo">
@@ -3087,7 +3084,7 @@ La trama se desarrolla en el pueblo cordobés de Fuente Obejuna en tiempos de lo
       <condition />
       <speak-char idTarget="FelipeIV">
         <resources name="No name" />
-        <text>El diseño de una estatua en mi honor, que se va a construir aquí,en el Palacio Real.</text>
+        <text>El diseño de una estatua en mi honor, que se va a construir aquí, en el Palacio Real.</text>
       </speak-char>
       <condition />
       <speak-char idTarget="FelipeIV">
@@ -3097,7 +3094,7 @@ La trama se desarrolla en el pueblo cordobés de Fuente Obejuna en tiempos de lo
       <condition />
       <speak-char idTarget="Inigo">
         <resources name="No name" />
-        <text>*Ah sí, esto es lo otro en lo que estaba trabajando el maestro Velazquez.*</text>
+        <text>*Ah sí, esto es lo otro en lo que estaba trabajando el maestro Velázquez.*</text>
       </speak-char>
       <condition />
       <speak-player>
@@ -3107,58 +3104,58 @@ La trama se desarrolla en el pueblo cordobés de Fuente Obejuna en tiempos de lo
       <condition />
       <child nodeindex="1" />
     </dialogue-node>
-    <dialogue-node nodeindex="1" editor-x="708" editor-y="50">
+    <dialogue-node nodeindex="1" editor-x="689" editor-y="402">
       <speak-player>
         <resources name="No name" />
-        <text>Si no requiere mas de nuestros servicios, nos retiramos su majestad</text>
+        <text>Si no requiere más de nuestros servicios, nos retiramos su majestad.</text>
       </speak-player>
       <condition />
       <speak-char idTarget="FelipeIV">
         <resources name="No name" />
-        <text>Podeis retiraros</text>
+        <text>Podéis retiraros.</text>
       </speak-char>
       <condition />
       <end-conversation />
     </dialogue-node>
   </graph-conversation>
   <graph-conversation id="conversacionHaciaRamales">
-    <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
+    <dialogue-node nodeindex="0" editor-x="0" editor-y="94">
       <speak-char idTarget="Inigo">
         <resources name="No name" />
-        <text>Aquí muy cerca está la capilla a la que suelo ir. Podemos ir allí a echar un vistazo. </text>
+        <text>Muy cerca de aquí está la capilla a la que suelo ir. Podemos ir allí a echar un vistazo. </text>
       </speak-char>
       <condition />
       <speak-player>
         <resources name="No name" />
-        <text>¿Te apetece ir a verlo?</text>
+        <text>¿Te apetece ir a verlo?.</text>
       </speak-player>
       <condition />
       <child nodeindex="1" />
     </dialogue-node>
-    <option-node nodeindex="1" keepShowing="yes" preListening="yes" editor-x="575" editor-y="36" x="575" y="36">
+    <option-node nodeindex="1" keepShowing="yes" preListening="yes" editor-x="497" editor-y="81" x="497" y="81">
       <speak-player>
-        <text>Si, porque no, asi conozco un poco mas de la ciudad</text>
+        <text>Si, porque no, asi conozco un poco mas de la ciudad.</text>
         <resources name="No name" />
       </speak-player>
       <condition />
       <child nodeindex="2" />
       <speak-player>
-        <text>Me da lo mismo, como tu veas</text>
+        <text>Me da lo mismo, como tu veas.</text>
         <resources name="No name" />
       </speak-player>
       <condition />
       <child nodeindex="2" />
       <speak-player>
-        <text>No, que tengo un poco de prisa</text>
+        <text>No, que tengo un poco de prisa.</text>
         <resources name="No name" />
       </speak-player>
       <condition />
       <child nodeindex="3" />
     </option-node>
-    <dialogue-node nodeindex="2" editor-x="1051" editor-y="23">
+    <dialogue-node nodeindex="2" editor-x="1088" editor-y="87">
       <speak-char idTarget="Inigo">
         <resources name="No name" />
-        <text>Vale, pues vamos para allá</text>
+        <text>Vale, pues vamos para allá.</text>
       </speak-char>
       <condition />
       <end-conversation>
@@ -3174,10 +3171,10 @@ La trama se desarrolla en el pueblo cordobés de Fuente Obejuna en tiempos de lo
         </effect>
       </end-conversation>
     </dialogue-node>
-    <dialogue-node nodeindex="3" editor-x="1052" editor-y="279">
+    <dialogue-node nodeindex="3" editor-x="682" editor-y="457">
       <speak-char idTarget="Inigo">
         <resources name="No name" />
-        <text>Vamos, si te va a encantar y no vamos a tardar nada</text>
+        <text>Vamos, si te va a encantar y no vamos a tardar nada.</text>
       </speak-char>
       <condition />
       <end-conversation>
@@ -3198,7 +3195,7 @@ La trama se desarrolla en el pueblo cordobés de Fuente Obejuna en tiempos de lo
     <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
       <speak-player>
         <resources name="No name" />
-        <text>La plaza de ramales, donde se enterró a Velazquez, un buen lugar para buscar </text>
+        <text>La plaza de Ramales, donde se enterró a Velazquez, un buen lugar para buscar.</text>
       </speak-player>
       <condition />
       <speak-char idTarget="Inigo">
@@ -3208,12 +3205,12 @@ La trama se desarrolla en el pueblo cordobés de Fuente Obejuna en tiempos de lo
       <condition />
       <speak-player>
         <resources name="No name" />
-        <text>Cierto. Espera un momento, lleva zapatos con suela moderna y ropas que no son de esta época. ¡Ese va a ser el ladrón! </text>
+        <text>Cierto. Espera un momento, lleva zapatos con suela moderna y ropas que no son de esta época. ¡Ese va a ser el ladrón!. </text>
       </speak-player>
       <condition />
       <speak-char idTarget="Inigo">
         <resources name="No name" />
-        <text> Fijate si lleva algo enrollado a la espalda, es posible que sea el cuadro que buscamos. ¡Vayamos tras él! </text>
+        <text> Fijate, si lleva algo enrollado a la espalda, es posible que sea el cuadro que buscamos. ¡Vayamos tras él!.</text>
       </speak-char>
       <condition />
       <end-conversation>
@@ -3231,15 +3228,15 @@ La trama se desarrolla en el pueblo cordobés de Fuente Obejuna en tiempos de lo
     </dialogue-node>
   </graph-conversation>
   <graph-conversation id="ConversationPalaciodeUceda">
-    <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
+    <dialogue-node nodeindex="0" editor-x="163" editor-y="42">
       <speak-player>
         <resources name="No name" />
-        <text>Lo he perdido de vista </text>
+        <text>Lo he perdido de vista.</text>
       </speak-player>
       <condition />
       <speak-char idTarget="Inigo">
         <resources name="No name" />
-        <text>Yo tampoco lo veo </text>
+        <text>Yo tampoco lo veo. </text>
       </speak-char>
       <condition />
       <speak-player>
@@ -3249,7 +3246,12 @@ La trama se desarrolla en el pueblo cordobés de Fuente Obejuna en tiempos de lo
       <condition />
       <speak-player>
         <resources name="No name" />
-        <text>Mira, el palacio de los duques de Uceda, hijo del valido del rey felipe III. Se finalizó en 1613 y  también es conocido como el Palacio de Consejos o Capitanería General. </text>
+        <text>Mira, el palacio del duque de Uceda, que fue valido del rey Felipe III. </text>
+      </speak-player>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>*Se finalizó en 1613 y también es conocido como el Palacio de Consejos o Capitanería General. En el presente es la sede del Consejo del Estado.*</text>
       </speak-player>
       <condition />
       <speak-player>
@@ -3261,7 +3263,7 @@ La trama se desarrolla en el pueblo cordobés de Fuente Obejuna en tiempos de lo
     </dialogue-node>
   </graph-conversation>
   <graph-conversation id="ConversationBuscarElEscudo">
-    <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
+    <dialogue-node nodeindex="0" editor-x="0" editor-y="87">
       <speak-char idTarget="Inigo">
         <resources name="No name" />
         <text> El escudo es muy grande, no es fácil de ocultar. Por esta zona solo se me ocurren dos sitios donde poder esconder algo tan grande y pesado: La plaza de la Villa y la plaza de la Cruz Verde. </text>
@@ -3269,29 +3271,29 @@ La trama se desarrolla en el pueblo cordobés de Fuente Obejuna en tiempos de lo
       <condition />
       <speak-char idTarget="Inigo">
         <resources name="No name" />
-        <text>¿hacia donde quieres ir?</text>
+        <text>¿Hacia donde quieres ir?.</text>
       </speak-char>
       <condition />
       <child nodeindex="1" />
     </dialogue-node>
-    <option-node nodeindex="1" keepShowing="yes" preListening="yes" editor-x="446" editor-y="50" x="446" y="50">
+    <option-node nodeindex="1" keepShowing="yes" preListening="yes" editor-x="565" editor-y="49" x="565" y="49">
       <speak-player>
-        <text>Plaza de la villa</text>
+        <text>Plaza de la villa.</text>
         <resources name="No name" />
       </speak-player>
       <condition />
       <child nodeindex="2" />
       <speak-player>
-        <text>Plaza de la Cruz Verde</text>
+        <text>Plaza de la Cruz Verde.</text>
         <resources name="No name" />
       </speak-player>
       <condition />
       <child nodeindex="3" />
     </option-node>
-    <dialogue-node nodeindex="2" editor-x="938" editor-y="16">
+    <dialogue-node nodeindex="2" editor-x="855" editor-y="24">
       <speak-char idTarget="Inigo">
         <resources name="No name" />
-        <text>Pues sigueme y te llevo al ayuntamiento</text>
+        <text>Pues sigueme y te llevo al ayuntamiento.</text>
       </speak-char>
       <condition />
       <end-conversation>
@@ -3308,7 +3310,7 @@ La trama se desarrolla en el pueblo cordobés de Fuente Obejuna en tiempos de lo
     <dialogue-node nodeindex="3" editor-x="923" editor-y="291">
       <speak-player>
         <resources name="No name" />
-        <text>Pues sigueme y te llevo a la fuente, que no esta lejos</text>
+        <text>Pues sigueme y te llevo a la fuente, que no esta lejos.</text>
       </speak-player>
       <condition />
       <end-conversation>
@@ -3324,15 +3326,20 @@ La trama se desarrolla en el pueblo cordobés de Fuente Obejuna en tiempos de lo
     </dialogue-node>
   </graph-conversation>
   <graph-conversation id="ConversationDuquedeUceda">
-    <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
+    <dialogue-node nodeindex="0" editor-x="83" editor-y="27">
+      <speak-char idTarget="Inigo">
+        <resources name="No name" />
+        <text>¡Mira!, el duque de Uceda.</text>
+      </speak-char>
+      <condition />
       <speak-char idTarget="DuqueDeUceda">
         <resources name="No name" />
-        <text> ¡Oh! ¿vosotros sois los que habéis localizado el escudo de mi fachada?  </text>
+        <text> ¡Oh! ¿vosotros sois los que habéis localizado el escudo de mi fachada?.  </text>
       </speak-char>
       <condition />
       <speak-char idTarget="Inigo">
         <resources name="No name" />
-        <text>Si, no está muy lejos. Está en la fuente de la Plaza de la Cruz Verde </text>
+        <text>Si, no está muy lejos. Está en la fuente de la Plaza de la Cruz Verde. </text>
       </speak-char>
       <condition />
       <speak-player>
@@ -3347,10 +3354,10 @@ La trama se desarrolla en el pueblo cordobés de Fuente Obejuna en tiempos de lo
       <condition />
       <child nodeindex="1" />
     </dialogue-node>
-    <dialogue-node nodeindex="1" editor-x="480" editor-y="69">
+    <dialogue-node nodeindex="1" editor-x="253" editor-y="381">
       <speak-char idTarget="DuqueDeUceda">
         <resources name="No name" />
-        <text>Sabiendo lo buenos que sois localizando cosas,¿podríais buscar el códice de mi padre, el duque de Lerma? </text>
+        <text>Sabiendo lo buenos que sois localizando objetos, ¿podríais buscar el códice de mi padre, el duque de Lerma? </text>
       </speak-char>
       <condition />
       <speak-char idTarget="DuqueDeUceda">
@@ -3360,7 +3367,7 @@ La trama se desarrolla en el pueblo cordobés de Fuente Obejuna en tiempos de lo
       <condition />
       <child nodeindex="2" />
     </dialogue-node>
-    <dialogue-node nodeindex="2" editor-x="965" editor-y="69">
+    <dialogue-node nodeindex="2" editor-x="921" editor-y="213">
       <speak-char idTarget="Inigo">
         <resources name="No name" />
         <text> Podemos ir a la plaza de la Villa, igual allí conseguimos información, ya que es una zona muy concurrida.</text>
@@ -3407,32 +3414,32 @@ La trama se desarrolla en el pueblo cordobés de Fuente Obejuna en tiempos de lo
     <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
       <speak-char idTarget="Inigo">
         <resources name="No name" />
-        <text>No parece que el escudo esté por aquí. deberiamos mirar en la plaza de la Cruz Verde</text>
+        <text>No parece que el escudo esté por aquí. Deberiamos mirar en la plaza de la Cruz Verde.</text>
       </speak-char>
       <condition />
       <speak-player>
         <resources name="No name" />
-        <text>Espera, estoy escuchando a dos mujeres.</text>
+        <text>Espera, estoy escuchando a dos mujeres...</text>
       </speak-player>
       <condition />
       <speak-player>
         <resources name="No name" />
-        <text>Dicen que han robado el códice de los duques de uceda.</text>
+        <text>Dicen que han robado el códice del duque de Uceda.</text>
       </speak-player>
       <condition />
       <speak-player>
         <resources name="No name" />
-        <text>Que paso por el mercado esta mañana y vio a un tendero con pergaminos y partituras</text>
+        <text>Que pasó por el mercado esta mañana y vio a un tendero con pergaminos y partituras.</text>
       </speak-player>
       <condition />
       <speak-player>
         <resources name="No name" />
-        <text>Pero parece que no saben nada del escudo</text>
+        <text>Pero parece que no saben nada del escudo.</text>
       </speak-player>
       <condition />
       <speak-player>
         <resources name="No name" />
-        <text>Vámonos</text>
+        <text>Vámonos.</text>
       </speak-player>
       <condition />
       <end-conversation>
@@ -3461,7 +3468,7 @@ La trama se desarrolla en el pueblo cordobés de Fuente Obejuna en tiempos de lo
       <condition />
       <speak-player>
         <resources name="No name" />
-        <text>Y una de ellas afirma que cuando paso por el mercado de san Miguel esta mañana habia un tendero con pergaminos y partituras.</text>
+        <text>Y una de ellas afirma que cuando paso por el mercado de san Miguel esta mañana, habia un tendero con pergaminos y partituras.</text>
       </speak-player>
       <condition />
       <speak-player>
@@ -3490,32 +3497,32 @@ La trama se desarrolla en el pueblo cordobés de Fuente Obejuna en tiempos de lo
     <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
       <speak-char idTarget="Inigo">
         <resources name="No name" />
-        <text>Con tanta gente va a ser muy dificil distinguir a nadie por aqui</text>
+        <text>Con tanta gente va a ser muy dificil distinguir a nadie por aquí.</text>
       </speak-char>
       <condition />
       <speak-player>
         <resources name="No name" />
-        <text>¡Mira, fijate! alli al otro lado de la calle Mayor</text>
+        <text>¡Mira, fijate! allí al otro lado de la calle Mayor.</text>
       </speak-player>
       <condition />
       <speak-player>
         <resources name="No name" />
-        <text>¿No es ese el ladrón al que hemos perseguido antes?</text>
+        <text>¿No es ese el ladrón al que hemos perseguido antes?.</text>
       </speak-player>
       <condition />
       <speak-char idTarget="Inigo">
         <resources name="No name" />
-        <text>¡Si, es él!</text>
+        <text>¡Si, es él!.</text>
       </speak-char>
       <condition />
       <speak-char idTarget="Inigo">
         <resources name="No name" />
-        <text>Mierda,nos ha visto y ha hechado a correr</text>
+        <text>Mierda, nos ha visto y ha hechado a correr.</text>
       </speak-char>
       <condition />
       <speak-player>
         <resources name="No name" />
-        <text>tras el, no podemos perderle otra vez</text>
+        <text>Tras él, no podemos perderle otra vez.</text>
       </speak-player>
       <condition />
       <end-conversation>
@@ -3536,7 +3543,7 @@ La trama se desarrolla en el pueblo cordobés de Fuente Obejuna en tiempos de lo
     <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
       <speak-player>
         <resources name="No name" />
-        <text>Alto.</text>
+        <text>¡Alto!.</text>
       </speak-player>
       <condition />
       <speak-char idTarget="Ladron">
@@ -3551,17 +3558,17 @@ La trama se desarrolla en el pueblo cordobés de Fuente Obejuna en tiempos de lo
       <condition />
       <speak-player>
         <resources name="No name" />
-        <text>Iñigo, coge el cuadro, yo me encargo de él, ahora vendrás conmigo. </text>
+        <text>íñigo, coge el cuadro, yo me encargo de él, ahora vendrás conmigo. </text>
       </speak-player>
       <condition />
       <speak-char idTarget="Ladron">
         <resources name="No name" />
-        <text>¿Cómo me habéis atrapado?</text>
+        <text>¿Cómo me habéis encontrado?.</text>
       </speak-char>
       <condition />
       <child nodeindex="1" />
     </dialogue-node>
-    <dialogue-node nodeindex="1" editor-x="755" editor-y="50">
+    <dialogue-node nodeindex="1" editor-x="499" editor-y="377">
       <speak-player>
         <resources name="No name" />
         <text>Solo seguimos tu rastro, has sido demasiado ambicioso tratando de robar tantas cosas.</text>
@@ -3579,7 +3586,7 @@ La trama se desarrolla en el pueblo cordobés de Fuente Obejuna en tiempos de lo
       <condition />
       <speak-char idTarget="Inigo">
         <resources name="No name" />
-        <text>No se que dices del presente pero te hemos pillado y vas a pagar por ello</text>
+        <text>No se que dices del presente pero te hemos pillado y vas a pagar por ello.</text>
       </speak-char>
       <condition />
       <speak-char idTarget="Inigo">
@@ -3622,7 +3629,7 @@ La trama se desarrolla en el pueblo cordobés de Fuente Obejuna en tiempos de lo
       <condition />
       <speak-char idTarget="Velazquez">
         <resources name="No name" />
-        <text>¿Y que vais a hacer con este delincuente?.</text>
+        <text>¿Y qué vais a hacer con este delincuente?.</text>
       </speak-char>
       <condition />
       <speak-player>
@@ -3637,7 +3644,7 @@ La trama se desarrolla en el pueblo cordobés de Fuente Obejuna en tiempos de lo
       <condition />
       <child nodeindex="1" />
     </dialogue-node>
-    <dialogue-node nodeindex="1" editor-x="646" editor-y="89">
+    <dialogue-node nodeindex="1" editor-x="768" editor-y="369">
       <speak-char idTarget="Inigo">
         <resources name="No name" />
         <text>Fue un placer, ve a llevarle al calabozo y luego nos vemos en la taberna. </text>
@@ -3760,7 +3767,7 @@ La trama se desarrolla en el pueblo cordobés de Fuente Obejuna en tiempos de lo
     <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
       <speak-char idTarget="Inigo">
         <resources name="No name" />
-        <text>Vamos,el ladrón ha escapado en dirección hacia el palacio de los Duques de Uceda.</text>
+        <text>Vamos,el ladrón ha escapado en dirección hacia el palacio del duque de Uceda.</text>
       </speak-char>
       <condition />
       <end-conversation />
@@ -3790,7 +3797,7 @@ La trama se desarrolla en el pueblo cordobés de Fuente Obejuna en tiempos de lo
     <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
       <speak-char idTarget="Inigo">
         <resources name="No name" />
-        <text>Volvamos al Placio de los duques de Uceda para devolver el escudo.</text>
+        <text>Volvamos al palacio del duque de Uceda para devolver el escudo.</text>
       </speak-char>
       <condition />
       <end-conversation />
