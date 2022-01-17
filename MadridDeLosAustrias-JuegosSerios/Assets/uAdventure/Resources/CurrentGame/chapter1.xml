@@ -937,7 +937,7 @@ Confiamos en ti, agente.</show-text>
       <object-ref idTarget="BotonAtrasEscenaColeccionables" x="89" y="167" scale="0.3043288" glow="no" layer="0" hasInfluenceArea="no" />
     </objects>
   </scene>
-  <map-scene id="MapaJuego" cameraType="Aerial2D" renderStyle="Tile" tileMetaIdentifier="OSMTile" usesGameplayArea="yes" gameplayArea="40.4125729710596 -3.71781527995988 0.00793969609117084 0.0171661376952987" center="(40.4154932909748, -3.70615566968772)" zoom="18" start="no">
+  <map-scene id="MapaJuego" cameraType="Aerial2D" renderStyle="Tile" tileMetaIdentifier="OSMTile" usesGameplayArea="yes" gameplayArea="40.4125729710596 -3.71781527995988 0.00793969609117084 0.0171661376952987" center="(40.4152339393587, -3.70558972358519)" zoom="18" start="no">
     <map-element targetId="Foto" layer="0">
       <condition />
       <ext-elem-ref scale="0.3179099" orientation="2" transformManager="uAdventure.Geo.GeopositionedDescriptor">
@@ -1194,7 +1194,9 @@ Confiamos en ti, agente.</show-text>
       </ext-elem-ref>
     </map-element>
     <map-element targetId="MapaLibro" layer="0">
-      <condition />
+      <condition>
+        <active flag="FotoConsultada" />
+      </condition>
       <ext-elem-ref scale="0.1464389" orientation="2" transformManager="uAdventure.Geo.GeopositionedDescriptor">
         <param name="Position">(40.4137268066406, -3.70815396308899)</param>
         <param name="Rotation">0</param>
@@ -1205,8 +1207,24 @@ Confiamos en ti, agente.</show-text>
         <actions />
       </ext-elem-ref>
     </map-element>
+    <map-element targetId="MapaEscudo" layer="0">
+      <condition>
+        <active flag="FotoConsultada" />
+      </condition>
+      <ext-elem-ref scale="0.1290556" orientation="2" transformManager="uAdventure.Geo.GeopositionedDescriptor">
+        <param name="Position">(40.4165153503418, -3.71094346046448)</param>
+        <param name="Rotation">0</param>
+        <param name="InteractionRange">20.9</param>
+        <param name="RevealOnlyOnRange">True</param>
+        <param name="Hint">True</param>
+        <param name="RevealParticleTexture">leaf_particle.png</param>
+        <actions />
+      </ext-elem-ref>
+    </map-element>
     <map-element targetId="MapaRosario" layer="0">
-      <condition />
+      <condition>
+        <active flag="FotoConsultada" />
+      </condition>
       <ext-elem-ref scale="0.1898841" orientation="2" transformManager="uAdventure.Geo.GeopositionedDescriptor">
         <param name="Position">(40.4146118164063, -3.71094870567322)</param>
         <param name="Rotation">0</param>
@@ -1218,7 +1236,9 @@ Confiamos en ti, agente.</show-text>
       </ext-elem-ref>
     </map-element>
     <map-element targetId="MapaMonedas" layer="0">
-      <condition />
+      <condition>
+        <active flag="FotoConsultada" />
+      </condition>
       <ext-elem-ref scale="0.2204265" orientation="2" transformManager="uAdventure.Geo.GeopositionedDescriptor">
         <param name="Position">(40.4158401489258, -3.70438265800476)</param>
         <param name="Rotation">0</param>
@@ -1229,20 +1249,10 @@ Confiamos en ti, agente.</show-text>
         <actions />
       </ext-elem-ref>
     </map-element>
-    <map-element targetId="MapaEscudo" layer="0">
-      <condition />
-      <ext-elem-ref scale="0.1290556" orientation="2" transformManager="uAdventure.Geo.GeopositionedDescriptor">
-        <param name="Position">(40.4165153503418, -3.71094346046448)</param>
-        <param name="Rotation">0</param>
-        <param name="InteractionRange">20.9</param>
-        <param name="RevealOnlyOnRange">True</param>
-        <param name="Hint">True</param>
-        <param name="RevealParticleTexture">leaf_particle.png</param>
-        <actions />
-      </ext-elem-ref>
-    </map-element>
     <map-element targetId="MapaFuenteCanos" layer="0">
-      <condition />
+      <condition>
+        <active flag="FotoConsultada" />
+      </condition>
       <ext-elem-ref scale="0.1119347" orientation="2" transformManager="uAdventure.Geo.GeopositionedDescriptor">
         <param name="Position">(40.4180488586426, -3.70914101600647)</param>
         <param name="Rotation">0</param>
@@ -2304,7 +2314,7 @@ La trama se desarrolla en el pueblo cordobés de Fuente Obejuna en tiempos de lo
     <actions>
       <grab needsGoTo="yes" keepDistance="35" not-effects="no">
         <effect>
-          <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="52649189-97ab-494c-986e-edef1b458f4b">Encontraste algo.</show-text>
+          <speak-char idTarget="Inigo" guid="98f9acb4-c4ed-4fc4-a3da-422ae0fc8a5c">Has encontrado algo.</speak-char>
           <condition />
           <remove-element idTarget="MapaRosario" guid="2f62c581-8aad-4040-8597-0db57df5c7fe" />
           <condition />
@@ -2354,7 +2364,7 @@ La trama se desarrolla en el pueblo cordobés de Fuente Obejuna en tiempos de lo
     <actions>
       <grab needsGoTo="yes" keepDistance="35" not-effects="no">
         <effect>
-          <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="edefa4e7-ee52-4fa7-9772-f4740cb7fca0">Encontraste una fuente.</show-text>
+          <speak-char idTarget="Inigo" guid="15a33d36-3687-4416-b5c6-dba55ad0e58f">Encontraste una fuente.</speak-char>
           <condition />
           <remove-element idTarget="MapaFuenteCanos" guid="7d731a14-8bab-45f7-b004-26e719ffae42" />
           <condition />
@@ -2382,7 +2392,7 @@ La trama se desarrolla en el pueblo cordobés de Fuente Obejuna en tiempos de lo
     <actions>
       <grab needsGoTo="yes" keepDistance="35" not-effects="no">
         <effect>
-          <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="582187ff-12f1-4471-91d9-3256f0861db0">Has encontrado unas monedas.</show-text>
+          <speak-char idTarget="Inigo" guid="d18b2c21-53bf-491b-a6ba-00f1f0824f0d">Has encontrado unas monedas.</speak-char>
           <condition />
           <remove-element idTarget="MapaMonedas" guid="65039a8e-6535-43ac-af31-202b5234a38b" />
           <condition />
@@ -2410,7 +2420,7 @@ La trama se desarrolla en el pueblo cordobés de Fuente Obejuna en tiempos de lo
     <actions>
       <grab needsGoTo="yes" keepDistance="35" not-effects="no">
         <effect>
-          <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="c8679e86-c71c-4033-91ef-70b12155cd4b">Encontraste un algo.</show-text>
+          <speak-char idTarget="Inigo" guid="feb89c7e-8a4f-46c0-b9e8-b319e232e86c">Encontraste algo.</speak-char>
           <condition />
           <remove-element idTarget="MapaEscudo" guid="bb7b0f08-f7da-492a-8f80-00464505f5bb" />
           <condition />
@@ -2438,7 +2448,7 @@ La trama se desarrolla en el pueblo cordobés de Fuente Obejuna en tiempos de lo
     <actions>
       <grab needsGoTo="yes" keepDistance="35" not-effects="no">
         <effect>
-          <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="78943541-ee56-4351-b779-7b6fbee2349c">Has recogido algo del suelo.</show-text>
+          <speak-char idTarget="Inigo" guid="904859c3-dd3f-409c-9b75-b03d77165041">Has recogido algo del suelo.</speak-char>
           <condition />
           <remove-element idTarget="MapaLibro" guid="123e24e0-3e36-43eb-a56b-65cdf53c07e0" />
           <condition />
@@ -2668,7 +2678,7 @@ La trama se desarrolla en el pueblo cordobés de Fuente Obejuna en tiempos de lo
             <step locks="False">Taberna</step>
           </navigate>
           <condition />
-          <increment var="Etapa" value="0" guid="3f6e3b6c-a755-47ec-af6e-69d6899745ca" />
+          <increment var="Etapa" value="1" guid="3f6e3b6c-a755-47ec-af6e-69d6899745ca" />
           <condition />
         </effect>
       </end-conversation>
