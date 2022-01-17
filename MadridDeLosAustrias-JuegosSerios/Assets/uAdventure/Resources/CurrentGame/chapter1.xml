@@ -937,7 +937,7 @@ Confiamos en ti, agente.</show-text>
       <object-ref idTarget="BotonAtrasEscenaColeccionables" x="89" y="167" scale="0.3043288" glow="no" layer="0" hasInfluenceArea="no" />
     </objects>
   </scene>
-  <map-scene id="MapaJuego" cameraType="Aerial2D" renderStyle="Tile" tileMetaIdentifier="OSMTile" usesGameplayArea="yes" gameplayArea="40.4125729710596 -3.71781527995988 0.00793969609117084 0.0171661376952987" center="(40.4152339393587, -3.70558972358519)" zoom="18" start="no">
+  <map-scene id="MapaJuego" cameraType="Aerial2D" renderStyle="Tile" tileMetaIdentifier="OSMTile" usesGameplayArea="yes" gameplayArea="40.4125729710596 -3.71781527995988 0.00793969609117084 0.0171661376952987" center="(40.4150705677495, -3.70593572854848)" zoom="18" start="no">
     <map-element targetId="Foto" layer="0">
       <condition />
       <ext-elem-ref scale="0.3179099" orientation="2" transformManager="uAdventure.Geo.GeopositionedDescriptor">
@@ -955,7 +955,7 @@ Confiamos en ti, agente.</show-text>
         <equals var="Etapa" value="4" />
       </condition>
       <ext-elem-ref scale="0.2587697" orientation="2" transformManager="uAdventure.Geo.GeopositionedDescriptor">
-        <param name="Position">(40.4171447753906, -3.70692014694214)</param>
+        <param name="Position">(40.4171867370605, -3.70687580108643)</param>
         <param name="Rotation">0</param>
         <param name="InteractionRange">19.4</param>
         <param name="RevealOnlyOnRange">True</param>
@@ -969,9 +969,9 @@ Confiamos en ti, agente.</show-text>
         <equals var="Etapa" value="1" />
       </condition>
       <ext-elem-ref scale="0.5775352" orientation="2" transformManager="uAdventure.Geo.GeopositionedDescriptor">
-        <param name="Position">(40.4126434326172, -3.70838332176209)</param>
+        <param name="Position">(40.4127655029297, -3.70839929580688)</param>
         <param name="Rotation">0</param>
-        <param name="InteractionRange">24.7</param>
+        <param name="InteractionRange">20</param>
         <param name="RevealOnlyOnRange">True</param>
         <param name="Hint">False</param>
         <param name="RevealParticleTexture">leaf_particle.png</param>
@@ -1188,7 +1188,7 @@ Confiamos en ti, agente.</show-text>
     <map-element targetId="BotonEscenaColeccionables" layer="0">
       <condition />
       <ext-elem-ref scale="0.09959341" orientation="2" transformManager="uAdventure.Geo.ScreenDescriptor">
-        <param name="Position">(752.0537, 104.916)</param>
+        <param name="Position">(745.3616, 130.3802)</param>
         <param name="Rotation">0</param>
         <actions />
       </ext-elem-ref>
@@ -1198,7 +1198,7 @@ Confiamos en ti, agente.</show-text>
         <active flag="FotoConsultada" />
       </condition>
       <ext-elem-ref scale="0.1464389" orientation="2" transformManager="uAdventure.Geo.GeopositionedDescriptor">
-        <param name="Position">(40.4137268066406, -3.70815396308899)</param>
+        <param name="Position">(40.4137077331543, -3.70812582969666)</param>
         <param name="Rotation">0</param>
         <param name="InteractionRange">24.3</param>
         <param name="RevealOnlyOnRange">True</param>
@@ -1298,7 +1298,7 @@ Confiamos en ti, agente.</show-text>
         <Polygon>
           <exterior>
             <LinearRing>
-              <posList>40.4129426119673 -3.70816196203235 40.41260156167 -3.70826925039295 40.4126955038406 -3.70865817070011 40.4129997938839 -3.70853478908543</posList>
+              <posList>40.4129671185221 -3.70821024179299 40.4127036727007 -3.70825315713723 40.412754728167 -3.70860989093619 40.4129997938839 -3.70853478908543</posList>
             </LinearRing>
           </exterior>
         </Polygon>
@@ -1433,7 +1433,7 @@ Confiamos en ti, agente.</show-text>
         <effect>
           <trigger-scene idTarget="EscenaSanMartin" x="492" y="534" transitionTime="0" transitionType="0" guid="77dccc88-6c5c-4e57-975b-8ebcb4792952" />
           <condition />
-          <speak-char idTarget="Inigo" guid="1f3e2978-f33a-4be8-aec6-106d82202d02">Mira, este mercader vende estatuas. Echales un buen vistazo.</speak-char>
+          <speak-char idTarget="Inigo" guid="1f3e2978-f33a-4be8-aec6-106d82202d02">Mira, este mercader vende estatuas. Échales un buen vistazo.</speak-char>
           <condition />
           <increment var="InigoRecordatorios" value="1" guid="76d149ba-c146-4d72-8738-6c8133e873f4" />
           <condition />
@@ -1572,6 +1572,59 @@ Confiamos en ti, agente.</show-text>
     </geometries>
     <actions />
   </geo-element>
+  <geo-element id="chocolateria">
+    <description>
+      <name>chocolateria</name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <geometries>
+      <geometry influence="0">
+        <Polygon>
+          <exterior>
+            <LinearRing>
+              <posList>40.4169387526296 -3.70671826302988 40.4166814543565 -3.70663779675944 40.4165956865303 -3.70705085694773 40.4168652371928 -3.70713668763621</posList>
+            </LinearRing>
+          </exterior>
+        </Polygon>
+      </geometry>
+    </geometries>
+    <actions>
+      <enter-action>
+        <condition>
+          <equals var="Etapa" value="14" />
+        </condition>
+        <effect>
+          <trigger-conversation idTarget="ConversacionLadron" guid="9792bc24-373a-487b-a324-50e6b379f044" />
+          <condition />
+        </effect>
+        <only-from-outside>True</only-from-outside>
+      </enter-action>
+    </actions>
+  </geo-element>
+  <geo-element id="MonasterioDescalzas">
+    <description>
+      <name>Monasterio Descalzas</name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <geometries>
+      <geometry influence="0">
+        <Polygon>
+          <exterior>
+            <LinearRing>
+              <posList>40.4183292805538 -3.70542879104621 40.4180434294642 -3.70560045242317 40.4182295024406 -3.70615298748032 40.4185262334606 -3.70598400831236</posList>
+            </LinearRing>
+          </exterior>
+        </Polygon>
+      </geometry>
+    </geometries>
+    <actions />
+  </geo-element>
   <geo-element id="PlazaVilla">
     <description>
       <name>Plaza Villa</name>
@@ -1678,60 +1731,6 @@ Confiamos en ti, agente.</show-text>
             <active flag="cuadroRecuprado" />
           </condition>
           <trigger-conversation idTarget="ConversacionFinal" guid="3c9f588c-0be2-4127-9d48-4d2a35611bc8" />
-          <condition />
-        </effect>
-        <only-from-outside>True</only-from-outside>
-      </enter-action>
-    </actions>
-  </geo-element>
-  <geo-element id="MonasterioDescalzas">
-    <description>
-      <name>Monasterio Descalzas</name>
-      <brief>
-      </brief>
-      <detailed>
-      </detailed>
-    </description>
-    <geometries>
-      <geometry influence="0">
-        <Polygon>
-          <exterior>
-            <LinearRing>
-              <posList>40.4183292805538 -3.70542879104621 40.4180434294642 -3.70560045242317 40.4182295024406 -3.70615298748032 40.4185262334606 -3.70598400831236</posList>
-            </LinearRing>
-          </exterior>
-        </Polygon>
-      </geometry>
-    </geometries>
-    <actions />
-  </geo-element>
-  <geo-element id="chocolateria">
-    <description>
-      <name>
-      </name>
-      <brief>
-      </brief>
-      <detailed>
-      </detailed>
-    </description>
-    <geometries>
-      <geometry influence="0">
-        <Polygon>
-          <exterior>
-            <LinearRing>
-              <posList>40.4169387526296 -3.70671826302988 40.4166814543565 -3.70663779675944 40.4165956865303 -3.70705085694773 40.4168652371928 -3.70713668763621</posList>
-            </LinearRing>
-          </exterior>
-        </Polygon>
-      </geometry>
-    </geometries>
-    <actions>
-      <enter-action>
-        <condition>
-          <equals var="Etapa" value="14" />
-        </condition>
-        <effect>
-          <trigger-conversation idTarget="ConversacionLadron" guid="9792bc24-373a-487b-a324-50e6b379f044" />
           <condition />
         </effect>
         <only-from-outside>True</only-from-outside>
