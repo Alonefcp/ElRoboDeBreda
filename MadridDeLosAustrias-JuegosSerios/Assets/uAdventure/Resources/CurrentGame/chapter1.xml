@@ -937,7 +937,7 @@ Confiamos en ti, agente.</show-text>
       <object-ref idTarget="BotonAtrasEscenaColeccionables" x="89" y="167" scale="0.3043288" glow="no" layer="0" hasInfluenceArea="no" />
     </objects>
   </scene>
-  <map-scene id="MapaJuego" cameraType="Aerial2D" renderStyle="Tile" tileMetaIdentifier="OSMTile" usesGameplayArea="yes" gameplayArea="40.4125729710596 -3.71781527995988 0.00793969609117084 0.0171661376952987" center="(40.4150705677495, -3.70593572854848)" zoom="18" start="no">
+  <map-scene id="MapaJuego" cameraType="Aerial2D" renderStyle="Tile" tileMetaIdentifier="OSMTile" usesGameplayArea="yes" gameplayArea="40.4125729710596 -3.71781527995988 0.00793969609117084 0.0171661376952987" center="(40.4153850577428, -3.70562995672066)" zoom="18" start="no">
     <map-element targetId="Foto" layer="0">
       <condition />
       <ext-elem-ref scale="0.3179099" orientation="2" transformManager="uAdventure.Geo.GeopositionedDescriptor">
@@ -957,7 +957,7 @@ Confiamos en ti, agente.</show-text>
       <ext-elem-ref scale="0.2587697" orientation="2" transformManager="uAdventure.Geo.GeopositionedDescriptor">
         <param name="Position">(40.4171867370605, -3.70687580108643)</param>
         <param name="Rotation">0</param>
-        <param name="InteractionRange">19.4</param>
+        <param name="InteractionRange">21.83</param>
         <param name="RevealOnlyOnRange">True</param>
         <param name="Hint">False</param>
         <param name="RevealParticleTexture">leaf_particle.png</param>
@@ -1057,7 +1057,7 @@ Confiamos en ti, agente.</show-text>
         <equals var="Etapa" value="7" />
       </condition>
       <ext-elem-ref scale="0.1362625" orientation="2" transformManager="uAdventure.Geo.GeopositionedDescriptor">
-        <param name="Position">(40.4179801940918, -3.71221208572388)</param>
+        <param name="Position">(40.4180068969727, -3.71221470832825)</param>
         <param name="Rotation">0</param>
         <param name="InteractionRange">38.51</param>
         <param name="RevealOnlyOnRange">True</param>
@@ -1145,7 +1145,7 @@ Confiamos en ti, agente.</show-text>
         <active flag="apareceVelazquez" />
       </condition>
       <ext-elem-ref scale="0.3020757" orientation="2" transformManager="uAdventure.Geo.ScreenDescriptor">
-        <param name="Position">(718.8711, 594.0002)</param>
+        <param name="Position">(726.7023, 614.0449)</param>
         <param name="Rotation">0</param>
         <actions />
       </ext-elem-ref>
@@ -1319,7 +1319,7 @@ Confiamos en ti, agente.</show-text>
         <Polygon>
           <exterior>
             <LinearRing>
-              <posList>40.4148923857091 -3.70568628311119 40.4147126760051 -3.70563800334891 40.4146942965765 -3.70624686479528 40.414888301403 -3.706198585033</posList>
+              <posList>40.4148944278643 -3.70565409660198 40.4147126760051 -3.70563800334891 40.4146942965765 -3.70624686479528 40.4148903435583 -3.7062361359582</posList>
             </LinearRing>
           </exterior>
         </Polygon>
@@ -1351,7 +1351,7 @@ Confiamos en ti, agente.</show-text>
         <Polygon>
           <exterior>
             <LinearRing>
-              <posList>40.4169100026389 -3.70442832708344 40.4167160036358 -3.70438809394823 40.4166955826556 -3.70465095043168 40.4168854975014 -3.70468581914888</posList>
+              <posList>40.416938591903 -3.7044283270821 40.4167160036358 -3.70438809394823 40.4166976247458 -3.70469923019262 40.4169181709598 -3.70472873449178</posList>
             </LinearRing>
           </exterior>
         </Polygon>
@@ -1387,7 +1387,7 @@ Confiamos en ti, agente.</show-text>
         <Polygon>
           <exterior>
             <LinearRing>
-              <posList>40.4173674296456 -3.7066196918494 40.4171387164097 -3.70670015811988 40.4172612414809 -3.70719100236957 40.417487912195 -3.70708639621801</posList>
+              <posList>40.4174838279941 -3.70653117894977 40.4171611793179 -3.70669479369959 40.4172837043793 -3.70716149806817 40.4176063524057 -3.70698983669134</posList>
             </LinearRing>
           </exterior>
         </Polygon>
@@ -1477,6 +1477,7 @@ Confiamos en ti, agente.</show-text>
       <exit-action>
         <condition>
           <equals var="Etapa" value="7" />
+          <active flag="habladoConRey" />
         </condition>
         <effect>
           <trigger-conversation idTarget="conversacionHaciaRamales" guid="6ed77107-37cf-4ddd-aa1e-627e036464c8" />
@@ -1692,6 +1693,7 @@ Confiamos en ti, agente.</show-text>
       <exit-action>
         <condition>
           <equals var="Etapa" value="13" />
+          <active flag="codiceRecuperado" />
         </condition>
         <effect>
           <trigger-conversation idTarget="ConversacionPerseguirLadron" guid="ceb1d0f9-6703-42e6-90b0-0851092f05fd" />
@@ -3022,7 +3024,7 @@ La trama se desarrolla en el pueblo cordobés de Fuente Obejuna en tiempos de lo
       <condition />
       <child nodeindex="4" />
     </option-node>
-    <dialogue-node nodeindex="2" editor-x="818" editor-y="12">
+    <dialogue-node nodeindex="2" editor-x="728" editor-y="8">
       <speak-player>
         <resources name="No name" />
         <text>Humm parece que esta es la estatua.</text>
@@ -3047,6 +3049,11 @@ La trama se desarrolla en el pueblo cordobés de Fuente Obejuna en tiempos de lo
         <resources name="No name" />
         <text>Vaya carácter amigo. Será mejor que nos vayamos de aquí, para no llamar más la atención.</text>
       </speak-char>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>Vayamos a devolver la estatua a la parroquia de San Ginés.</text>
+      </speak-player>
       <condition />
       <end-conversation>
         <effect>
@@ -3113,7 +3120,7 @@ La trama se desarrolla en el pueblo cordobés de Fuente Obejuna en tiempos de lo
       <condition />
       <child nodeindex="1" />
     </dialogue-node>
-    <dialogue-node nodeindex="1" editor-x="689" editor-y="402">
+    <dialogue-node nodeindex="1" editor-x="481" editor-y="145">
       <speak-player>
         <resources name="No name" />
         <text>Si no requiere más de nuestros servicios, nos retiramos su majestad.</text>
@@ -3124,7 +3131,12 @@ La trama se desarrolla en el pueblo cordobés de Fuente Obejuna en tiempos de lo
         <text>Podéis retiraros.</text>
       </speak-char>
       <condition />
-      <end-conversation />
+      <end-conversation>
+        <effect>
+          <activate flag="habladoConRey" guid="1630c1eb-93d8-4f60-87d3-4141e4858afa" />
+          <condition />
+        </effect>
+      </end-conversation>
     </dialogue-node>
   </graph-conversation>
   <graph-conversation id="conversacionHaciaRamales">
@@ -3275,12 +3287,17 @@ La trama se desarrolla en el pueblo cordobés de Fuente Obejuna en tiempos de lo
     <dialogue-node nodeindex="0" editor-x="0" editor-y="87">
       <speak-char idTarget="Inigo">
         <resources name="No name" />
-        <text> El escudo es muy grande, no es fácil de ocultar. Por esta zona solo se me ocurren dos sitios donde poder esconder algo tan grande y pesado: La plaza de la Villa y la plaza de la Cruz Verde. </text>
+        <text> El escudo es muy grande, no es fácil de ocultar. Por esta zona solo se me ocurren dos sitios donde poder esconder algo tan grande y pesado.</text>
       </speak-char>
       <condition />
       <speak-char idTarget="Inigo">
         <resources name="No name" />
-        <text>¿Hacia donde quieres ir?.</text>
+        <text> La plaza de la Villa y la plaza de la Cruz Verde. </text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="Inigo">
+        <resources name="No name" />
+        <text>¿Hacia dónde quieres ir?.</text>
       </speak-char>
       <condition />
       <child nodeindex="1" />
