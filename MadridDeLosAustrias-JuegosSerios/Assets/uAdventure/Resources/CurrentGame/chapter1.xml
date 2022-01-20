@@ -937,7 +937,7 @@ Confiamos en ti, agente.</show-text>
       <object-ref idTarget="BotonAtrasEscenaColeccionables" x="89" y="167" scale="0.3043288" glow="no" layer="0" hasInfluenceArea="no" />
     </objects>
   </scene>
-  <map-scene id="MapaJuego" cameraType="Aerial2D" renderStyle="Tile" tileMetaIdentifier="OSMTile" usesGameplayArea="yes" gameplayArea="40.4125729710596 -3.71781527995988 0.00793969609117084 0.0171661376952987" center="(40.4153850577428, -3.70562995672066)" zoom="18" start="no">
+  <map-scene id="MapaJuego" cameraType="Aerial2D" renderStyle="Tile" tileMetaIdentifier="OSMTile" usesGameplayArea="yes" gameplayArea="40.4125729710596 -3.71781527995988 0.00793969609117084 0.0171661376952987" center="(40.4153442149681, -3.70596523284781)" zoom="19" start="no">
     <map-element targetId="Foto" layer="0">
       <condition />
       <ext-elem-ref scale="0.3179099" orientation="2" transformManager="uAdventure.Geo.GeopositionedDescriptor">
@@ -983,7 +983,7 @@ Confiamos en ti, agente.</show-text>
         <active flag="FotoConsultada" />
       </condition>
       <ext-elem-ref scale="2.1" orientation="2" transformManager="uAdventure.Geo.ScreenDescriptor">
-        <param name="Position">(76.48134, 761.1983)</param>
+        <param name="Position">(59.44708, 750.5078)</param>
         <param name="Rotation">0</param>
         <actions />
       </ext-elem-ref>
@@ -992,8 +992,8 @@ Confiamos en ti, agente.</show-text>
       <condition>
         <equals var="Etapa" value="2" />
       </condition>
-      <ext-elem-ref scale="0.12354" orientation="2" transformManager="uAdventure.Geo.GeopositionedDescriptor">
-        <param name="Position">(40.4147834777832, -3.70594787597656)</param>
+      <ext-elem-ref scale="0.1200763" orientation="2" transformManager="uAdventure.Geo.GeopositionedDescriptor">
+        <param name="Position">(40.414737701416, -3.70606184005737)</param>
         <param name="Rotation">0</param>
         <param name="InteractionRange">25.14</param>
         <param name="RevealOnlyOnRange">True</param>
@@ -1006,8 +1006,8 @@ Confiamos en ti, agente.</show-text>
       <condition>
         <active flag="EstatuaRecuperada" />
       </condition>
-      <ext-elem-ref scale="0.3319511" orientation="2" transformManager="uAdventure.Geo.GeopositionedDescriptor">
-        <param name="Position">(40.417839050293, -3.70701670646667)</param>
+      <ext-elem-ref scale="0.3492287" orientation="2" transformManager="uAdventure.Geo.GeopositionedDescriptor">
+        <param name="Position">(40.4179420471191, -3.70685839653015)</param>
         <param name="Rotation">0</param>
         <param name="InteractionRange">31.7</param>
         <param name="RevealOnlyOnRange">False</param>
@@ -1021,8 +1021,8 @@ Confiamos en ti, agente.</show-text>
         <active flag="HabladoConMonja" />
         <equals var="Etapa" value="6" />
       </condition>
-      <ext-elem-ref scale="0.1043247" orientation="2" transformManager="uAdventure.Geo.GeopositionedDescriptor">
-        <param name="Position">(40.4180564880371, -3.7057774066925)</param>
+      <ext-elem-ref scale="0.520443" orientation="2" transformManager="uAdventure.Geo.GeopositionedDescriptor">
+        <param name="Position">(40.4180946350098, -3.70576000213623)</param>
         <param name="Rotation">0</param>
         <param name="InteractionRange">35.5</param>
         <param name="RevealOnlyOnRange">True</param>
@@ -1262,6 +1262,9 @@ Confiamos en ti, agente.</show-text>
         <param name="RevealParticleTexture">leaf_particle.png</param>
         <actions />
       </ext-elem-ref>
+    </map-element>
+    <map-element targetId="Limites" layer="0">
+      <condition />
     </map-element>
   </map-scene>
   <geo-element id="PlazaMayor">
@@ -1664,6 +1667,36 @@ Confiamos en ti, agente.</show-text>
         </condition>
         <effect>
           <trigger-conversation idTarget="ConversationPlazaVilla2" guid="e1281fad-bccf-4d3b-852f-57f85de6393a" />
+          <condition />
+        </effect>
+        <only-from-outside>True</only-from-outside>
+      </enter-action>
+    </actions>
+  </geo-element>
+  <geo-element id="Limites">
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <geometries>
+      <geometry influence="0">
+        <Polygon>
+          <exterior>
+            <LinearRing>
+              <posList>40.413088791875 -3.71500968879441 40.4135204362247 -3.71368467754106 40.412192123084 -3.70839428874162 40.4126169026229 -3.70498251756514 40.4141526181388 -3.70277237864634 40.4166848670516 -3.70245051487425 40.4189393046346 -3.70455336674223 40.4203365272092 -3.70829343742096 40.4197773910235 -3.71413528931009 40.4154155507047 -3.71511161339174 40.4135161838451 -3.71374368679392 40.4132590312856 -3.71454298508037 40.4154237191032 -3.71612012398116 40.4203565580747 -3.7149667741047 40.4210597547187 -3.70839536136352 40.4194457232196 -3.7039954672671 40.4167665479546 -3.70165658100584 40.4139402450184 -3.70204281779429 40.4120287410968 -3.70444607576217 40.4114079032844 -3.70820116969294</posList>
+            </LinearRing>
+          </exterior>
+        </Polygon>
+      </geometry>
+    </geometries>
+    <actions>
+      <enter-action>
+        <effect>
+          <speak-char idTarget="Inigo" guid="b2c9801b-6e9c-48e9-8949-41e23da049b6">¡Cuidado! Te estás alejando mucho. Tenemos que volver por donde hemos venido.</speak-char>
           <condition />
         </effect>
         <only-from-outside>True</only-from-outside>
