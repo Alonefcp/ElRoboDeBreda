@@ -6,7 +6,7 @@ El juego esta disponible para dispositivos móviles con sistema operativo Androi
 
 Enlace al APK: https://drive.google.com/file/d/1KkvIf9cAmf2lsKPNcECvuFjS4ZvNEx_D/view?usp=sharing
 
-Enlace al GDD: https://drive.google.com/file/d/1PUwwB3okFA23Qo_b3jBJ-iuwcS8tgfnX/view?usp=sharing
+Enlace al GDD: https://drive.google.com/file/d/1Gi53xfoS2x2tHyA9wRnReEpsSDkeFlT_/view?usp=sharing
 
 Gameplay de demostración del juego: https://drive.google.com/file/d/175pMyBIL_NftbOlYxVoB6J4q3W2Asax1/view?usp=sharing
 
