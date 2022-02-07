@@ -4,6 +4,8 @@ Juego hecho por Felipe Cuadra Plaza, Adrián de Lucas Gomez y Aurora García Jov
 El Robo de Breda es un juego serio geoposicionado, cuyo objetivo es transmitir algunos datos sobre edificios y objetos de la época del Madrid de los Austrias (1516-1700). Más concretamente durante el reinado de Felipe IV (1621-1665). 
 El juego esta disponible para dispositivos móviles con sistema operativo Android y con GPS.
 
+El .apk, el GDD y el gameplay de demostración del juego se encuentran en el repositorio. Aunque desde este enlace también podeís acceder al gameplay:
+
 Gameplay de demostración del juego: https://drive.google.com/file/d/175pMyBIL_NftbOlYxVoB6J4q3W2Asax1/view?usp=sharing
 
 Este juego se ha desarrollado durante la asignatura de Juegos Serios del Grado en Desarrollo de Videojuegos de la UCM.
